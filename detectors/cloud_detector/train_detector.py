@@ -1,5 +1,5 @@
 """
-Owner: Devyani (Lead — cloud layer)
+Owner: Devyani
 
 Loads data/cloud/raw/cloud_logs.*, trains an anomaly detector, and writes
 flagged rows to detectors/cloud_detector/output/flags.json in the shared

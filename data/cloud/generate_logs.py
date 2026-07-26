@@ -1,5 +1,5 @@
 """
-Owner: Devyani (Lead — cloud layer)
+Owner: Devyani
 
 Generates synthetic CloudTrail-style logs at data/cloud/raw/cloud_logs.json (or .csv).
 Rows: {user, action, source_ip, timestamp, is_attack}

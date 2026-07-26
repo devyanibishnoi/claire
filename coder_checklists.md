@@ -1,7 +1,7 @@
 # Step-by-Step Coder Checklists
-### AI-Assisted Cross-Layer Threat Detection & Explanation System
+### CLAIRE — Cross-Layer AI-driven Incident Response & Explanation
 
-This is a literal, in-order checklist for the three coders. Nothing here assumes prior knowledge — follow the steps in order, top to bottom, inside your own section only. Before starting, read `REPO_GUIDE.md` once — it explains the folder structure these steps refer to.
+This is a literal, in-order checklist for the three coders. Nothing here assumes prior knowledge — follow the steps in order, top to bottom, inside your own section only. Before starting, read `repo_guide.md` once — it explains the folder structure these steps refer to.
 
 ---
 
@@ -11,7 +11,6 @@ This is a literal, in-order checklist for the three coders. Nothing here assumes
 - [ ] Open a terminal and check if Python is installed: type `python3 --version`. If it's missing, download and install it from python.org (version 3.10 or newer).
 - [ ] Check if git is installed: type `git --version`. If missing, install it from git-scm.com.
 - [ ] Install a code editor if you don't have one — VS Code (free, from code.visualstudio.com) is the easiest for beginners.
-- [ ] Ask Devyani for the GitHub repo link and get added as a collaborator.
 - [ ] In a terminal, go to the folder where you want the project to live, then run: `git clone <repo-url>`
 - [ ] Move into the project folder: `cd <repo-folder-name>`
 - [ ] Set your git identity (once per computer): `git config --global user.name "Your Name"` and `git config --global user.email "your@email.com"`
@@ -82,7 +81,7 @@ This is a literal, in-order checklist for the three coders. Nothing here assumes
 
 ### Phase 5 — Wrap up
 - [ ] Message Devyani that your `flags.json` and `network_metrics.md` are ready.
-- [ ] Double-check your `flags.json` matches `docs/data_contract.md` exactly — this is what lets the Lead's fusion code read it without errors.
+- [ ] Double-check your `flags.json` matches `docs/data_contract.md` exactly — this is what lets Devyani's fusion code read it without errors.
 - [ ] Join the whole-team read-through when scheduled.
 
 ---
@@ -142,8 +141,7 @@ This is the largest of the three jobs since it covers a detector plus the two pi
 ### Phase 0 — One-time setup
 *(identical setup — Python, git, VS Code, clone the repo, virtual environment, `pip install pandas scikit-learn numpy`. Also run `pip install openai` or the equivalent package for whichever LLM API the team picked, e.g. `google-generativeai` for Gemini or `anthropic` for Claude.)*
 
-- [ ] Additionally, create the GitHub repo itself (if not already created) and add the other four team members as collaborators.
-- [ ] Create `docs/data_contract.md` together with the team on Day 1 (see `REPO_GUIDE.md` Section 4 for the suggested format) before anyone starts writing detector code.
+- [ ] Create `docs/data_contract.md` together with the team on Day 1 (see `repo_guide.md` Section 4 for the suggested format) before anyone starts writing detector code.
 - [ ] Get an API key for whichever LLM (OpenAI, Gemini, or Claude) the team is using, and store it as an environment variable — never commit it to the repo.
 
 ### Phase 1 — Get the cloud data

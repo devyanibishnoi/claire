@@ -1,6 +1,6 @@
 # Data Contract
 
-**Status: DRAFT — lock this together as a team on Day 1, then treat it as frozen.** If it ever needs to change, post in the team chat first — the Lead's fusion code depends on this matching exactly.
+**Status: DRAFT — lock this together as a team on Day 1, then treat it as frozen.** If it ever needs to change, post in the team chat first — Devyani's fusion code depends on this matching exactly.
 
 Every detector's `output/flags.json` must be a list of objects shaped like this:
 

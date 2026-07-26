@@ -1,7 +1,7 @@
 # Project Repo Guide
-### AI-Assisted Cross-Layer Threat Detection & Explanation System
+### CLAIRE — Cross-Layer AI-driven Incident Response & Explanation
 
-This file explains the folder structure, who owns what, and the git rules everyone follows so pushes never conflict. Read it once before writing any code. Put this file at the root of the repo as `REPO_GUIDE.md` so anyone can find it.
+This file explains the folder structure, who owns what, and the git rules everyone follows so pushes never conflict. Read it once before writing any code. Put this file at the root of the repo as `repo_guide.md` so anyone can find it.
 
 ---
 
@@ -17,17 +17,25 @@ The only file everyone shares is `docs/data_contract.md` (explained in Section 3
 
 ```
 repo/
+├── problem_statement.pdf            (shared — the original research problem statement)
 ├── README.md                        (shared — project overview, edited rarely)
-├── REPO_GUIDE.md                    (this file)
+├── repo_guide.md                    (this file)
+├── coder_checklists.md              (shared — literal step-by-step checklist per person)
+├── LEARNING.md                      (shared — concept notes + pipeline diagrams, see Section 3)
 ├── docs/
 │   └── data_contract.md             (shared — the ONE agreed data format, see Section 3)
 │
 ├── data/
 │   ├── network/                     ← Hridya only
+│   │   ├── README.md                (where to get the dataset)
 │   │   └── raw/                     (downloaded dataset files — see .gitignore note below)
 │   ├── os/                          ← Anshika only
+│   │   ├── README.md
+│   │   ├── generate_logs.py         (synthetic-data option, see coder_checklists.md)
 │   │   └── raw/
 │   └── cloud/                       ← Devyani only
+│       ├── README.md
+│       ├── generate_logs.py
 │       └── raw/
 │
 ├── detectors/
@@ -68,7 +76,8 @@ repo/
 | `data/network/`, `detectors/network_detector/`, `adversarial/network_attacks.py`, `results/network_metrics.md` | **Hridya** | Everything about the network detector, start to finish |
 | `data/os/`, `detectors/os_detector/`, `adversarial/os_attacks.py`, `results/os_metrics.md` | **Anshika** | Everything about the OS/endpoint detector, start to finish |
 | `data/cloud/`, `detectors/cloud_detector/`, `fusion/`, `explanation/`, `adversarial/cloud_attacks.py`, `adversarial/llm_prompt_attacks.py`, `results/cloud_llm_metrics.md` | **Devyani** | The cloud detector, plus fusion, plus the LLM explanation layer, plus their adversarial testing |
-| `README.md`, `docs/data_contract.md` | **Everyone** (rarely) | Shared reference — see rules below |
+| `README.md`, `docs/data_contract.md`, `problem_statement.pdf`, `coder_checklists.md` | **Everyone** (rarely) | Shared reference — see rules below |
+| `LEARNING.md` | **Devyani** (written for everyone) | Concept notes and pipeline diagrams, organized so Hridya/Anshika-relevant material lives in their own sections — read-only for the other two, updated by Devyani as the project progresses |
 
 **Each detector folder produces exactly one output file the rest of the team depends on: `output/flags.json`.** That's the handoff point. Fusion only ever *reads* those three files — it never edits them, and the detector owners never touch `fusion/`.
 
@@ -106,13 +115,12 @@ As long as every detector writes this exact shape, Devyani's fusion script can r
 
 ### One-time setup (everyone does this once)
 1. Install git if you don't have it (check with `git --version` in a terminal).
-2. Get added as a collaborator on the GitHub repo by whoever created it.
-3. Set your identity (only needed once per computer):
+2. Set your identity (only needed once per computer):
    ```
    git config --global user.name "Your Name"
    git config --global user.email "your@email.com"
    ```
-4. Clone the repo:
+3. Clone the repo:
    ```
    git clone <repo-url>
    cd <repo-folder-name>
@@ -169,8 +177,4 @@ Large dataset files shouldn't go in the repo at all — GitHub isn't built for t
 
 ---
 
-## 6. Common problems
 
-- **"git asks for a username/password and won't accept it"** — GitHub no longer accepts your account password over the command line. Use a Personal Access Token instead (GitHub → Settings → Developer Settings → Personal Access Tokens), or set up the GitHub CLI (`gh auth login`) for an easier experience.
-- **"git push says I need to pull first"** — someone else pushed since you last pulled. Just run `git pull`, then `git push` again.
-- **"I accidentally started editing someone else's file"** — stop, don't commit it, message them, let them make the change instead.
