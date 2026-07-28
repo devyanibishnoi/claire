@@ -79,6 +79,20 @@ This also matters directly for the adversarial testing phases: each of you tests
 
 Note: since each of us splits our own separate dataset, `random_state=42` doesn't mean the three of us get "the same split" of shared data — there's no shared dataset to split. It means each person's own split becomes reproducible run to run.
 
+### Label leakage: the `is_attack` column is the answer key, not a feature
+
+Every dataset in this project has a label column (`is_attack` in the synthetic data, `label` in NSL-KDD, etc.) marking whether a row is actually an attack. That column exists so we can *check* how well the model did afterward — it must never be fed into the model as an input feature.
+
+If it stays in by accident, the model can key off it directly — a column that says "attack or not" makes the model's job trivial, but for the wrong reason. It would look artificially perfect during training, without having learned anything real about the actual patterns (syscall counts, byte counts, IP behavior, etc.). This is called **label leakage**, and it's sneakier than plain overfitting, since it wouldn't even show up as a train/test mismatch — both would look great, for a fake reason.
+
+The fix: before splitting, separate the label out into its own variable and drop it from the features:
+```python
+y = df["is_attack"]
+X = df.drop(columns=["is_attack"])
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+```
+`model.fit()` and `model.predict()` only ever see `X_train`/`X_test`. `y_test` only comes back afterward, to check how many of the model's flagged rows were real attacks.
+
 ### Adversarial testing (all three detectors, plus the LLM layer)
 
 A detector that tests well right after being built has only proven it can catch **natural, unmodified** attack examples — it says nothing about whether it holds up against someone actively and deliberately trying to slip past it. A real attacker doesn't behave like a random sample from the dataset; they probe for blind spots. That's what the attack-and-retrain phases exist to find deliberately, in a controlled setting, before a real attacker finds them instead. (The exact phase numbers differ slightly per person, since Devyani's checklist has fusion and the LLM layer sitting in between: for Hridya and Anshika it's Phase 3 — attack baseline — then Phase 4 — retrain and re-test; for Devyani's cloud detector it's Phase 5 then Phase 7, with Phase 7 also covering the LLM defense.)

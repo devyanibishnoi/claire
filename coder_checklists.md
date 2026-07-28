@@ -37,10 +37,15 @@ This is a literal, in-order checklist for the three coders. Nothing here assumes
   ```python
   df = pd.get_dummies(df, columns=["protocol_type", "service", "flag"])
   ```
+- [ ] Set aside the label column (e.g. `label` in NSL-KDD, marking each row normal or a specific attack type) — it's the answer key for checking your results afterward, and must never be fed into the model as a feature, or the model will "cheat" by keying off it directly instead of learning real patterns:
+  ```python
+  y = df["label"]
+  X = df.drop(columns=["label"])
+  ```
 - [ ] Split the data into a training portion and a testing portion:
   ```python
   from sklearn.model_selection import train_test_split
-  X_train, X_test = train_test_split(df, test_size=0.2, random_state=42)
+  X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
   ```
 - [ ] Train a simple anomaly detection model:
   ```python
@@ -53,7 +58,7 @@ This is a literal, in-order checklist for the three coders. Nothing here assumes
   predictions = model.predict(X_test)
   # -1 means "flagged as anomaly", 1 means "normal"
   ```
-- [ ] Print out how many it caught vs. missed, compared to the real labels in the dataset, so you know roughly how good it is before moving on.
+- [ ] Print out how many it caught vs. missed by comparing `predictions` against `y_test`, so you know roughly how good it is before moving on.
 - [ ] Write a small function that takes the flagged rows and converts them into the shared format from `docs/data_contract.md` — one JSON object per flagged row with `entity` (use the source IP or connection ID), `host`, `timestamp`, `anomaly_score`, and `layer` set to `"network"`.
 - [ ] Save that list of objects to `detectors/network_detector/output/flags.json`.
 - [ ] Save your commit:
@@ -96,6 +101,7 @@ Real datasets for this layer are harder to find than for network traffic, so the
 
 **Option A — use a real dataset:**
 - [ ] Search Kaggle for **"ADFA-LD dataset"** — a public dataset of OS-level system call logs.
+- [ ] Before assuming anything needs text encoding, check your actual columns with `df.dtypes` and `df.head()`. Most Kaggle versions of ADFA-LD are already preprocessed into a numeric "bag of system calls" matrix — one column per syscall (or short syscall sequence), with counts or 0/1 presence flags as values. That's already valid numeric input for the model — no `get_dummies`/`LabelEncoder` needed. Identify which column is the label (commonly `is_attack`, `label`, or `class`) so you can set it aside in Phase 2.
 
 **Option B — generate a realistic fake dataset (often faster, and explicitly allowed by the problem statement):**
 - [ ] Create `data/os/generate_logs.py`
@@ -107,10 +113,17 @@ Real datasets for this layer are harder to find than for network traffic, so the
 ### Phase 2 — Build the detector
 - [ ] Create `detectors/os_detector/train_detector.py`
 - [ ] Load the CSV with pandas, same as Hridya's Phase 2.
-- [ ] Convert text columns (process name, user) into numbers with `pd.get_dummies()` or `LabelEncoder`.
-- [ ] Split into train/test with `train_test_split`.
-- [ ] Train an Isolation Forest or `RandomForestClassifier` the same way as the network detector (see Hridya's Phase 2 for the exact code shape).
-- [ ] Check how well it separates normal vs. attack rows.
+- [ ] Encode any text columns that still need it — this depends on which option you picked in Phase 1:
+  - **Option A (real ADFA-LD data):** if your columns are already numeric counts/flags (see Phase 1), there's nothing to encode — skip to the next step.
+  - **Option B (synthetic data):** `user` is usually low-cardinality and safe to one-hot encode with `pd.get_dummies()`. `process_name` is high-cardinality (many possible programs) — don't one-hot encode it directly, since that creates one column per unique process and can't represent a process it never saw in training. Instead engineer a feature like `is_new_process_for_this_user` (1 if this user hasn't run this process before, else 0).
+- [ ] Set aside the label column (`is_attack`) before training — it's the answer key, not a feature the model should ever see:
+  ```python
+  y = df["is_attack"]
+  X = df.drop(columns=["is_attack"])
+  ```
+- [ ] Split into train/test with `train_test_split(X, y, test_size=0.2, random_state=42)`.
+- [ ] Train an Isolation Forest the same way as the network detector (see Hridya's Phase 2 for the exact code shape) — `model.fit(X_train)`.
+- [ ] Check how well it separates normal vs. attack rows by comparing `model.predict(X_test)` against `y_test`.
 - [ ] Convert flagged rows into the shared format from `docs/data_contract.md` (`entity` = the user, `host` = the machine, `layer` = `"os"`), and save to `detectors/os_detector/output/flags.json`.
 - [ ] Commit and push: `git add detectors/os_detector/`, `git commit -m "os: initial detector working"`, `git push`
 
@@ -151,7 +164,9 @@ This is the largest of the three jobs since it covers a detector plus the two pi
 - [ ] Save as `data/cloud/raw/cloud_logs.json` or `.csv`.
 
 ### Phase 2 — Build the cloud detector
-- [ ] Create `detectors/cloud_detector/train_detector.py` and follow the same recipe as the other two detectors: load data, encode text fields as numbers, split train/test, train an Isolation Forest or Random Forest, check how well it separates normal vs. attack.
+- [ ] Create `detectors/cloud_detector/train_detector.py` and follow the same recipe as the other two detectors: load data, split train/test, train an Isolation Forest, check how well it separates normal vs. attack.
+- [ ] Encoding: `action` is low-cardinality (a fixed set of API actions), safe to one-hot encode directly with `pd.get_dummies()`. `source_ip` is high-cardinality — don't one-hot encode it directly, since a brand-new attacker IP wouldn't have a column to land in. Instead engineer `is_new_ip_for_this_entity` (1 if this IP is new for this user/account, else 0).
+- [ ] Set aside the label column (`is_attack`) before training — it's the answer key, not a feature: `y = df["is_attack"]`, `X = df.drop(columns=["is_attack"])`. Use `X_train`/`X_test` (from `train_test_split(X, y, ...)`) for `model.fit()` and `model.predict()`, and only bring `y_test` back afterward to check results.
 - [ ] Convert flagged rows to the shared format (`entity` = the account/user, `host` = the resource, `layer` = `"cloud"`) and save to `detectors/cloud_detector/output/flags.json`.
 - [ ] Commit and push: `git add detectors/cloud_detector/`, `git commit -m "cloud: initial detector working"`, `git push`
 
