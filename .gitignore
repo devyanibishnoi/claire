@@ -4,4 +4,5 @@ __pycache__/
 .DS_Store
 data/*/raw/
 CLAUDE.md
+MY_LEARNINGS.md
 .env

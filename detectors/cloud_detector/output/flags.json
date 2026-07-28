@@ -1,1 +1,723 @@
-[]
+[
+  {
+    "entity": "user28",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-01T03:12:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user30",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-12T02:46:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user24",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-03T02:53:00Z",
+    "anomaly_score": 0.954,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user7",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-02T01:33:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user17",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-05T01:32:00Z",
+    "anomaly_score": 0.954,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user6",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-27T03:30:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user21",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-22T02:51:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user23",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-11T03:37:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user25",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-09T04:14:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user11",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-02T03:24:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user17",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-27T03:39:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user4",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-12T04:52:00Z",
+    "anomaly_score": 0.954,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user12",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-13T01:27:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user1",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-24T04:00:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user10",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-12T04:01:00Z",
+    "anomaly_score": 0.954,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user24",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-10T04:16:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user24",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-14T03:19:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user24",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-19T04:28:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user25",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-16T02:00:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user22",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-07T02:58:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user17",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-01T04:52:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user27",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-26T04:11:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user15",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-18T03:33:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user15",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-08T03:43:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user17",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-28T01:12:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user17",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-09T01:12:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user11",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-12T04:29:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user19",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-22T04:50:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user12",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-25T02:52:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user6",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-05T01:20:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user20",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-24T03:29:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user22",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-16T04:30:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user25",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-16T04:36:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user8",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-03T03:50:00Z",
+    "anomaly_score": 0.954,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user3",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-11T01:52:00Z",
+    "anomaly_score": 0.954,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user1",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-04T03:53:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user3",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-01T02:45:00Z",
+    "anomaly_score": 0.954,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user23",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-26T03:36:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user21",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-27T03:31:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user20",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-30T01:32:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user6",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-30T03:53:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user26",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-10T02:38:00Z",
+    "anomaly_score": 0.954,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user11",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-17T03:42:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user20",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-28T03:14:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user16",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-15T03:22:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user3",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-09T01:27:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user16",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-09T04:15:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user27",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-18T04:44:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user12",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-18T04:34:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user1",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-18T02:35:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user23",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-11T01:53:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user5",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-15T02:07:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user21",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-08T01:45:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user25",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-17T02:37:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user9",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-26T03:26:00Z",
+    "anomaly_score": 0.954,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user25",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-30T01:14:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user11",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-05T04:58:00Z",
+    "anomaly_score": 0.954,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user25",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-10T02:40:00Z",
+    "anomaly_score": 0.954,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user22",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-11T01:10:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user21",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-14T03:30:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user13",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-22T03:24:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user11",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-29T01:37:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user2",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-07T03:55:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user20",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-14T03:27:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user24",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-05T01:36:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user2",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-17T01:25:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user25",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-12T04:40:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user9",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-21T04:46:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user20",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-18T04:20:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user18",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-24T04:32:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user18",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-06T04:49:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user23",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-23T03:58:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user23",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-29T03:38:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user29",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-14T03:08:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user5",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-23T03:55:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user19",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-15T01:07:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user15",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-19T04:34:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user19",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-14T01:15:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user15",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-18T01:06:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user23",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-29T04:58:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user9",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-11T02:38:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user14",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-23T02:16:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user30",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-27T04:58:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user30",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-03T04:53:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user3",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-17T03:42:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user27",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-01T03:03:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user19",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-06T01:49:00Z",
+    "anomaly_score": 0.954,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user2",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-01T03:05:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user18",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-23T01:05:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user3",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-23T02:08:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user21",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-30T04:23:00Z",
+    "anomaly_score": 0.954,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user9",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-26T01:02:00Z",
+    "anomaly_score": 1.0,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user3",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-02T04:03:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user2",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-20T02:46:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user1",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-11T04:03:00Z",
+    "anomaly_score": 0.954,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user13",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-28T01:08:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user27",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-22T02:03:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user2",
+    "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
+    "timestamp": "2026-06-22T02:01:00Z",
+    "anomaly_score": 0.955,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user9",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-14T04:57:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user24",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-25T01:25:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user26",
+    "host": "arn:aws:iam::123456789012:role/Analyst",
+    "timestamp": "2026-06-17T03:47:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user7",
+    "host": "arn:aws:s3:::reports-bucket",
+    "timestamp": "2026-06-08T04:39:00Z",
+    "anomaly_score": 0.976,
+    "layer": "cloud"
+  },
+  {
+    "entity": "user6",
+    "host": "arn:aws:s3:::user-uploads",
+    "timestamp": "2026-06-06T04:15:00Z",
+    "anomaly_score": 0.936,
+    "layer": "cloud"
+  }
+]
