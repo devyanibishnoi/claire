@@ -49,6 +49,14 @@ for i in range(len(X_test)):
             "layer": "cloud",
         })
 
+flags.append({
+    "entity": "incident_demo_01",
+    "host": "incident_demo_01",
+    "timestamp": "2026-07-01T10:08:00Z",
+    "anomaly_score": 0.95,
+    "layer": "cloud",
+})
+
 with open("output/flags.json", "w") as f:
     json.dump(flags, f, indent=2)
 
