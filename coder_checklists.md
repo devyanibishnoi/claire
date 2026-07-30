@@ -61,6 +61,7 @@ This is a literal, in-order checklist for the three coders. Nothing here assumes
 - [ ] Print out how many it caught vs. missed by comparing `predictions` against `y_test`, so you know roughly how good it is before moving on.
 - [ ] Write a small function that takes the flagged rows and converts them into the shared format from `docs/data_contract.md` — one JSON object per flagged row with `entity` (use the source IP or connection ID), `host`, `timestamp`, `anomaly_score`, and `layer` set to `"network"`.
 - [ ] Save that list of objects to `detectors/network_detector/output/flags.json`.
+- [ ] Add one coordinated test row for fusion validation — append to your `flags` list before saving: `{"entity": "incident_demo_01", "host": "incident_demo_01", "timestamp": "2026-07-01T10:00:00Z", "anomaly_score": 0.95, "layer": "network"}`.
 - [ ] Save your commit:
   ```
   git add detectors/network_detector/
@@ -125,6 +126,7 @@ Real datasets for this layer are harder to find than for network traffic, so the
 - [ ] Train an Isolation Forest the same way as the network detector (see Hridya's Phase 2 for the exact code shape) — `model.fit(X_train)`.
 - [ ] Check how well it separates normal vs. attack rows by comparing `model.predict(X_test)` against `y_test`.
 - [ ] Convert flagged rows into the shared format from `docs/data_contract.md` (`entity` = the user, `host` = the machine, `layer` = `"os"`), and save to `detectors/os_detector/output/flags.json`.
+- [ ] Add one coordinated test row for fusion validation — append to your `flags` list before saving: `{"entity": "incident_demo_01", "host": "incident_demo_01", "timestamp": "2026-07-01T10:04:00Z", "anomaly_score": 0.95, "layer": "os"}`.
 - [ ] Commit and push: `git add detectors/os_detector/`, `git commit -m "os: initial detector working"`, `git push`
 
 ### Phase 3 — Attack your own detector (baseline)
@@ -174,7 +176,7 @@ This is the largest of the three jobs since it covers a detector plus the two pi
 - [ ] Create `fusion/fuse.py`
 - [ ] Write code that loads all three `flags.json` files (network, OS, cloud) — pull the latest from the repo first with `git pull` so you have Hridya's and Anshika's newest output.
 - [ ] Group records together if they share the same `entity` or `host`, **and** their timestamps fall within a shared time window (e.g., 10 minutes of each other). This grouped set is one "attack chain."
-- [ ] Together with Hridya and Anshika, construct 1–2 made-up multi-stage scenarios — deliberately flagged records across all three layers, close together in time, with the same entity/host — to confirm the fusion logic groups them correctly.
+- [x] Together with Hridya and Anshika, add one coordinated test row to each of your three `flags.json` outputs, all using `entity`/`host` = `"incident_demo_01"`, with timestamps ~4 minutes apart (network 10:00, OS 10:04, cloud 10:08) — proves the fusion logic actually groups correlated events across layers. **Devyani: done.** Hridya/Anshika: see your own Phase 2 checklist for the exact row to add.
 - [ ] Commit and push: `git add fusion/`, `git commit -m "fusion: initial correlation logic"`, `git push`
 
 ### Phase 4 — Build the LLM explanation layer
