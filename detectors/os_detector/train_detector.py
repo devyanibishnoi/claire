@@ -5,6 +5,7 @@ from sklearn.ensemble import IsolationForest
 import random
 from datetime import datetime, timedelta
 
+random.seed(42)
 df = pd.read_csv("data/os/raw/os_logs.csv")
 
 y = df["class"]

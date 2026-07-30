@@ -1,869 +1,869 @@
 [
   {
-    "entity": "USR-017",
-    "host": "HOST-015",
-    "timestamp": "2026-06-10T13:13:13Z",
+    "entity": "USR-021",
+    "host": "HOST-004",
+    "timestamp": "2026-06-02T05:08:22Z",
     "anomaly_score": 0.8363,
     "layer": "os"
   },
   {
-    "entity": "USR-001",
+    "entity": "USR-024",
     "host": "HOST-009",
-    "timestamp": "2026-06-23T18:58:25Z",
+    "timestamp": "2026-06-12T21:19:10Z",
     "anomaly_score": 0.5225,
     "layer": "os"
   },
   {
-    "entity": "USR-007",
-    "host": "HOST-019",
-    "timestamp": "2026-06-22T11:51:31Z",
+    "entity": "USR-008",
+    "host": "HOST-005",
+    "timestamp": "2026-06-05T23:24:55Z",
     "anomaly_score": 0.3901,
     "layer": "os"
   },
   {
-    "entity": "USR-016",
-    "host": "HOST-022",
-    "timestamp": "2026-06-09T15:34:51Z",
+    "entity": "USR-022",
+    "host": "HOST-024",
+    "timestamp": "2026-06-27T11:23:53Z",
     "anomaly_score": 0.9057,
     "layer": "os"
   },
   {
-    "entity": "USR-022",
+    "entity": "USR-003",
     "host": "HOST-019",
-    "timestamp": "2026-06-12T01:07:32Z",
+    "timestamp": "2026-06-21T11:34:28Z",
     "anomaly_score": 0.4102,
     "layer": "os"
   },
   {
-    "entity": "USR-019",
-    "host": "HOST-014",
-    "timestamp": "2026-06-09T01:49:27Z",
+    "entity": "USR-002",
+    "host": "HOST-001",
+    "timestamp": "2026-06-05T13:09:46Z",
     "anomaly_score": 0.56,
     "layer": "os"
   },
   {
-    "entity": "USR-016",
-    "host": "HOST-003",
-    "timestamp": "2026-06-01T01:57:39Z",
+    "entity": "USR-007",
+    "host": "HOST-008",
+    "timestamp": "2026-06-25T12:46:53Z",
     "anomaly_score": 0.6012,
     "layer": "os"
   },
   {
-    "entity": "USR-010",
-    "host": "HOST-012",
-    "timestamp": "2026-06-30T13:16:50Z",
+    "entity": "USR-020",
+    "host": "HOST-001",
+    "timestamp": "2026-06-28T05:53:52Z",
     "anomaly_score": 0.4271,
     "layer": "os"
   },
   {
-    "entity": "USR-003",
-    "host": "HOST-001",
-    "timestamp": "2026-06-13T17:22:01Z",
+    "entity": "USR-007",
+    "host": "HOST-023",
+    "timestamp": "2026-06-27T10:54:10Z",
     "anomaly_score": 0.7119,
     "layer": "os"
   },
   {
-    "entity": "USR-001",
-    "host": "HOST-023",
-    "timestamp": "2026-06-09T12:01:43Z",
+    "entity": "USR-014",
+    "host": "HOST-008",
+    "timestamp": "2026-06-22T19:21:59Z",
     "anomaly_score": 0.4522,
     "layer": "os"
   },
   {
-    "entity": "USR-020",
-    "host": "HOST-003",
-    "timestamp": "2026-06-23T10:59:24Z",
+    "entity": "USR-019",
+    "host": "HOST-009",
+    "timestamp": "2026-06-01T07:34:17Z",
     "anomaly_score": 0.3318,
     "layer": "os"
   },
   {
-    "entity": "USR-018",
-    "host": "HOST-023",
-    "timestamp": "2026-06-29T15:40:28Z",
+    "entity": "USR-025",
+    "host": "HOST-006",
+    "timestamp": "2026-06-21T12:22:53Z",
     "anomaly_score": 0.3343,
     "layer": "os"
   },
   {
-    "entity": "USR-004",
-    "host": "HOST-016",
-    "timestamp": "2026-06-23T13:32:29Z",
+    "entity": "USR-011",
+    "host": "HOST-009",
+    "timestamp": "2026-06-08T13:08:48Z",
     "anomaly_score": 0.3782,
     "layer": "os"
   },
   {
-    "entity": "USR-020",
+    "entity": "USR-007",
     "host": "HOST-025",
-    "timestamp": "2026-06-16T06:10:39Z",
+    "timestamp": "2026-06-17T08:09:39Z",
     "anomaly_score": 0.4262,
     "layer": "os"
   },
   {
-    "entity": "USR-007",
-    "host": "HOST-014",
-    "timestamp": "2026-06-22T05:53:12Z",
+    "entity": "USR-004",
+    "host": "HOST-003",
+    "timestamp": "2026-06-19T10:38:50Z",
     "anomaly_score": 0.505,
     "layer": "os"
   },
   {
-    "entity": "USR-008",
-    "host": "HOST-021",
-    "timestamp": "2026-06-27T16:32:35Z",
+    "entity": "USR-004",
+    "host": "HOST-012",
+    "timestamp": "2026-06-17T16:44:14Z",
     "anomaly_score": 0.7732,
     "layer": "os"
   },
   {
-    "entity": "USR-012",
-    "host": "HOST-006",
-    "timestamp": "2026-06-20T08:19:46Z",
+    "entity": "USR-020",
+    "host": "HOST-009",
+    "timestamp": "2026-06-03T02:37:24Z",
     "anomaly_score": 0.3687,
     "layer": "os"
   },
   {
-    "entity": "USR-002",
-    "host": "HOST-001",
-    "timestamp": "2026-06-03T07:04:13Z",
+    "entity": "USR-024",
+    "host": "HOST-015",
+    "timestamp": "2026-06-27T00:45:03Z",
     "anomaly_score": 0.4843,
     "layer": "os"
   },
   {
-    "entity": "USR-008",
+    "entity": "USR-004",
     "host": "HOST-013",
-    "timestamp": "2026-06-07T16:35:26Z",
+    "timestamp": "2026-06-04T19:48:31Z",
     "anomaly_score": 0.4804,
     "layer": "os"
   },
   {
-    "entity": "USR-016",
-    "host": "HOST-015",
-    "timestamp": "2026-06-30T19:17:49Z",
+    "entity": "USR-018",
+    "host": "HOST-010",
+    "timestamp": "2026-06-18T13:20:07Z",
     "anomaly_score": 0.3235,
     "layer": "os"
   },
   {
-    "entity": "USR-006",
-    "host": "HOST-023",
-    "timestamp": "2026-06-26T22:36:51Z",
+    "entity": "USR-019",
+    "host": "HOST-007",
+    "timestamp": "2026-06-04T09:02:15Z",
     "anomaly_score": 0.3282,
     "layer": "os"
   },
   {
-    "entity": "USR-001",
-    "host": "HOST-017",
-    "timestamp": "2026-06-05T14:28:53Z",
+    "entity": "USR-002",
+    "host": "HOST-022",
+    "timestamp": "2026-06-12T01:31:14Z",
     "anomaly_score": 0.4331,
     "layer": "os"
   },
   {
-    "entity": "USR-020",
-    "host": "HOST-017",
-    "timestamp": "2026-06-20T22:16:32Z",
+    "entity": "USR-025",
+    "host": "HOST-010",
+    "timestamp": "2026-06-04T20:57:51Z",
     "anomaly_score": 0.3282,
     "layer": "os"
   },
   {
-    "entity": "USR-024",
-    "host": "HOST-016",
-    "timestamp": "2026-06-22T22:52:05Z",
+    "entity": "USR-008",
+    "host": "HOST-004",
+    "timestamp": "2026-06-19T10:52:44Z",
     "anomaly_score": 0.7651,
     "layer": "os"
   },
   {
-    "entity": "USR-022",
-    "host": "HOST-012",
-    "timestamp": "2026-06-27T21:03:58Z",
+    "entity": "USR-009",
+    "host": "HOST-015",
+    "timestamp": "2026-06-18T17:03:37Z",
     "anomaly_score": 0.8378,
     "layer": "os"
   },
   {
-    "entity": "USR-025",
-    "host": "HOST-016",
-    "timestamp": "2026-06-15T15:46:08Z",
+    "entity": "USR-006",
+    "host": "HOST-012",
+    "timestamp": "2026-06-18T05:55:13Z",
     "anomaly_score": 0.6118,
     "layer": "os"
   },
   {
-    "entity": "USR-022",
-    "host": "HOST-001",
-    "timestamp": "2026-06-27T17:45:45Z",
+    "entity": "USR-007",
+    "host": "HOST-022",
+    "timestamp": "2026-06-13T23:03:06Z",
     "anomaly_score": 0.4275,
     "layer": "os"
   },
   {
-    "entity": "USR-022",
-    "host": "HOST-018",
-    "timestamp": "2026-06-07T00:40:50Z",
+    "entity": "USR-023",
+    "host": "HOST-022",
+    "timestamp": "2026-06-04T11:11:23Z",
     "anomaly_score": 0.3685,
     "layer": "os"
   },
   {
-    "entity": "USR-025",
-    "host": "HOST-007",
-    "timestamp": "2026-06-22T01:30:43Z",
+    "entity": "USR-020",
+    "host": "HOST-021",
+    "timestamp": "2026-06-09T07:23:27Z",
     "anomaly_score": 0.4168,
     "layer": "os"
   },
   {
-    "entity": "USR-017",
-    "host": "HOST-001",
-    "timestamp": "2026-06-23T00:10:07Z",
+    "entity": "USR-018",
+    "host": "HOST-024",
+    "timestamp": "2026-06-12T21:13:31Z",
     "anomaly_score": 0.5062,
     "layer": "os"
   },
   {
-    "entity": "USR-023",
-    "host": "HOST-019",
-    "timestamp": "2026-06-17T07:51:16Z",
+    "entity": "USR-006",
+    "host": "HOST-015",
+    "timestamp": "2026-06-19T10:05:51Z",
     "anomaly_score": 0.467,
     "layer": "os"
   },
   {
-    "entity": "USR-002",
-    "host": "HOST-010",
-    "timestamp": "2026-06-13T00:06:46Z",
+    "entity": "USR-009",
+    "host": "HOST-021",
+    "timestamp": "2026-06-28T00:53:36Z",
     "anomaly_score": 0.4101,
     "layer": "os"
   },
   {
-    "entity": "USR-019",
-    "host": "HOST-011",
-    "timestamp": "2026-06-05T19:38:28Z",
+    "entity": "USR-008",
+    "host": "HOST-022",
+    "timestamp": "2026-06-16T17:49:00Z",
     "anomaly_score": 0.4012,
     "layer": "os"
   },
   {
-    "entity": "USR-002",
-    "host": "HOST-015",
-    "timestamp": "2026-06-12T19:18:10Z",
+    "entity": "USR-025",
+    "host": "HOST-025",
+    "timestamp": "2026-06-03T17:10:20Z",
     "anomaly_score": 0.3299,
     "layer": "os"
   },
   {
     "entity": "USR-008",
-    "host": "HOST-019",
-    "timestamp": "2026-06-10T07:55:02Z",
+    "host": "HOST-002",
+    "timestamp": "2026-06-16T07:31:45Z",
     "anomaly_score": 0.3596,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-020",
-    "host": "HOST-011",
-    "timestamp": "2026-06-16T11:59:59Z",
-    "anomaly_score": 0.8237,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-008",
-    "host": "HOST-025",
-    "timestamp": "2026-06-03T20:58:27Z",
-    "anomaly_score": 0.3454,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-011",
-    "host": "HOST-012",
-    "timestamp": "2026-06-16T09:01:13Z",
-    "anomaly_score": 0.5249,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-004",
-    "host": "HOST-019",
-    "timestamp": "2026-06-13T21:39:41Z",
-    "anomaly_score": 0.4519,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-008",
-    "host": "HOST-004",
-    "timestamp": "2026-06-16T03:33:33Z",
-    "anomaly_score": 0.404,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-023",
-    "host": "HOST-019",
-    "timestamp": "2026-06-18T22:30:09Z",
-    "anomaly_score": 0.6751,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-001",
-    "host": "HOST-001",
-    "timestamp": "2026-06-23T01:07:43Z",
-    "anomaly_score": 0.4769,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-025",
-    "host": "HOST-019",
-    "timestamp": "2026-06-27T04:20:08Z",
-    "anomaly_score": 0.3961,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-021",
-    "host": "HOST-020",
-    "timestamp": "2026-06-24T20:42:50Z",
-    "anomaly_score": 0.4855,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-015",
-    "host": "HOST-007",
-    "timestamp": "2026-06-09T12:51:58Z",
-    "anomaly_score": 0.4803,
     "layer": "os"
   },
   {
     "entity": "USR-013",
     "host": "HOST-009",
-    "timestamp": "2026-06-15T04:53:18Z",
-    "anomaly_score": 0.4864,
+    "timestamp": "2026-06-04T05:06:55Z",
+    "anomaly_score": 0.8237,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-007",
+    "host": "HOST-019",
+    "timestamp": "2026-06-16T06:37:34Z",
+    "anomaly_score": 0.3454,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-007",
+    "host": "HOST-021",
+    "timestamp": "2026-06-25T05:38:47Z",
+    "anomaly_score": 0.5249,
     "layer": "os"
   },
   {
     "entity": "USR-013",
-    "host": "HOST-015",
-    "timestamp": "2026-06-17T20:18:46Z",
-    "anomaly_score": 0.3332,
+    "host": "HOST-021",
+    "timestamp": "2026-06-23T06:36:04Z",
+    "anomaly_score": 0.4519,
     "layer": "os"
   },
   {
-    "entity": "USR-016",
-    "host": "HOST-003",
-    "timestamp": "2026-06-14T22:56:09Z",
-    "anomaly_score": 0.3217,
+    "entity": "USR-005",
+    "host": "HOST-009",
+    "timestamp": "2026-06-07T18:40:52Z",
+    "anomaly_score": 0.404,
     "layer": "os"
   },
   {
-    "entity": "USR-010",
-    "host": "HOST-002",
-    "timestamp": "2026-06-14T10:59:10Z",
-    "anomaly_score": 0.6412,
+    "entity": "USR-008",
+    "host": "HOST-024",
+    "timestamp": "2026-06-28T06:02:28Z",
+    "anomaly_score": 0.6751,
     "layer": "os"
   },
   {
-    "entity": "USR-004",
-    "host": "HOST-015",
-    "timestamp": "2026-06-01T21:31:51Z",
-    "anomaly_score": 0.3605,
+    "entity": "USR-018",
+    "host": "HOST-009",
+    "timestamp": "2026-06-29T09:05:31Z",
+    "anomaly_score": 0.4769,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-014",
+    "host": "HOST-019",
+    "timestamp": "2026-06-20T09:20:07Z",
+    "anomaly_score": 0.3961,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-012",
+    "host": "HOST-008",
+    "timestamp": "2026-06-07T17:10:05Z",
+    "anomaly_score": 0.4855,
     "layer": "os"
   },
   {
     "entity": "USR-017",
-    "host": "HOST-023",
-    "timestamp": "2026-06-22T02:14:08Z",
+    "host": "HOST-016",
+    "timestamp": "2026-06-05T09:55:01Z",
+    "anomaly_score": 0.4803,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-025",
+    "host": "HOST-002",
+    "timestamp": "2026-06-06T07:45:01Z",
+    "anomaly_score": 0.4864,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-005",
+    "host": "HOST-021",
+    "timestamp": "2026-06-08T18:23:33Z",
+    "anomaly_score": 0.3332,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-022",
+    "host": "HOST-014",
+    "timestamp": "2026-06-29T22:52:00Z",
+    "anomaly_score": 0.3217,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-003",
+    "host": "HOST-013",
+    "timestamp": "2026-06-19T12:37:07Z",
+    "anomaly_score": 0.6412,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-020",
+    "host": "HOST-015",
+    "timestamp": "2026-06-26T16:27:46Z",
+    "anomaly_score": 0.3605,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-009",
+    "host": "HOST-018",
+    "timestamp": "2026-06-01T13:22:34Z",
     "anomaly_score": 0.3701,
     "layer": "os"
   },
   {
-    "entity": "USR-024",
-    "host": "HOST-018",
-    "timestamp": "2026-06-13T08:45:06Z",
+    "entity": "USR-022",
+    "host": "HOST-024",
+    "timestamp": "2026-06-06T13:27:44Z",
     "anomaly_score": 0.338,
     "layer": "os"
   },
   {
-    "entity": "USR-002",
-    "host": "HOST-012",
-    "timestamp": "2026-06-25T13:47:12Z",
+    "entity": "USR-022",
+    "host": "HOST-018",
+    "timestamp": "2026-06-13T22:52:25Z",
     "anomaly_score": 0.5663,
     "layer": "os"
   },
   {
-    "entity": "USR-006",
-    "host": "HOST-024",
-    "timestamp": "2026-06-28T00:43:39Z",
+    "entity": "USR-025",
+    "host": "HOST-021",
+    "timestamp": "2026-06-17T12:19:59Z",
     "anomaly_score": 0.6627,
     "layer": "os"
   },
   {
-    "entity": "USR-013",
-    "host": "HOST-022",
-    "timestamp": "2026-06-06T04:32:28Z",
+    "entity": "USR-004",
+    "host": "HOST-010",
+    "timestamp": "2026-06-22T02:32:17Z",
     "anomaly_score": 0.3388,
     "layer": "os"
   },
   {
     "entity": "USR-006",
-    "host": "HOST-008",
-    "timestamp": "2026-06-02T02:25:39Z",
+    "host": "HOST-015",
+    "timestamp": "2026-06-01T03:46:51Z",
     "anomaly_score": 0.4676,
     "layer": "os"
   },
   {
-    "entity": "USR-004",
-    "host": "HOST-003",
-    "timestamp": "2026-06-03T23:13:03Z",
+    "entity": "USR-024",
+    "host": "HOST-024",
+    "timestamp": "2026-06-13T18:52:13Z",
     "anomaly_score": 0.4336,
     "layer": "os"
   },
   {
-    "entity": "USR-003",
-    "host": "HOST-003",
-    "timestamp": "2026-06-12T23:48:24Z",
+    "entity": "USR-017",
+    "host": "HOST-025",
+    "timestamp": "2026-06-09T16:08:40Z",
     "anomaly_score": 1.0,
     "layer": "os"
   },
   {
-    "entity": "USR-004",
-    "host": "HOST-017",
-    "timestamp": "2026-06-23T18:46:46Z",
+    "entity": "USR-017",
+    "host": "HOST-004",
+    "timestamp": "2026-06-15T11:42:48Z",
     "anomaly_score": 0.3751,
     "layer": "os"
   },
   {
-    "entity": "USR-008",
-    "host": "HOST-024",
-    "timestamp": "2026-06-14T12:49:42Z",
+    "entity": "USR-021",
+    "host": "HOST-017",
+    "timestamp": "2026-06-30T13:30:06Z",
     "anomaly_score": 0.3282,
     "layer": "os"
   },
   {
-    "entity": "USR-022",
-    "host": "HOST-002",
-    "timestamp": "2026-06-22T18:55:31Z",
+    "entity": "USR-007",
+    "host": "HOST-005",
+    "timestamp": "2026-06-19T03:38:28Z",
     "anomaly_score": 0.388,
     "layer": "os"
   },
   {
     "entity": "USR-025",
-    "host": "HOST-001",
-    "timestamp": "2026-06-10T14:19:07Z",
+    "host": "HOST-006",
+    "timestamp": "2026-06-27T04:25:19Z",
     "anomaly_score": 0.5199,
     "layer": "os"
   },
   {
-    "entity": "USR-001",
-    "host": "HOST-023",
-    "timestamp": "2026-06-02T08:38:36Z",
+    "entity": "USR-025",
+    "host": "HOST-017",
+    "timestamp": "2026-06-01T00:39:58Z",
     "anomaly_score": 0.9028,
     "layer": "os"
   },
   {
-    "entity": "USR-014",
+    "entity": "USR-020",
     "host": "HOST-011",
-    "timestamp": "2026-06-01T11:17:37Z",
+    "timestamp": "2026-06-24T17:16:00Z",
     "anomaly_score": 0.3471,
     "layer": "os"
   },
   {
-    "entity": "USR-021",
-    "host": "HOST-019",
-    "timestamp": "2026-06-16T17:57:22Z",
+    "entity": "USR-001",
+    "host": "HOST-004",
+    "timestamp": "2026-06-18T14:54:11Z",
     "anomaly_score": 0.3592,
     "layer": "os"
   },
   {
-    "entity": "USR-005",
-    "host": "HOST-013",
-    "timestamp": "2026-06-18T20:02:43Z",
+    "entity": "USR-010",
+    "host": "HOST-008",
+    "timestamp": "2026-06-03T19:29:15Z",
     "anomaly_score": 0.3329,
     "layer": "os"
   },
   {
-    "entity": "USR-023",
-    "host": "HOST-020",
-    "timestamp": "2026-06-17T12:13:34Z",
+    "entity": "USR-008",
+    "host": "HOST-019",
+    "timestamp": "2026-06-04T19:45:31Z",
     "anomaly_score": 0.4672,
     "layer": "os"
   },
   {
-    "entity": "USR-010",
-    "host": "HOST-007",
-    "timestamp": "2026-06-26T03:56:08Z",
+    "entity": "USR-003",
+    "host": "HOST-024",
+    "timestamp": "2026-06-24T14:13:11Z",
     "anomaly_score": 0.334,
     "layer": "os"
   },
   {
-    "entity": "USR-011",
+    "entity": "USR-003",
     "host": "HOST-025",
-    "timestamp": "2026-06-21T14:54:04Z",
+    "timestamp": "2026-06-26T20:38:51Z",
     "anomaly_score": 0.3433,
     "layer": "os"
   },
   {
-    "entity": "USR-017",
-    "host": "HOST-022",
-    "timestamp": "2026-06-04T04:01:19Z",
+    "entity": "USR-025",
+    "host": "HOST-005",
+    "timestamp": "2026-06-07T05:35:12Z",
     "anomaly_score": 0.4615,
     "layer": "os"
   },
   {
-    "entity": "USR-019",
-    "host": "HOST-005",
-    "timestamp": "2026-06-19T09:18:39Z",
+    "entity": "USR-022",
+    "host": "HOST-016",
+    "timestamp": "2026-06-27T16:34:03Z",
     "anomaly_score": 0.3562,
     "layer": "os"
   },
   {
-    "entity": "USR-016",
-    "host": "HOST-015",
-    "timestamp": "2026-06-01T15:28:26Z",
+    "entity": "USR-006",
+    "host": "HOST-009",
+    "timestamp": "2026-06-26T14:47:04Z",
     "anomaly_score": 0.6235,
     "layer": "os"
   },
   {
-    "entity": "USR-024",
-    "host": "HOST-019",
-    "timestamp": "2026-06-29T00:35:22Z",
+    "entity": "USR-020",
+    "host": "HOST-014",
+    "timestamp": "2026-06-11T06:45:46Z",
     "anomaly_score": 0.535,
     "layer": "os"
   },
   {
-    "entity": "USR-002",
-    "host": "HOST-018",
-    "timestamp": "2026-06-28T09:09:56Z",
+    "entity": "USR-018",
+    "host": "HOST-025",
+    "timestamp": "2026-06-10T18:21:28Z",
     "anomaly_score": 0.3305,
     "layer": "os"
   },
   {
-    "entity": "USR-006",
-    "host": "HOST-015",
-    "timestamp": "2026-06-01T16:26:11Z",
+    "entity": "USR-023",
+    "host": "HOST-010",
+    "timestamp": "2026-06-20T08:51:34Z",
     "anomaly_score": 0.3291,
     "layer": "os"
   },
   {
-    "entity": "USR-018",
-    "host": "HOST-018",
-    "timestamp": "2026-06-18T18:09:15Z",
+    "entity": "USR-022",
+    "host": "HOST-021",
+    "timestamp": "2026-06-19T03:03:59Z",
     "anomaly_score": 0.3242,
     "layer": "os"
   },
   {
-    "entity": "USR-021",
-    "host": "HOST-007",
-    "timestamp": "2026-06-06T10:11:29Z",
+    "entity": "USR-015",
+    "host": "HOST-017",
+    "timestamp": "2026-06-22T22:01:10Z",
     "anomaly_score": 0.5721,
     "layer": "os"
   },
   {
     "entity": "USR-004",
-    "host": "HOST-024",
-    "timestamp": "2026-06-15T16:38:45Z",
+    "host": "HOST-008",
+    "timestamp": "2026-06-11T21:47:28Z",
     "anomaly_score": 0.6659,
     "layer": "os"
   },
   {
     "entity": "USR-003",
-    "host": "HOST-024",
-    "timestamp": "2026-06-15T22:38:59Z",
+    "host": "HOST-011",
+    "timestamp": "2026-06-02T00:30:24Z",
     "anomaly_score": 0.3431,
     "layer": "os"
   },
   {
-    "entity": "USR-008",
-    "host": "HOST-001",
-    "timestamp": "2026-06-24T05:37:44Z",
+    "entity": "USR-019",
+    "host": "HOST-018",
+    "timestamp": "2026-06-12T04:06:11Z",
     "anomaly_score": 0.4071,
     "layer": "os"
   },
   {
-    "entity": "USR-004",
-    "host": "HOST-015",
-    "timestamp": "2026-06-19T00:08:19Z",
+    "entity": "USR-019",
+    "host": "HOST-008",
+    "timestamp": "2026-06-01T08:22:40Z",
     "anomaly_score": 0.3282,
     "layer": "os"
   },
   {
-    "entity": "USR-014",
-    "host": "HOST-013",
-    "timestamp": "2026-06-17T04:58:29Z",
+    "entity": "USR-003",
+    "host": "HOST-023",
+    "timestamp": "2026-06-03T20:35:34Z",
     "anomaly_score": 0.3282,
     "layer": "os"
   },
   {
-    "entity": "USR-014",
+    "entity": "USR-008",
     "host": "HOST-003",
-    "timestamp": "2026-06-07T09:15:02Z",
+    "timestamp": "2026-06-02T12:35:55Z",
     "anomaly_score": 0.7844,
     "layer": "os"
   },
   {
-    "entity": "USR-007",
-    "host": "HOST-025",
-    "timestamp": "2026-06-04T11:32:05Z",
+    "entity": "USR-011",
+    "host": "HOST-003",
+    "timestamp": "2026-06-25T23:02:07Z",
     "anomaly_score": 0.3676,
     "layer": "os"
   },
   {
-    "entity": "USR-018",
-    "host": "HOST-001",
-    "timestamp": "2026-06-06T20:46:19Z",
+    "entity": "USR-008",
+    "host": "HOST-009",
+    "timestamp": "2026-06-24T13:32:55Z",
     "anomaly_score": 0.7363,
     "layer": "os"
   },
   {
-    "entity": "USR-004",
-    "host": "HOST-024",
-    "timestamp": "2026-06-16T04:22:31Z",
+    "entity": "USR-007",
+    "host": "HOST-018",
+    "timestamp": "2026-06-07T10:09:16Z",
     "anomaly_score": 0.3576,
     "layer": "os"
   },
   {
-    "entity": "USR-004",
-    "host": "HOST-017",
-    "timestamp": "2026-06-12T17:47:42Z",
+    "entity": "USR-024",
+    "host": "HOST-019",
+    "timestamp": "2026-06-28T23:20:06Z",
     "anomaly_score": 0.4856,
     "layer": "os"
   },
   {
-    "entity": "USR-017",
-    "host": "HOST-020",
-    "timestamp": "2026-06-29T06:39:28Z",
+    "entity": "USR-016",
+    "host": "HOST-008",
+    "timestamp": "2026-06-23T23:03:12Z",
     "anomaly_score": 0.3539,
     "layer": "os"
   },
   {
-    "entity": "USR-011",
-    "host": "HOST-001",
-    "timestamp": "2026-06-16T00:17:55Z",
+    "entity": "USR-014",
+    "host": "HOST-007",
+    "timestamp": "2026-06-05T13:53:51Z",
     "anomaly_score": 0.525,
     "layer": "os"
   },
   {
     "entity": "USR-004",
-    "host": "HOST-020",
-    "timestamp": "2026-06-28T19:30:59Z",
+    "host": "HOST-022",
+    "timestamp": "2026-06-21T22:12:39Z",
     "anomaly_score": 0.352,
     "layer": "os"
   },
   {
-    "entity": "USR-010",
-    "host": "HOST-016",
-    "timestamp": "2026-06-13T08:11:49Z",
+    "entity": "USR-012",
+    "host": "HOST-014",
+    "timestamp": "2026-06-20T22:58:07Z",
     "anomaly_score": 0.4238,
     "layer": "os"
   },
   {
-    "entity": "USR-019",
-    "host": "HOST-004",
-    "timestamp": "2026-06-07T09:11:12Z",
+    "entity": "USR-015",
+    "host": "HOST-024",
+    "timestamp": "2026-06-03T15:06:50Z",
     "anomaly_score": 0.3395,
     "layer": "os"
   },
   {
-    "entity": "USR-012",
-    "host": "HOST-004",
-    "timestamp": "2026-06-12T23:39:08Z",
+    "entity": "USR-022",
+    "host": "HOST-021",
+    "timestamp": "2026-06-05T18:39:54Z",
     "anomaly_score": 0.4032,
     "layer": "os"
   },
   {
-    "entity": "USR-015",
-    "host": "HOST-002",
-    "timestamp": "2026-06-26T01:00:18Z",
+    "entity": "USR-002",
+    "host": "HOST-013",
+    "timestamp": "2026-06-17T11:18:58Z",
     "anomaly_score": 0.3586,
     "layer": "os"
   },
   {
-    "entity": "USR-005",
-    "host": "HOST-005",
-    "timestamp": "2026-06-16T09:05:04Z",
+    "entity": "USR-004",
+    "host": "HOST-008",
+    "timestamp": "2026-06-10T07:13:07Z",
     "anomaly_score": 0.4102,
     "layer": "os"
   },
   {
-    "entity": "USR-009",
-    "host": "HOST-010",
-    "timestamp": "2026-06-05T11:59:22Z",
+    "entity": "USR-007",
+    "host": "HOST-018",
+    "timestamp": "2026-06-22T18:40:21Z",
     "anomaly_score": 0.4333,
     "layer": "os"
   },
   {
-    "entity": "USR-001",
+    "entity": "USR-005",
     "host": "HOST-014",
-    "timestamp": "2026-06-29T14:07:29Z",
+    "timestamp": "2026-06-09T21:46:44Z",
     "anomaly_score": 0.3574,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-001",
-    "host": "HOST-022",
-    "timestamp": "2026-06-30T04:50:37Z",
-    "anomaly_score": 0.3188,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-004",
-    "host": "HOST-009",
-    "timestamp": "2026-06-10T20:10:45Z",
-    "anomaly_score": 0.6251,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-001",
-    "host": "HOST-007",
-    "timestamp": "2026-06-03T14:30:08Z",
-    "anomaly_score": 0.4465,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-007",
-    "host": "HOST-014",
-    "timestamp": "2026-06-04T05:17:00Z",
-    "anomaly_score": 0.4681,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-010",
-    "host": "HOST-012",
-    "timestamp": "2026-06-11T09:23:49Z",
-    "anomaly_score": 0.4094,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-004",
-    "host": "HOST-011",
-    "timestamp": "2026-06-21T03:51:21Z",
-    "anomaly_score": 0.5302,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-006",
-    "host": "HOST-017",
-    "timestamp": "2026-06-05T19:51:03Z",
-    "anomaly_score": 0.3989,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-007",
-    "host": "HOST-005",
-    "timestamp": "2026-06-27T15:54:09Z",
-    "anomaly_score": 0.3282,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-017",
-    "host": "HOST-011",
-    "timestamp": "2026-06-21T10:20:04Z",
-    "anomaly_score": 0.5872,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-011",
-    "host": "HOST-008",
-    "timestamp": "2026-06-06T16:54:30Z",
-    "anomaly_score": 0.3539,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-021",
-    "host": "HOST-017",
-    "timestamp": "2026-06-23T07:19:58Z",
-    "anomaly_score": 0.4862,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-011",
-    "host": "HOST-012",
-    "timestamp": "2026-06-25T13:37:12Z",
-    "anomaly_score": 0.445,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-015",
-    "host": "HOST-003",
-    "timestamp": "2026-06-26T16:56:07Z",
-    "anomaly_score": 0.5722,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-003",
-    "host": "HOST-024",
-    "timestamp": "2026-06-08T11:37:18Z",
-    "anomaly_score": 0.3282,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-015",
-    "host": "HOST-021",
-    "timestamp": "2026-06-09T19:42:21Z",
-    "anomaly_score": 0.3611,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-015",
-    "host": "HOST-018",
-    "timestamp": "2026-06-07T00:44:18Z",
-    "anomaly_score": 0.6756,
     "layer": "os"
   },
   {
     "entity": "USR-009",
     "host": "HOST-015",
-    "timestamp": "2026-06-23T18:15:24Z",
-    "anomaly_score": 0.4206,
+    "timestamp": "2026-06-13T03:02:44Z",
+    "anomaly_score": 0.3188,
     "layer": "os"
   },
   {
-    "entity": "USR-022",
-    "host": "HOST-005",
-    "timestamp": "2026-06-23T19:26:58Z",
-    "anomaly_score": 0.7821,
+    "entity": "USR-003",
+    "host": "HOST-015",
+    "timestamp": "2026-06-27T17:10:31Z",
+    "anomaly_score": 0.6251,
     "layer": "os"
   },
   {
-    "entity": "USR-014",
-    "host": "HOST-012",
-    "timestamp": "2026-06-01T06:20:41Z",
-    "anomaly_score": 0.5618,
+    "entity": "USR-004",
+    "host": "HOST-002",
+    "timestamp": "2026-06-27T05:49:50Z",
+    "anomaly_score": 0.4465,
     "layer": "os"
   },
   {
-    "entity": "USR-024",
-    "host": "HOST-016",
-    "timestamp": "2026-06-16T12:05:51Z",
-    "anomaly_score": 0.9095,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-015",
-    "host": "HOST-006",
-    "timestamp": "2026-06-22T12:17:44Z",
-    "anomaly_score": 0.7157,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-012",
-    "host": "HOST-022",
-    "timestamp": "2026-06-07T00:55:41Z",
-    "anomaly_score": 0.5167,
-    "layer": "os"
-  },
-  {
-    "entity": "USR-009",
-    "host": "HOST-022",
-    "timestamp": "2026-06-17T20:34:37Z",
-    "anomaly_score": 0.3282,
+    "entity": "USR-001",
+    "host": "HOST-003",
+    "timestamp": "2026-06-12T11:24:07Z",
+    "anomaly_score": 0.4681,
     "layer": "os"
   },
   {
     "entity": "USR-006",
-    "host": "HOST-009",
-    "timestamp": "2026-06-12T17:40:59Z",
+    "host": "HOST-014",
+    "timestamp": "2026-06-24T13:48:46Z",
+    "anomaly_score": 0.4094,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-016",
+    "host": "HOST-007",
+    "timestamp": "2026-06-20T11:14:44Z",
+    "anomaly_score": 0.5302,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-002",
+    "host": "HOST-006",
+    "timestamp": "2026-06-19T09:32:08Z",
+    "anomaly_score": 0.3989,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-001",
+    "host": "HOST-013",
+    "timestamp": "2026-06-13T20:59:02Z",
+    "anomaly_score": 0.3282,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-015",
+    "host": "HOST-010",
+    "timestamp": "2026-06-21T12:50:21Z",
+    "anomaly_score": 0.5872,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-023",
+    "host": "HOST-024",
+    "timestamp": "2026-06-27T23:31:01Z",
+    "anomaly_score": 0.3539,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-022",
+    "host": "HOST-023",
+    "timestamp": "2026-06-24T15:00:47Z",
+    "anomaly_score": 0.4862,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-005",
+    "host": "HOST-007",
+    "timestamp": "2026-06-15T09:41:22Z",
+    "anomaly_score": 0.445,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-007",
+    "host": "HOST-002",
+    "timestamp": "2026-06-29T02:47:38Z",
+    "anomaly_score": 0.5722,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-024",
+    "host": "HOST-018",
+    "timestamp": "2026-06-03T23:01:14Z",
+    "anomaly_score": 0.3282,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-024",
+    "host": "HOST-011",
+    "timestamp": "2026-06-03T18:36:08Z",
+    "anomaly_score": 0.3611,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-002",
+    "host": "HOST-019",
+    "timestamp": "2026-06-24T03:29:55Z",
+    "anomaly_score": 0.6756,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-017",
+    "host": "HOST-017",
+    "timestamp": "2026-06-08T15:25:20Z",
+    "anomaly_score": 0.4206,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-002",
+    "host": "HOST-017",
+    "timestamp": "2026-06-04T21:20:11Z",
+    "anomaly_score": 0.7821,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-006",
+    "host": "HOST-003",
+    "timestamp": "2026-06-29T21:15:58Z",
+    "anomaly_score": 0.5618,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-003",
+    "host": "HOST-022",
+    "timestamp": "2026-06-12T10:01:56Z",
+    "anomaly_score": 0.9095,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-013",
+    "host": "HOST-004",
+    "timestamp": "2026-06-28T15:43:11Z",
+    "anomaly_score": 0.7157,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-008",
+    "host": "HOST-019",
+    "timestamp": "2026-06-29T20:39:54Z",
+    "anomaly_score": 0.5167,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-002",
+    "host": "HOST-020",
+    "timestamp": "2026-06-04T23:31:03Z",
+    "anomaly_score": 0.3282,
+    "layer": "os"
+  },
+  {
+    "entity": "USR-014",
+    "host": "HOST-022",
+    "timestamp": "2026-06-29T08:01:39Z",
     "anomaly_score": 0.4729,
     "layer": "os"
   },
   {
-    "entity": "USR-012",
-    "host": "HOST-007",
-    "timestamp": "2026-06-03T15:40:24Z",
+    "entity": "USR-019",
+    "host": "HOST-017",
+    "timestamp": "2026-06-16T08:35:51Z",
     "anomaly_score": 0.3217,
     "layer": "os"
   },
   {
-    "entity": "USR-025",
-    "host": "HOST-018",
-    "timestamp": "2026-06-10T09:51:46Z",
+    "entity": "USR-009",
+    "host": "HOST-007",
+    "timestamp": "2026-06-16T06:03:02Z",
     "anomaly_score": 0.5592,
     "layer": "os"
   },
   {
-    "entity": "USR-011",
-    "host": "HOST-008",
-    "timestamp": "2026-06-05T19:01:48Z",
+    "entity": "USR-008",
+    "host": "HOST-009",
+    "timestamp": "2026-06-20T05:07:26Z",
     "anomaly_score": 0.3901,
     "layer": "os"
   }
