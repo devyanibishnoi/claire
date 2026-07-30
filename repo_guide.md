@@ -62,6 +62,7 @@ repo/
 │   └── llm_prompt_attacks.py        ← Devyani only
 │
 └── results/
+    ├── progress_log.md              (shared — append-only running log, see Section 3)
     ├── network_metrics.md           ← Hridya only
     ├── os_metrics.md                ← Anshika only
     └── cloud_llm_metrics.md         ← Devyani only
@@ -77,6 +78,7 @@ repo/
 | `data/os/`, `detectors/os_detector/`, `adversarial/os_attacks.py`, `results/os_metrics.md` | **Anshika** | Everything about the OS/endpoint detector, start to finish |
 | `data/cloud/`, `detectors/cloud_detector/`, `fusion/`, `explanation/`, `adversarial/cloud_attacks.py`, `adversarial/llm_prompt_attacks.py`, `results/cloud_llm_metrics.md` | **Devyani** | The cloud detector, plus fusion, plus the LLM explanation layer, plus their adversarial testing |
 | `README.md`, `docs/data_contract.md`, `problem_statement.pdf`, `coder_checklists.md` | **Everyone** (rarely) | Shared reference — see rules below |
+| `results/progress_log.md` | **Everyone** (append-only) | Running log of metrics as each phase completes, so the team can see progress evolve over time. Add your own row, never edit someone else's row — that's what keeps concurrent edits from someone else conflict-free. |
 | `LEARNING.md` | **Devyani** (written for everyone) | Concept notes and pipeline diagrams, organized so Hridya/Anshika-relevant material lives in their own sections — read-only for the other two, updated by Devyani as the project progresses |
 
 **Each detector folder produces exactly one output file the rest of the team depends on: `output/flags.json`.** That's the handoff point. Fusion only ever *reads* those three files — it never edits them, and the detector owners never touch `fusion/`.

@@ -1,15 +1,4 @@
-"""
-Owner: Devyani
 
-Loads data/cloud/raw/cloud_logs.json, trains an anomaly detector, and writes
-flagged rows to detectors/cloud_detector/output/flags.json in the shared
-format defined in docs/data_contract.md (entity = account/user, host =
-resource, layer = "cloud").
-
-Run from inside detectors/cloud_detector/: `python3 train_detector.py`
-
-See coder_checklists.md > Devyani > Phase 2.
-"""
 
 import json
 

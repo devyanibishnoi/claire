@@ -1,13 +1,4 @@
-"""
-Owner: Devyani
 
-Generates synthetic CloudTrail-style logs at data/cloud/raw/cloud_logs.json.
-Rows: {user, action, source_ip, resource, timestamp, is_attack}
-~5,000 normal entries (routine actions from known users/home IPs) +
-~500 attack entries (unusual IAM actions, new-location logins, odd-hour activity).
-
-See coder_checklists.md > Devyani > Phase 1.
-"""
 
 import json
 import random

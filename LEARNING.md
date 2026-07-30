@@ -93,6 +93,14 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 ```
 `model.fit()` and `model.predict()` only ever see `X_train`/`X_test`. `y_test` only comes back afterward, to check how many of the model's flagged rows were real attacks.
 
+### Features that drive detection vs. metadata carried for reporting
+
+Every `flags.json` row mixes two different kinds of information, and it's worth being clear on which is which. The `anomaly_score` comes from `model.decision_function()` — the Isolation Forest's actual measure of how isolated a row's *encoded feature values* are (the one-hot/engineered columns actually passed into `model.fit()`), rescaled to 0–1 so higher means more suspicious. Fields like `entity`, `host`, and `timestamp` are typically just carried straight through from the original row for human reporting — the model never saw them, since raw identifier columns get dropped before training. So a high `anomaly_score` reflects "this row's action/behavior pattern was unusual," not "this specific host or time was unusual" — those fields just tell an analyst *where*/*when*, they don't factor into the score itself. Also worth remembering: `anomaly_score` isn't a probability — it's a relative ranking of isolation within that specific run's test batch (via min-max normalization), not a calibrated "% chance this is an attack."
+
+### Why anomaly scores often cluster into tight groups instead of spreading smoothly
+
+If most flagged rows come back with very similar `anomaly_score`s (e.g. clustered around 0.9+) rather than spread evenly across 0–1, that's not a bug — it's a natural consequence of a small, mostly one-hot/binary feature space. One-hot encoding a categorical column with N values plus a couple of engineered binary flags only produces so many distinct possible feature combinations; Isolation Forest gives near-identical path lengths to rows with identical feature values, so every row sharing one of the "attack-shaped" combinations ends up similarly isolated, regardless of which specific one it is. Worth checking directly rather than assuming — group scores by label (normal vs. attack) and check the actual distribution, and count `X.drop_duplicates()` to see how many distinct feature combinations actually exist. If smoother, more spread-out scores are wanted later, the fix is adding genuinely continuous numeric features (a real count, a time delta), not just categorical/binary ones.
+
 ### Adversarial testing (all three detectors, plus the LLM layer)
 
 A detector that tests well right after being built has only proven it can catch **natural, unmodified** attack examples — it says nothing about whether it holds up against someone actively and deliberately trying to slip past it. A real attacker doesn't behave like a random sample from the dataset; they probe for blind spots. That's what the attack-and-retrain phases exist to find deliberately, in a controlled setting, before a real attacker finds them instead. (The exact phase numbers differ slightly per person, since Devyani's checklist has fusion and the LLM layer sitting in between: for Hridya and Anshika it's Phase 3 — attack baseline — then Phase 4 — retrain and re-test; for Devyani's cloud detector it's Phase 5 then Phase 7, with Phase 7 also covering the LLM defense.)
@@ -222,6 +230,8 @@ Network's columns (`protocol_type`, `service`, `flag`) are low-cardinality — a
 `source_ip` is high-cardinality, and it has an extra problem beyond just cardinality: the very thing that makes an IP suspicious is often that it's *never been seen before* — but one-hot encoding can only create columns for values seen during training, so a genuinely new attacker IP has no column to land in and disappears from the model's view entirely. The fix is the same pattern as OS: engineer `is_new_ip_for_this_entity` instead of one-hot encoding the raw IP, so "this IP is new for this specific user" becomes an explicit signal the model can actually use.
 
 `action` (`AssumeRole`, `PutObject`, `ConsoleLogin`, etc.) is a fixed, fairly small set of API actions, so it's safe to one-hot encode directly.
+
+`resource` (maps to `host` in the shared format) is currently assigned completely at random per row in `generate_logs.py`, with no connection to which user it belongs to — unlike `source_ip`, it carries no real signal yet, and it's dropped from the model's features entirely. It's there purely as reporting metadata for now. A real improvement later would be giving each user a typical set of resources, the same way home IPs work, so it could become an actual feature instead of just a label.
 
 ### Fusion layer
 
