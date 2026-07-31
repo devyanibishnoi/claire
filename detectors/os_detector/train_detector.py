@@ -2,8 +2,11 @@ import json
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import IsolationForest
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
 import random
 from datetime import datetime, timedelta
+import joblib
 
 random.seed(42)
 df = pd.read_csv("data/os/raw/os_logs.csv")
@@ -24,6 +27,16 @@ min_score = scores.min()
 max_score = scores.max()
 normalized_scores = 1 - ((scores - min_score) / (max_score - min_score))
 
+'''print(classification_report(y_test, predictions))
+
+cm = confusion_matrix(y_test, predictions)
+
+TN, FP, FN, TP = cm.ravel()
+
+print(f"True Positives (Caught attacks): {TP}")
+print(f"False Negatives (Missed attacks): {FN}")
+print(f"False Positives (False alarms): {FP}")
+print(f"True Negatives (Correctly identified normal): {TN}")'''
 
 users = [
     "USR-001", "USR-002", "USR-003", "USR-004", "USR-005",
@@ -52,6 +65,15 @@ def random_timestamp():
 
 
 flags = []
+f_val = {
+    "entity": "incident_demo_01", 
+    "host": "incident_demo_01", 
+    "timestamp": "2026-07-01T10:04:00Z", 
+    "anomaly_score": 0.95, 
+    "layer": "os"
+}
+flags.append(f_val)
+
 for pred, score in zip(predictions, normalized_scores):
     if pred == 1:
         flag = {
