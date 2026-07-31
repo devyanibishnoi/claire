@@ -156,9 +156,9 @@ flags.append(
     {
         "entity": "incident_demo_01",
         "host": "incident_demo_01",
-        "timestamp": "2026-07-01T10:08:00Z",
+        "timestamp": "2026-07-01T10:00:00Z",
         "anomaly_score": 0.95,
-        "layer": "cloud",
+        "layer": "network",
     }
 )
 
