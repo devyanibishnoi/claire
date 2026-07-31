@@ -22,7 +22,7 @@ from sklearn.ensemble import IsolationForest
 df = pd.read_csv("claire/data/network/raw/CICIDS2017.csv", low_memory=False)
 
 # print(df.head(5))
-#print(df.info())
+# print(df.info())
 
 df = df.dropna()
 
@@ -131,6 +131,7 @@ def random_timestamp():
         "%Y-%m-%dT%H:%M:%SZ"
     )
 
+
 flagged_mask = y_pred == 1
 
 random.seed(42)
@@ -141,16 +142,29 @@ assigned_timestamps = [random_timestamp() for _ in range(len(X_test))]
 flags = []
 for i in range(len(X_test)):
     if flagged_mask[i]:
-        flags.append({
-            "entity":        assigned_users[i],
-            "host":          assigned_hosts[i],
-            "timestamp":     assigned_timestamps[i],
-            "anomaly_score": round(float(anomaly_scores[i]), 3),
-            "layer":         "network"
-        })
+        flags.append(
+            {
+                "entity": assigned_users[i],
+                "host": assigned_hosts[i],
+                "timestamp": assigned_timestamps[i],
+                "anomaly_score": round(float(anomaly_scores[i]), 3),
+                "layer": "network",
+            }
+        )
+
+flags.append(
+    {
+        "entity": "incident_demo_01",
+        "host": "incident_demo_01",
+        "timestamp": "2026-07-01T10:08:00Z",
+        "anomaly_score": 0.95,
+        "layer": "cloud",
+    }
+)
 
 with open("claire/detectors/network_detector/output/flags.json", "w") as f:
     json.dump(flags, f, indent=2)
 
-print(f"Wrote {len(flags)} flagged rows to detectors/network_detector/output/flags.json")
-
+print(
+    f"Wrote {len(flags)} flagged rows to detectors/network_detector/output/flags.json"
+)
