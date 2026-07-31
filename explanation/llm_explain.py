@@ -52,4 +52,19 @@ EXAMPLE_CHAIN = [
 ]
 
 if __name__ == "__main__":
-    print(explain_attack_chain(EXAMPLE_CHAIN))
+    three_layer_path = "fusion/output/three_layer_chains.json"
+    if os.path.exists(three_layer_path):
+        with open(three_layer_path) as f:
+            chains = json.load(f)
+    else:
+        chains = []
+
+    if chains:
+        for i, chain in enumerate(chains):
+            layers = set(r["layer"] for r in chain)
+            print(f"--- Chain {i + 1} ({len(chain)} records, layers: {layers}) ---")
+            print(explain_attack_chain(chain))
+            print()
+    else:
+        print("No cross-layer chains found in fusion output yet -- explaining the hand-crafted example instead.")
+        print(explain_attack_chain(EXAMPLE_CHAIN))

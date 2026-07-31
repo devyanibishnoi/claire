@@ -67,11 +67,20 @@ for chain in attack_chains:
         del record["_id"]
         del record["_ts"]
 
+cross_layer_chains = [chain for chain in attack_chains if len(set(r["layer"] for r in chain)) > 1]
+three_layer_chains = [chain for chain in attack_chains if len(set(r["layer"] for r in chain)) == 3]
+
 os.makedirs("fusion/output", exist_ok=True)
 with open("fusion/output/attack_chains.json", "w") as f:
     json.dump(attack_chains, f, indent=2)
+with open("fusion/output/cross_layer_chains.json", "w") as f:
+    json.dump(cross_layer_chains, f, indent=2)
+with open("fusion/output/three_layer_chains.json", "w") as f:
+    json.dump(three_layer_chains, f, indent=2)
 
 print(f"Found {len(attack_chains)} attack chains out of {len(all_records)} total flagged records")
+print(f"Of those, {len(cross_layer_chains)} span more than one layer (see fusion/output/cross_layer_chains.json)")
+print(f"Of those, {len(three_layer_chains)} span all three layers (see fusion/output/three_layer_chains.json)")
 if attack_chains:
     print(f"Largest chain has {len(attack_chains[0])} records")
     layers_in_largest = set(r["layer"] for r in attack_chains[0])
