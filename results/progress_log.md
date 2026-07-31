@@ -8,3 +8,4 @@ Running log of detection/robustness metrics as each of us completes phases, so t
 | 2026-07-30 | Hridya | Network | Phase 2 (baseline) | False alarm rate | 16.5% | |
 | 2026-07-30 | Anshika | OS | Phase 2 (baseline) | Flags produced | 124 | ADFA-LD (real dataset), bag-of-syscalls features |
 | 2026-07-30 | Devyani | Cloud | Phase 2 (baseline) | Detection rate | 100% (103/103) | Synthetic data; attacks deliberately obvious for this baseline — expect this to drop once Phase 5 makes them subtler |
+| 2026-07-31 | Devyani | Cloud | Phase 5 (before defenses) | Detection rate under credential-mimicry evasion | 50% (15/30) | Redesigned data to include legitimate admin overlap so this evasion has real room to work; retraining (Phase 7) comes next |

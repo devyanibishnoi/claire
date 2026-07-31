@@ -1,5 +1,3 @@
-
-
 import json
 import random
 from datetime import datetime, timedelta
@@ -7,8 +5,10 @@ from datetime import datetime, timedelta
 random.seed(42)
 
 NUM_USERS = 30
+NUM_ADMIN_USERS = 4
 NORMAL_ROWS = 5000
 ATTACK_ROWS = 500
+ADMIN_ACTION_PROBABILITY = 0.08
 
 ROUTINE_ACTIONS = ["ConsoleLogin", "GetObject", "PutObject", "DescribeInstances", "ListBuckets"]
 SENSITIVE_ACTIONS = ["AttachUserPolicy", "CreateAccessKey", "PutUserPolicy", "DeleteTrail", "AssumeRole"]
@@ -31,21 +31,28 @@ def random_timestamp(start_hour, end_hour):
     dt = datetime(2026, 6, 1) + timedelta(days=day_offset, hours=hour, minutes=minute)
     return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
 
+
 users = []
 for i in range(NUM_USERS):
     users.append({
         "name": f"user{i + 1}",
         "home_ips": [random_ip() for _ in range(random.randint(2, 3))],
         "routine_actions": random.sample(ROUTINE_ACTIONS, k=random.randint(2, 3)),
+        "is_admin": i < NUM_ADMIN_USERS,
+        "admin_action": random.choice(SENSITIVE_ACTIONS),
     })
 
 rows = []
 
 for _ in range(NORMAL_ROWS):
     user = random.choice(users)
+    if user["is_admin"] and random.random() < ADMIN_ACTION_PROBABILITY:
+        action = user["admin_action"]
+    else:
+        action = random.choice(user["routine_actions"])
     rows.append({
         "user": user["name"],
-        "action": random.choice(user["routine_actions"]),
+        "action": action,
         "source_ip": random.choice(user["home_ips"]),
         "resource": random.choice(RESOURCES),
         "timestamp": random_timestamp(9, 18),

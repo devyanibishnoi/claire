@@ -2,13 +2,15 @@
 ### Owner: Devyani
 
 ## Baseline cloud detector performance
-_TODO: precision/recall/detection rate on held-out test set._
+Detection rate: 100% (105/105 real attacks caught on held-out test set). `IsolationForest(contamination=0.1)` on one-hot `action` + engineered `is_new_ip_for_this_entity`.
 
 ## Adversarial evaluation — credential-use mimicry (cloud detector)
 
+Attack: flip `is_new_ip_for_this_entity` from 1 to 0 on real attack rows, simulating a stolen session/IP already recognized as trusted for that user, without changing the actual malicious action performed.
+
 | | Detection rate |
 |---|---|
-| Before defenses | _TODO_ |
+| Before defenses | 50% (15/30 still caught) |
 | After adversarial retraining | _TODO_ |
 
 ## Adversarial evaluation — prompt injection (LLM explanation layer)
