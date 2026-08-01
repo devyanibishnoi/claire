@@ -76,3 +76,24 @@ print(
     f"Evasion success rate: {(len(attack_rows) - evaded_caught) / len(attack_rows):.1%}"
 )
 
+# ── PHASE 4: ADVERSARIAL RETRAINING ──────────────────────────────────────────
+
+X_train_hardened = pd.concat([X_train, padded_rows], ignore_index=True)
+y_train_hardened = pd.concat(
+    [
+        y_train,
+        pd.Series([1] * len(padded_rows)),  # they are still attacks
+    ],
+    ignore_index=True,
+)
+
+hardened_model = IsolationForest(contamination=contamination, random_state=42)
+hardened_model.fit(X_train_hardened)
+
+hardened_preds = hardened_model.predict(padded_rows)
+hardened_caught = int((hardened_preds == -1).sum())
+
+print("\n -- Phase 4: After Adversarial Retraining --")
+print(f"Before hardening:  {evaded_caught}/{len(attack_rows)} caught after evasion")
+print(f"After hardening:   {hardened_caught}/{len(attack_rows)} caught after evasion")
+print(f"Improvement:       +{hardened_caught - evaded_caught} more caught")
