@@ -8,5 +8,5 @@ _TODO: precision/recall/detection rate on held-out test set._
 
 | | Detection rate |
 |---|---|
-| Before defenses | _TODO_ |
+| Before defenses | 11/25 caught | Evasion success rate: 56%
 | After adversarial retraining | _TODO_ |
