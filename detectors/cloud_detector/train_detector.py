@@ -7,6 +7,7 @@ from sklearn.ensemble import IsolationForest
 from sklearn.model_selection import train_test_split
 
 df = pd.read_json("../../data/cloud/raw/cloud_logs.json")
+df["is_unusual_hour"] = df["timestamp"].dt.hour.between(1, 4).astype(int)
 df["timestamp"] = df["timestamp"].dt.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 df = pd.get_dummies(df, columns=["action"])

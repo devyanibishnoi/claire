@@ -3,6 +3,7 @@ from sklearn.ensemble import IsolationForest
 from sklearn.model_selection import train_test_split
 
 df = pd.read_json("../data/cloud/raw/cloud_logs.json")
+df["is_unusual_hour"] = df["timestamp"].dt.hour.between(1, 4).astype(int)
 df["timestamp"] = df["timestamp"].dt.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 df = pd.get_dummies(df, columns=["action"])
@@ -24,19 +25,28 @@ attack_rows = X_test[y_test == 1].sample(n=30, random_state=42)
 baseline_predictions = model.predict(attack_rows)
 baseline_caught = int((baseline_predictions == -1).sum())
 
+ip_only_rows = attack_rows.copy()
+ip_only_rows["is_new_ip_for_this_entity"] = 0
+
+ip_only_predictions = model.predict(ip_only_rows)
+ip_only_caught = int((ip_only_predictions == -1).sum())
+
 mimicry_rows = attack_rows.copy()
 mimicry_rows["is_new_ip_for_this_entity"] = 0
+mimicry_rows["is_unusual_hour"] = 0
 
 evasion_predictions = model.predict(mimicry_rows)
 evaded_caught = int((evasion_predictions == -1).sum())
 
 print(f"Baseline: {baseline_caught} / {len(attack_rows)} caught before any modification")
-print(f"After credential-use mimicry: {evaded_caught} / {len(attack_rows)} still caught")
-print(f"Evasion success rate: {(len(attack_rows) - evaded_caught) / len(attack_rows):.1%}")
+print(f"After faking IP only (old attack, timing still gives it away): {ip_only_caught} / {len(ip_only_rows)} still caught")
+print(f"After faking IP and timing (credential-use mimicry): {evaded_caught} / {len(mimicry_rows)} still caught")
+print(f"Evasion success rate: {(len(mimicry_rows) - evaded_caught) / len(mimicry_rows):.1%}")
 
 train_attack_rows = X_train[y_train == 1].sample(n=30, random_state=42)
 mimicry_train_rows = train_attack_rows.copy()
 mimicry_train_rows["is_new_ip_for_this_entity"] = 0
+mimicry_train_rows["is_unusual_hour"] = 0
 
 X_train_retrained = pd.concat([X_train, mimicry_train_rows], ignore_index=True)
 
@@ -55,6 +65,6 @@ real_caught_before = int((model.predict(real_attacks) == -1).sum())
 real_caught_after = int((retrained_model.predict(real_attacks) == -1).sum())
 
 print("\n=== Phase 7: After Adversarial Retraining ===")
-print(f"Mimicry evasion        -- before: {evaded_caught}/{len(mimicry_rows)} caught, after: {after_caught}/{len(mimicry_rows)} caught")
+print(f"Mimicry evasion (IP + timing faked) -- before: {evaded_caught}/{len(mimicry_rows)} caught, after: {after_caught}/{len(mimicry_rows)} caught")
 print(f"False positives (benign) -- before: {fp_before}/{len(benign_rows)}, after: {fp_after}/{len(benign_rows)}")
 print(f"Unmodified real attacks -- before: {real_caught_before}/{len(real_attacks)}, after: {real_caught_after}/{len(real_attacks)}")
