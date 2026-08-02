@@ -123,73 +123,58 @@ Evaluate on the same obfuscated attacks
 Generate confusion matrix
 ```
 
+---
 
+# Experimental Evaluation – Higher Contamination
 
+Although the project implementation uses an Isolation Forest with **contamination = 0.10**, an additional experiment was conducted to study how increasing the contamination parameter affects attack detection performance.
 
+Unlike the adversarial evaluation, which used only the 30 obfuscated attack samples, this experiment evaluated the detector on the **entire held-out test set (1191 samples)** to measure both attack detection and false positive cost.
 
-# Previous Experiments
+## Classification Report
 
-Before arriving at the final approach, several adversarial retraining strategies were evaluated to improve the detector's robustness.
+| Class | Precision | Recall | F1-score | Support |
+|---|---:|---:|---:|---:|
+| Normal (0) | 0.91 | 0.73 | 0.81 | 1042 |
+| Attack (1) | 0.21 | 0.52 | 0.30 | 149 |
+| **Accuracy** | | | **0.70** | **1191** |
+| **Macro Average** | 0.56 | 0.62 | 0.56 | 1191 |
+| **Weighted Average** | 0.83 | 0.70 | 0.75 | 1191 |
 
-## Attempt 1 – Single Obfuscation (0.90×)
+## Confusion Matrix
 
-* Generated obfuscated attack samples by reducing the selected features by **10% (×0.90)**.
-* Added these obfuscated samples to the training dataset.
-* Retrained the Isolation Forest using the original **contamination = 0.1**.
-* Result: Detection performance did not improve significantly and, in some runs, decreased compared to the original model.
+| Metric | Count |
+|---|---:|
+| True Positives | 78 |
+| False Negatives | 71 |
+| False Positives | 285 |
+| True Negatives | 757 |
 
-## Attempt 2 – Increasing Training Samples
+## Derived Metrics
 
-* Increased the number of obfuscated attack samples used for retraining.
-* The model was retrained using the same Isolation Forest configuration.
-* Result: Only minor changes in detection performance were observed.
+| Metric | Value |
+|---|---:|
+| Attack Recall | 52.35% |
+| False Positive Rate | 27.35% |
 
-## Attempt 3 – Multiple Obfuscation Strengths
+## Observation
 
-* Generated three adversarial versions of the training attacks:
+Increasing the contamination parameter from **0.10** to **0.30** substantially increased the detector's ability to identify attacks, improving attack recall from **24.83%** to **52.35%**.
 
-  * **0.95×** (5% reduction)
-  * **0.90×** (10% reduction)
-  * **0.80×** (20% reduction)
-* Combined all obfuscated samples with the original training data before retraining.
-* This exposed the model to a wider range of evasive attack patterns.
+However, this improvement came at the cost of a much higher false positive rate, which increased from **8.35%** to **27.35%**, reducing the overall accuracy from **83%** to **70%**.
 
-## Attempt 4 – Contamination Parameter Tuning
+Since the project specification requires the Isolation Forest model to use **contamination = 0.10**, this higher contamination configuration was evaluated only as an experimental comparison and was not adopted as the final detector.
 
-To determine the most suitable anomaly threshold after adversarial retraining, multiple contamination values were evaluated.
+---
 
-| Contamination | Attacks Detected | Detection Rate |
-| ------------: | ---------------: | -------------: |
-|          0.10 |           5 / 30 |         16.67% |
-|          0.15 |           8 / 30 |         26.67% |
-|          0.20 |           9 / 30 |         30.00% |
-|          0.25 |          10 / 30 |         33.33% |
-|      **0.30** |      **15 / 30** |     **50.00%** |
+# Discussion and Limitations
 
-The model with **contamination = 0.30** achieved the highest detection rate and was selected for the final evaluation.
+The detector was implemented using **Isolation Forest**, as specified in the project requirements. Isolation Forest is designed to identify anomalies by isolating observations that differ significantly from the majority of the dataset.
 
-## Final Outcome
+However, the ADFA-LD dataset presents a challenge for this approach. Many attack samples share similar system call transition patterns and therefore form **clusters** rather than isolated outliers. As a result, the model may begin to interpret these clustered attack patterns as part of the normal data distribution.
 
-The final approach combined:
+This behaviour was observed during adversarial retraining. Even after augmenting the training dataset with multiple obfuscated attack samples, the detector did not improve its robustness. Detection on the obfuscated attack set decreased slightly from **6/30 (20.00%)** before retraining to **5/30 (16.67%)** after retraining.
 
-* Multiple obfuscation strengths (0.95×, 0.90×, and 0.80×).
-* Adversarial retraining using the augmented training dataset.
-* Hyperparameter tuning of the Isolation Forest contamination value.
+The additional contamination experiment further demonstrated the trade-off inherent to Isolation Forest. Increasing the contamination parameter improved attack detection but significantly increased false positives, indicating that simply making the detector more sensitive is not an ideal solution.
 
-This configuration improved the adversarial detection rate from **20.00% (6/30)** before defenses to **50.00% (15/30)** after retraining and model selection.
-
-## Attempt 5 – Hard Example Mining
-
-A Hard Example Mining strategy was also explored.
-
-Instead of retraining the model using all obfuscated attack samples, only the **hard examples** (i.e., the attacks that successfully evaded detection) were selected for retraining.
-
-The workflow was:
-
-1. Evaluate the obfuscated attack samples using the original detector.
-2. Identify the attacks that were **missed** by the model.
-3. Add these hard examples to the training dataset.
-4. Retrain the Isolation Forest model.
-5. Re-evaluate the same 30 obfuscated attack samples.
-
-**Observation:** This strategy produced essentially the **same detection performance** as the previous retraining approach.
+Overall, these results suggest that while Isolation Forest provides a suitable baseline for unsupervised anomaly detection, it may not be the most appropriate model when attack samples form dense clusters or when adversarial examples become increasingly similar to one another.
