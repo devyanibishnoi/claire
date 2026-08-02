@@ -5,27 +5,27 @@
 
 | Metric | Value |
 |---|---|
-| True Positives (TP) | 13 |
-| False Negatives (FN) | 17 |
-| False Positives (FP) | 5 |
-| True Negatives (TN) | 25 |
-| Detection Rate (Recall) | 43.3% |
-| Precision | 72.2% |
+| True Positives (TP) | 469 |
+| False Negatives (FN) | 531 |
+| False Positives (FP) | 158 |
+| True Negatives (TN) | 842 |
+| Detection Rate (Recall) | 46.9% |
+| Precision | 74.8% |
 
 ## Adversarial evaluation — evasion ("traffic padding")
 
 | | Detection rate |
 |---|---|
-| Before defenses | 13/30 (43.3%) |
-| After adversarial retraining | 20/30 (66.7%) |
+| Before defenses | 469/1000 (46.9%) |
+| After adversarial retraining | 745/1000 (74.5%) |
 
 ## Full confusion matrix — before vs after hardening
 
 | Metric | Before Hardening | After Hardening |
 |---|---|---|
-| TP | 13 | 20 |
-| FN | 17 | 10 |
-| FP | 5 | 20 |
-| TN | 25 | 10 |
-| Evasion success rate | 56.7% | 33.3% |
-| Improvement | -- | +7 more caught |
+| TP | 469 | 745 |
+| FN | 531 | 255 |
+| FP | 158 | 623 |
+| TN | 842 | 377 |
+| Evasion success rate | 53.1% | 25.5% |
+| Improvement | -- | +276 more caught |

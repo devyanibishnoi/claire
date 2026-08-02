@@ -23,19 +23,19 @@ X_train, X_test, y_train, y_test = train_test_split(
 model = IsolationForest(contamination=contamination, random_state=42)
 model.fit(X_train)
 
-attack_rows = X_test[y_test == 1].sample(n=30, random_state=42)
+attack_rows = X_test[y_test == 1].sample(n=1000, random_state=42)
 
 baseline_preds = model.predict(attack_rows)
 baseline_caught = int((baseline_preds == -1).sum())
 
-# Pull 30 benign rows too so we have both classes
-benign_rows = X_test[y_test == 0].sample(n=30, random_state=42)
+# Pull 1000 benign rows too so we have both classes
+benign_rows = X_test[y_test == 0].sample(n=1000, random_state=42)
 benign_preds = model.predict(benign_rows)
 
 # Combine attack + benign for full confusion matrix
 import numpy as np
 
-y_true_base = np.array([1] * 30 + [0] * 30)
+y_true_base = np.array([1] * 1000 + [0] * 1000)
 y_pred_base = np.concatenate(
     [
         (baseline_preds == -1).astype(int),  # attack rows
@@ -65,6 +65,20 @@ n = len(attack_rows)
 print(f"Baseline:              {baseline_caught}/{n} caught before any modification")
 print(f"After traffic padding: {evaded_caught}/{n} still caught")
 print(f"Evasion success rate:  {(n - evaded_caught) / n:.1%}")
+
+y_pred_evasion = np.concatenate([
+    (evasion_preds == -1).astype(int),  # padded attack rows
+    (benign_preds == -1).astype(int)    # same benign rows, same original model
+])
+
+tp_ev = int(((y_pred_evasion == 1) & (y_true_base == 1)).sum())
+fn_ev = int(((y_pred_evasion == 0) & (y_true_base == 1)).sum())
+fp_ev = int(((y_pred_evasion == 1) & (y_true_base == 0)).sum())
+tn_ev = int(((y_pred_evasion == 0) & (y_true_base == 0)).sum())
+
+print(f"\n-- Phase 3: After Traffic Padding Confusion Matrix --")
+print(f"TP: {tp_ev}  FN: {fn_ev}")
+print(f"FP: {fp_ev}  TN: {tn_ev}")
 
 # ── PHASE 4: ADVERSARIAL RETRAINING ──────────────────────────────────────────
 # Get anomaly scores for known attacks in training set
