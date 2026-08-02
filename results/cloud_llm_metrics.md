@@ -11,7 +11,20 @@ Attack: flip `is_new_ip_for_this_entity` from 1 to 0 on real attack rows, simula
 | | Detection rate |
 |---|---|
 | Before defenses | 50% (15/30 still caught) |
-| After adversarial retraining | _TODO_ |
+| After adversarial retraining | 20% (6/30 still caught) |
+
+Retraining approach: pulled 30 real attack rows from `X_train` (not the 30 test rows used for evaluation), flipped `is_new_ip_for_this_entity` to 0 on those (same transform as the actual attack), added them into the training data, and refit a new `IsolationForest`.
+
+Two safety checks passed clean — no regression:
+
+| Check | Before | After |
+|---|---|---|
+| False positives on benign test rows | 1/30 | 1/30 |
+| Unmodified real attacks still caught | 105/105 | 105/105 |
+
+But the actual target metric got *worse*, not better — detection under the mimicry attack dropped from 15/30 to 6/30 after retraining.
+
+**Root cause (confirmed):** Isolation Forest has no labels — it only measures how sparse a point's neighborhood is. The Phase 5 admin-user redesign had already put a small legitimate crowd into the feature corner "sensitive action + familiar-looking IP" (the ~50 admin rows), which is why 15/30 mimicry rows could blend in to begin with. Retraining added 30 more rows into that exact same corner, but with no labels attached, the model has no way to learn "these are attacks" — it only registers that the corner got more crowded, which lowers the anomaly score for everything there, including the original evasion rows. Retraining thickened the camouflage instead of teaching the model to distrust it. Not a dataset-scale issue — this happened on a ~4,400-row training set. This is a real, structural limitation of applying naive data-augmentation-style adversarial training to an unsupervised, density-based detector, not a bug in the implementation. Reported as an honest negative result rather than forced into looking better; a real fix would need a different mechanism than adding more raw rows (e.g. an explicit distance-based penalty or reworked features that separate legitimate admin behavior from attacker mimicry more cleanly) — flagged as future work.
 
 ## Adversarial evaluation — prompt injection (LLM explanation layer)
 
