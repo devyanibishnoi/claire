@@ -27,6 +27,45 @@ min_score = scores.min()
 max_score = scores.max()
 normalized_scores = 1 - ((scores - min_score) / (max_score - min_score))
 
+
+
+# ==========================================
+# PHASE 8 - FEATURE ATTRIBUTION
+# ==========================================
+
+# Mean value of each feature in the training data.
+# This is used as the normal/reference value.
+feature_means = X_train.mean()
+
+
+def find_top_feature(row, model, feature_means):
+    modified_row = row.astype(float)
+
+    original_score = model.decision_function(
+        modified_row.to_frame().T
+    )[0]
+
+    feature_changes = {}
+    for column in modified_row.index:
+        test_row = modified_row.copy()
+        test_row[column] = feature_means[column]
+
+        modified_score = model.decision_function(
+            test_row.to_frame().T
+        )[0]
+        feature_changes[column] = abs(
+            modified_score - original_score
+        )
+
+    return max(
+        feature_changes,
+        key=feature_changes.get
+    )
+
+
+
+
+
 '''print(classification_report(y_test, predictions))
 
 cm = confusion_matrix(y_test, predictions)
@@ -74,7 +113,32 @@ f_val = {
 }
 flags.append(f_val)
 
-for pred, score in zip(predictions, normalized_scores):
+
+
+for index, (pred, score) in enumerate(
+    zip(predictions, normalized_scores)
+):
+    if pred == 1:
+        row = X_test.iloc[index]
+        top_feature = find_top_feature(
+            row,
+            model,
+            feature_means
+        )
+
+        flag = {
+            "entity": random.choice(users),
+            "host": random.choice(hosts),
+            "timestamp": random_timestamp(),
+            "anomaly_score": round(float(score), 4),
+            "layer": "os",
+            "top_feature": top_feature
+        }
+        flags.append(flag)
+
+
+
+'''for pred, score in zip(predictions, normalized_scores):
     if pred == 1:
         flag = {
             "entity": random.choice(users),
@@ -84,6 +148,7 @@ for pred, score in zip(predictions, normalized_scores):
             "layer": "os"
         }
         flags.append(flag)
+'''
 
 with open("detectors/os_detector/output/flags.json", "w") as file:
     json.dump(flags, file, indent=2)
