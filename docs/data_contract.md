@@ -11,7 +11,8 @@ Every detector's `output/flags.json` must be a list of objects shaped like this:
     "host": "hostname or machine ID",
     "timestamp": "2026-07-25T14:32:00Z",
     "anomaly_score": 0.87,
-    "layer": "network"
+    "layer": "network",
+    "top_feature": "Destination Port"
   }
 ]
 ```
@@ -23,5 +24,6 @@ Every detector's `output/flags.json` must be a list of objects shaped like this:
 | `timestamp` | ISO 8601 format, so it sorts and compares correctly |
 | `anomaly_score` | A number from 0.0 to 1.0, higher means more suspicious |
 | `layer` | Always exactly `"network"`, `"os"`, or `"cloud"` depending on which detector wrote it |
+| `top_feature` | The single feature that contributed most to this row's anomaly score (leave-one-feature-out against `decision_function()`) |
 
 As long as every detector writes this exact shape, `fusion/fuse.py` can read all three without ever opening anyone else's code.
