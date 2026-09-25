@@ -997,5 +997,33 @@
     "anomaly_score": 0.3901,
     "layer": "os",
     "top_feature": "('125', '125')"
+  },
+  {
+    "entity": "chain_apt_02",
+    "host": "HOST-CHAIN-02",
+    "timestamp": "2026-07-02T09:04:00Z",
+    "anomaly_score": 0.92,
+    "layer": "os"
+  },
+  {
+    "entity": "chain_cred_03",
+    "host": "HOST-CHAIN-03",
+    "timestamp": "2026-07-03T14:03:00Z",
+    "anomaly_score": 0.88,
+    "layer": "os"
+  },
+  {
+    "entity": "decoy_os_01",
+    "host": "HOST-DECOY-O1",
+    "timestamp": "2026-07-04T10:02:00Z",
+    "anomaly_score": 0.81,
+    "layer": "os"
+  },
+  {
+    "entity": "decoy_lag_02",
+    "host": "HOST-DECOY-L2",
+    "timestamp": "2026-07-05T09:30:00Z",
+    "anomaly_score": 0.86,
+    "layer": "os"
   }
 ]
