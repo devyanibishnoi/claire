@@ -278,10 +278,10 @@ This is the largest of the three jobs since it covers a detector plus the two pi
 
 ### Phase 8 — Generalize the retraining finding to a second model
 
-- [ ] Repeat your cloud detector's credential-mimicry evasion experiment (from your existing Phase 7), but this time train with `LocalOutlierFactor(novelty=True)` instead of `IsolationForest`. Use the same features, the same train/test split, and the same mimicry-attack rows as before, so the comparison is fair.
-- [ ] Run the identical sequence: baseline detection rate, detection rate under the mimicry attack, detection rate after retraining with adversarial examples added to the training data.
-- [ ] Record the result honestly, whichever way it comes out. If it backfires the same way Isolation Forest did, that's your strongest possible result, it means the finding isn't specific to one algorithm. If it doesn't backfire, that's still worth reporting, since it narrows down which detection paradigms the effect applies to.
-- [ ] Add a new "Cross-paradigm generalization" section to `results/cloud_llm_metrics.md` with this result.
+- [x] Repeat your cloud detector's credential-mimicry evasion experiment (from your existing Phase 7), but this time train with `LocalOutlierFactor(novelty=True)` instead of `IsolationForest`. Use the same features, the same train/test split, and the same mimicry-attack rows as before, so the comparison is fair.
+- [x] Run the identical sequence: baseline detection rate, detection rate under the mimicry attack, detection rate after retraining with adversarial examples added to the training data.
+- [x] Record the result honestly, whichever way it comes out. If it backfires the same way Isolation Forest did, that's your strongest possible result, it means the finding isn't specific to one algorithm. If it doesn't backfire, that's still worth reporting, since it narrows down which detection paradigms the effect applies to. **Turned out to be a third outcome the checklist didn't anticipate: LOF couldn't establish a working baseline at all, for a well-understood numerical reason — see the writeup.**
+- [x] Add a new "Cross-paradigm generalization" section to `results/cloud_llm_metrics.md` with this result.
 - [ ] Commit and push:
   ```
   git add detectors/cloud_detector/ results/cloud_llm_metrics.md

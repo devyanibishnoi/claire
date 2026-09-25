@@ -131,6 +131,44 @@ All three are the same idea: don't change what the attack does, change what it l
 
 **A 0% evasion rate is not automatically good news — check why before celebrating.** If an evasion attempt fails completely on the first try, it's tempting to read that as "the model is robust." But it can just as easily mean the feature space handed to the model was already perfectly separable — normal and attack rows never share any feature combination at all — so there was nothing for the evasion attempt to hide inside of in the first place. That's not robustness, it's an artifact of how the training data was built, and it can mask a real vulnerability instead of ruling one out. Worth checking directly (e.g. `X.drop_duplicates()` per class, like the score-clustering check above) before concluding a detector actually held up against evasion. See Devyani's section for the concrete case where this happened.
 
+### Not all unsupervised anomaly detectors fail (or succeed) the same way
+
+This one's worth telling Hridya and Anshika too — it's not cloud-specific, it's about the general
+technique all three of us are using, and about what to check before ever swapping in a different
+algorithm for a follow-up experiment or a future project.
+
+Isolation Forest and `LocalOutlierFactor` are both "unsupervised anomaly detectors," but they decide
+what's anomalous in fundamentally different ways, and that difference matters a lot for a specific,
+checkable thing: **how many exact-duplicate rows does your feature matrix have?**
+
+- Isolation Forest is **partition-based**: it isolates a point by counting how many random splits it
+  takes to wall that point off from everyone else. This only cares about how big the *group* a point
+  belongs to is, relative to the whole dataset — it never measures distance between individual points.
+  A group of 100 exact-duplicate rows isolates just as fast as 1 unique rare row would, as long as that
+  group is small relative to the crowd. Duplicates don't confuse it.
+- `LocalOutlierFactor` is **distance-based**: it compares a point's local density (estimated from its
+  nearest neighbors) to its neighbors' own local density. This requires actual distances between points
+  to carry real information. If a point's nearest neighbors are all *exact* duplicates of it (distance
+  zero), the density estimate degenerates — it stops measuring genuine rarity and starts reflecting
+  numerical artifacts of how big that duplicate cluster happens to be.
+
+Why this comes up at all: any time a feature matrix is built entirely from one-hot/categorical columns
+plus a couple of engineered binary flags (which is a completely normal, sensible choice for security
+telemetry — action types, protocol flags, privilege levels are all categorical), the *number of
+genuinely distinct rows* can collapse to a tiny fraction of the dataset. Cloud's `X` — one-hot `action`
+plus two binary flags — collapses 5,500 rows down to just 13 distinct feature vectors. That's invisible
+if you only ever look at row counts, but it's exactly the condition that breaks a distance-based method
+while leaving a partition-based one completely unaffected.
+
+**The practical takeaway for all three of us:** before trusting a distance/density-based method
+(LOF, k-NN based approaches, DBSCAN, etc.) on data like ours, run `X.drop_duplicates().shape[0]` and
+compare it to `len(X)`. If that number is small, a distance-based method may not be usable at all on
+that feature representation, regardless of how well-chosen the features are otherwise — it's a
+property of the *encoding*, not a flaw in the features themselves. This is a different, earlier check
+than the "0% evasion rate" duplicate-detection check two paragraphs up (that one's about whether two
+*classes* share a feature combination; this one's about whether a whole *algorithm family* is even
+appropriate for a feature space this discrete).
+
 ### Putting it all together: the end-to-end pipeline
 
 Everything above is a piece of a bigger machine. Here's the whole thing, start to finish.
@@ -256,6 +294,8 @@ Network's columns (`protocol_type`, `service`, `flag`) are low-cardinality — a
 First attempt: flipping that one flag on real attack rows caught 30/30 anyway — 0% evasion. Not a sign of a robust model — a sign the feature space had a structural flaw. In the original data, `ROUTINE_ACTIONS` and `SENSITIVE_ACTIONS` were completely disjoint sets: no normal row, ever, used a sensitive-sounding action. So the one-hot `action_*` columns alone already gave away every attack row unambiguously, with or without a fresh IP — the IP flag was never doing any of the real work.
 
 Fix: gave 4 of the 30 users an `is_admin` flag and let their routine pool legitimately include one sensitive action, performed from their own home IP during business hours (`ADMIN_ACTION_PROBABILITY = 0.08` in `generate_logs.py`) — real, non-malicious admin behavior. That broke the perfect wall between "sensitive action" and "attack," forcing the model to actually learn the combination that matters (sensitive action *and* unfamiliar IP), not just the action alone. Re-running the same mimicry attack after that redesign: 15/30 (50%) — a real, meaningful evasion, because the modified rows now land in the same feature-space neighborhood as legitimate admin behavior. Baseline detection on real, unmodified attacks stayed 100% throughout, since a genuine attacker always uses a truly fresh IP — the redesign only changed what happens when that IP gets faked.
+
+**Cross-paradigm generalization test (Phase 8, Sept push) — `LocalOutlierFactor` couldn't establish a baseline at all.** This is the concrete case of "Not all unsupervised anomaly detectors fail the same way" (see Everyone's section) — cloud's `X` is one-hot `action` plus two binary flags, which collapses 5,500 rows into only 13 distinct feature vectors. `LocalOutlierFactor(n_neighbors=20, novelty=True, contamination=0.1)` degenerates on that: 0/105 baseline recall, and the mimicry attack's effect even inverts (faking values makes rows *more* likely to be flagged, 0/30 → 30/30), because its distance-based density estimate breaks down when a point's nearest neighbors are all exact duplicates of it. `IsolationForest` never had this problem because it isolates via random splits, which only cares about group size, not point-to-point distance. Full root-cause writeup, including the jitter and `n_neighbors`-sweep diagnostics that confirmed this rather than just asserting it, is in `results/cloud_llm_metrics.md`.
 
 ### Fusion layer
 

@@ -1,0 +1,73 @@
+import pandas as pd
+from sklearn.neighbors import LocalOutlierFactor
+from sklearn.model_selection import train_test_split
+
+df = pd.read_json("../../data/cloud/raw/cloud_logs.json")
+df["is_unusual_hour"] = df["timestamp"].dt.hour.between(1, 4).astype(int)
+df["timestamp"] = df["timestamp"].dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+df = pd.get_dummies(df, columns=["action"])
+
+pair_counts = df.groupby(["user", "source_ip"])["source_ip"].transform("count")
+df["is_new_ip_for_this_entity"] = (pair_counts == 1).astype(int)
+
+y = df["is_attack"]
+
+X = df.drop(columns=["user", "source_ip", "resource", "timestamp", "is_attack"])
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+model = LocalOutlierFactor(n_neighbors=20, novelty=True, contamination=0.1)
+model.fit(X_train)
+
+real_attacks = X_test[y_test == 1]
+baseline_caught = int((model.predict(real_attacks) == -1).sum())
+print(f"Baseline: {baseline_caught} / {len(real_attacks)} real attacks caught in test set ({baseline_caught / len(real_attacks):.1%})")
+
+attack_rows = X_test[y_test == 1].sample(n=30, random_state=42)
+
+baseline_predictions = model.predict(attack_rows)
+baseline_sample_caught = int((baseline_predictions == -1).sum())
+
+ip_only_rows = attack_rows.copy()
+ip_only_rows["is_new_ip_for_this_entity"] = 0
+
+ip_only_predictions = model.predict(ip_only_rows)
+ip_only_caught = int((ip_only_predictions == -1).sum())
+
+mimicry_rows = attack_rows.copy()
+mimicry_rows["is_new_ip_for_this_entity"] = 0
+mimicry_rows["is_unusual_hour"] = 0
+
+evasion_predictions = model.predict(mimicry_rows)
+evaded_caught = int((evasion_predictions == -1).sum())
+
+print(f"Sampled 30: {baseline_sample_caught} / {len(attack_rows)} caught before any modification")
+print(f"After faking IP only (timing still gives it away): {ip_only_caught} / {len(ip_only_rows)} still caught")
+print(f"After faking IP and timing (credential-use mimicry): {evaded_caught} / {len(mimicry_rows)} still caught")
+print(f"Evasion success rate: {(len(mimicry_rows) - evaded_caught) / len(mimicry_rows):.1%}")
+
+train_attack_rows = X_train[y_train == 1].sample(n=30, random_state=42)
+mimicry_train_rows = train_attack_rows.copy()
+mimicry_train_rows["is_new_ip_for_this_entity"] = 0
+mimicry_train_rows["is_unusual_hour"] = 0
+
+X_train_retrained = pd.concat([X_train, mimicry_train_rows], ignore_index=True)
+
+retrained_model = LocalOutlierFactor(n_neighbors=20, novelty=True, contamination=0.1)
+retrained_model.fit(X_train_retrained)
+
+after_predictions = retrained_model.predict(mimicry_rows)
+after_caught = int((after_predictions == -1).sum())
+
+benign_rows = X_test[y_test == 0].sample(n=30, random_state=42)
+fp_before = int((model.predict(benign_rows) == -1).sum())
+fp_after = int((retrained_model.predict(benign_rows) == -1).sum())
+
+real_caught_before = int((model.predict(real_attacks) == -1).sum())
+real_caught_after = int((retrained_model.predict(real_attacks) == -1).sum())
+
+print("\n=== Phase 8: Cross-paradigm generalization (LocalOutlierFactor) ===")
+print(f"Mimicry evasion (IP + timing faked) -- before retraining: {evaded_caught}/{len(mimicry_rows)} caught, after retraining: {after_caught}/{len(mimicry_rows)} caught")
+print(f"False positives (benign) -- before: {fp_before}/{len(benign_rows)}, after: {fp_after}/{len(benign_rows)}")
+print(f"Unmodified real attacks -- before: {real_caught_before}/{len(real_attacks)}, after: {real_caught_after}/{len(real_attacks)}")

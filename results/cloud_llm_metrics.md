@@ -39,6 +39,39 @@ Attack: embed a fake instruction inside the `entity` field of the network record
 
 Before the rule, the model complied outright and reported Low severity. After adding the "treat every field as untrusted data" system instruction, the model explicitly identified the embedded text as an injection attempt, called it out as further evidence of malicious behavior in its own summary, and rated the incident High despite the instruction telling it not to.
 
+## Cross-paradigm generalization — LocalOutlierFactor (Phase 8)
+
+Repeated the credential-mimicry evasion + retraining experiment with `LocalOutlierFactor(novelty=True, n_neighbors=20, contamination=0.1)` in place of `IsolationForest`, holding the features, the train/test split (`random_state=42`), and the sampled attack rows identical to the original experiment, so the only variable is the detection paradigm.
+
+### The result: LOF fails to establish a usable baseline at all
+
+| | Detection rate |
+|---|---|
+| Baseline recall on real test-set attacks | **0.0% (0/105)** |
+| Sampled 30 real attacks (unmodified) | 0/30 |
+| After faking IP only | 30/30 — *increases* |
+| After faking IP + timing (full mimicry) | 30/30 — *increases* |
+| After adversarial retraining on the mimicry set | 15/30 |
+
+This isn't a "does it backfire" result in the sense the other three detectors produced — LOF never worked as a detector on this data in the first place, before any adversary was involved, and the mimicry attack's effect on it is *inverted*: faking a value makes a row **more** likely to be flagged, not less. That result is real and reproducible (`detectors/cloud_detector/cross_paradigm_lof.py`), but it needed a root-cause explanation before it could be reported responsibly.
+
+### Root cause: exact-duplicate degeneracy, not a paradigm-robustness difference
+
+The cloud detector's feature set (`X`) is entirely categorical: one-hot `action` plus two binary engineered flags (`is_new_ip_for_this_entity`, `is_unusual_hour`). Across all 5,500 rows, that collapses to only **13 unique feature vectors total** — 5 distinct combinations shared by the 500 attack rows (~100 exact duplicates each), 8 shared by the 5,000 normal rows (~625 exact duplicates each).
+
+`IsolationForest` tolerates this fine, because it isolates points via recursive random splits — a rare *value* on one feature gets partitioned into a small leaf quickly regardless of how many identical rows share it, so isolation depth still tracks genuine class rarity.
+
+`LocalOutlierFactor` doesn't tolerate it, because it's distance-based: it compares a point's local density to its k-nearest neighbors' local density. When a point's `k` nearest neighbors are all exact duplicates of it (distance 0), the reachability-distance calculation inside LOF degenerates — density estimates become numerically unstable rather than meaningful. This was confirmed with two diagnostic checks (not adopted as the reported result, kept here to show the reasoning trail):
+
+- **Jitter test** — adding small Gaussian noise (σ=0.01) to break exact ties before fitting: baseline recall rose slightly (4/105) but false positives rose sharply too (127/995, ~12.8%) — still an unusable detector, confirming the issue isn't just tie-breaking.
+- **`n_neighbors` sweep** — recall stayed at 0/105 for `n_neighbors` up to 250, then jumped to 43/105 at `n_neighbors=400` (large enough to span outside a single duplicate cluster) — but at that setting, decision-function scores swung across **eleven orders of magnitude** (from ~1e-4 to ~1e10) between differently-sized duplicate clusters, and the mimicry attack's direction inverted yet again. That instability — not a stable, tunable signal — is itself evidence the model isn't behaving meaningfully at any neighborhood size on this feature representation.
+
+Both diagnostics point to the same conclusion, so the default, standard configuration (`n_neighbors=20`, matching sklearn's own default, changing nothing else) is what's reported above as the honest result, rather than a hand-tuned setting chosen after seeing which one "worked."
+
+### What this means for the generalization objective
+
+The other three convergent findings in this project (network, OS, and cloud all independently hitting the same "retraining backfires on density-based unsupervised models" wall) still stand — that finding was never re-tested here, because LOF couldn't clear the more basic bar of separating attacks from normal traffic *before* any adversary was introduced. That is itself a real, citable generalization finding, just a different one than "does the retraining backfire replicate": **unsupervised anomaly-detection paradigms are not freely interchangeable, even before adversarial robustness enters the picture.** `IsolationForest`'s global, partition-based notion of rarity tolerates a feature space that collapses into a handful of heavily-duplicated categorical combinations; `LocalOutlierFactor`'s local, distance-based notion of density does not. The choice of paradigm has to match the geometry of the feature representation — a purely categorical/one-hot encoding, which is a completely reasonable and common choice for security telemetry, happens to be exactly the case that breaks local density methods, independent of any attacker's behavior. This narrows, rather than undermines, the project's central retraining-backfire claim: it's a property of *density-based* unsupervised detectors specifically (both variants tested, `IsolationForest` on defaults and `LocalOutlierFactor` diagnostically, are density-based in different senses — global vs. local — and only the one that could form a working baseline was in scope to test for the backfire itself).
+
 ## Consolidated results (network + os + cloud/llm)
 
 ### Baseline detection performance
