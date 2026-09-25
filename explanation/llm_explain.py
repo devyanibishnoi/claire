@@ -18,7 +18,7 @@ def explain_attack_chain(attack_chain):
     evidence = json.dumps(attack_chain, indent=2)
     prompt = f"Here is one correlated attack chain:\n\n{evidence}"
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {"role": "system", "content": SYSTEM_INSTRUCTION},
             {"role": "user", "content": prompt},

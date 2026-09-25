@@ -291,10 +291,10 @@ This is the largest of the three jobs since it covers a detector plus the two pi
 
 ### Phase 9 — Quantify LLM prompt-injection robustness
 
-- [ ] Write 15 to 20 distinct prompt-injection attempts. Vary the phrasing, vary which field carries the injected text (`entity` vs `host`), and vary what the injection tries to force (some should try to downgrade severity to Low, some should try to get the model to skip flagging entirely, some should try more indirect phrasing than the original demo).
-- [ ] Run every attempt through `llm_explain.py` twice, once with `VULNERABLE_SYSTEM_INSTRUCTION` and once with the real, defended `SYSTEM_INSTRUCTION`, and record for each attempt whether the model complied with the injected instruction or correctly flagged it as an injection.
-- [ ] Compute a before/after success rate across the full set (for example, "17 of 20 attempts succeeded before defenses, 1 of 20 succeeded after").
-- [ ] Replace the single-example result in `results/cloud_llm_metrics.md` with this full quantified table, keeping the original example as one illustrative row within it.
+- [x] Write 15 to 20 distinct prompt-injection attempts. Vary the phrasing, vary which field carries the injected text (`entity` vs `host`), and vary what the injection tries to force (some should try to downgrade severity to Low, some should try to get the model to skip flagging entirely, some should try more indirect phrasing than the original demo). **20 written.**
+- [x] Run every attempt through `llm_explain.py` twice, once with `VULNERABLE_SYSTEM_INSTRUCTION` and once with the real, defended `SYSTEM_INSTRUCTION`, and record for each attempt whether the model complied with the injected instruction or correctly flagged it as an injection.
+- [x] Compute a before/after success rate across the full set (for example, "17 of 20 attempts succeeded before defenses, 1 of 20 succeeded after"). **5/20 before, 0/20 after.**
+- [x] Replace the single-example result in `results/cloud_llm_metrics.md` with this full quantified table, keeping the original example as one illustrative row within it.
 - [ ] Commit and push:
   ```
   git add adversarial/llm_prompt_attacks.py results/cloud_llm_metrics.md
