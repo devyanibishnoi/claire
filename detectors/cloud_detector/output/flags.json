@@ -824,5 +824,19 @@
     "timestamp": "2026-07-01T10:08:00Z",
     "anomaly_score": 0.95,
     "layer": "cloud"
+  },
+  {
+    "entity": "chain_apt_02",
+    "host": "HOST-CHAIN-02",
+    "timestamp": "2026-07-02T09:08:00Z",
+    "anomaly_score": 0.93,
+    "layer": "cloud"
+  },
+  {
+    "entity": "chain_cred_03",
+    "host": "HOST-CHAIN-03",
+    "timestamp": "2026-07-03T14:08:00Z",
+    "anomaly_score": 0.9,
+    "layer": "cloud"
   }
 ]

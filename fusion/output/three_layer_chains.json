@@ -5,7 +5,8 @@
       "host": "incident_demo_01",
       "timestamp": "2026-07-01T10:00:00Z",
       "anomaly_score": 0.95,
-      "layer": "network"
+      "layer": "network",
+      "top_feature": null
     },
     {
       "entity": "incident_demo_01",
@@ -19,6 +20,54 @@
       "host": "incident_demo_01",
       "timestamp": "2026-07-01T10:08:00Z",
       "anomaly_score": 0.95,
+      "layer": "cloud"
+    }
+  ],
+  [
+    {
+      "entity": "chain_apt_02",
+      "host": "HOST-CHAIN-02",
+      "timestamp": "2026-07-02T09:00:00Z",
+      "anomaly_score": 0.91,
+      "layer": "network",
+      "top_feature": null
+    },
+    {
+      "entity": "chain_apt_02",
+      "host": "HOST-CHAIN-02",
+      "timestamp": "2026-07-02T09:04:00Z",
+      "anomaly_score": 0.92,
+      "layer": "os"
+    },
+    {
+      "entity": "chain_apt_02",
+      "host": "HOST-CHAIN-02",
+      "timestamp": "2026-07-02T09:08:00Z",
+      "anomaly_score": 0.93,
+      "layer": "cloud"
+    }
+  ],
+  [
+    {
+      "entity": "chain_cred_03",
+      "host": "HOST-CHAIN-03",
+      "timestamp": "2026-07-03T14:00:00Z",
+      "anomaly_score": 0.87,
+      "layer": "network",
+      "top_feature": null
+    },
+    {
+      "entity": "chain_cred_03",
+      "host": "HOST-CHAIN-03",
+      "timestamp": "2026-07-03T14:03:00Z",
+      "anomaly_score": 0.88,
+      "layer": "os"
+    },
+    {
+      "entity": "chain_cred_03",
+      "host": "HOST-CHAIN-03",
+      "timestamp": "2026-07-03T14:08:00Z",
+      "anomaly_score": 0.9,
       "layer": "cloud"
     }
   ]

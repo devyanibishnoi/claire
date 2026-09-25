@@ -58,6 +58,22 @@ flags.append({
     "layer": "cloud",
 })
 
+flags.append({
+    "entity": "chain_apt_02",
+    "host": "HOST-CHAIN-02",
+    "timestamp": "2026-07-02T09:08:00Z",
+    "anomaly_score": 0.93,
+    "layer": "cloud",
+})
+
+flags.append({
+    "entity": "chain_cred_03",
+    "host": "HOST-CHAIN-03",
+    "timestamp": "2026-07-03T14:08:00Z",
+    "anomaly_score": 0.90,
+    "layer": "cloud",
+})
+
 with open("output/flags.json", "w") as f:
     json.dump(flags, f, indent=2)
 

@@ -304,10 +304,10 @@ This is the largest of the three jobs since it covers a detector plus the two pi
 
 ### Phase 10 — Quantify fusion's chain-reconstruction accuracy
 
-- [ ] Once Hridya and Anshika have pushed their scenario legs (their own Phase 9), pull the latest and add your cloud-layer row for each of the new scenarios, genuine chains and decoys alike.
-- [ ] Run `fuse.py` across the full scenario set and record: how many of the genuine multi-stage chains fusion correctly reconstructed, and how many of the decoy scenarios fusion correctly kept separate rather than merging into a false chain.
-- [ ] Compute precision (of the chains fusion actually produced, how many were genuine) and recall (of the genuine chains that existed, how many fusion found).
-- [ ] Add a new "Fusion accuracy" section to `results/cloud_llm_metrics.md` with these numbers.
+- [x] Once Hridya and Anshika have pushed their scenario legs (their own Phase 9), pull the latest and add your cloud-layer row for each of the new scenarios, genuine chains and decoys alike. **Added cloud legs for the 2 genuine chains; the existing decoys don't involve cloud by design, so nothing needed there.**
+- [x] Run `fuse.py` across the full scenario set and record: how many of the genuine multi-stage chains fusion correctly reconstructed, and how many of the decoy scenarios fusion correctly kept separate rather than merging into a false chain. **3/3 genuine chains reconstructed, both decoy scenarios correctly kept separate.**
+- [x] Compute precision (of the chains fusion actually produced, how many were genuine) and recall (of the genuine chains that existed, how many fusion found). **100% / 100% on the controlled scenario set — see the writeup for an important caveat found on the full dataset.**
+- [x] Add a new "Fusion accuracy" section to `results/cloud_llm_metrics.md` with these numbers.
 - [ ] Commit and push:
   ```
   git add fusion/ results/cloud_llm_metrics.md
