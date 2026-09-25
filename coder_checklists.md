@@ -317,9 +317,9 @@ This is the largest of the three jobs since it covers a detector plus the two pi
 
 ### Phase 11 — Quantify the alert-reduction ratio
 
-- [ ] Using the same run from Phase 10, count the total raw anomalies flagged across all three `flags.json` files, and the total number of chains or incidents fusion produced from them.
-- [ ] Record this as one concrete ratio (for example, "X raw alerts collapsed into Y incidents, an N percent reduction").
-- [ ] Add this number to `results/cloud_llm_metrics.md`, in the same section as the fusion accuracy numbers.
+- [x] Using the same run from Phase 10, count the total raw anomalies flagged across all three `flags.json` files, and the total number of chains or incidents fusion produced from them.
+- [x] Record this as one concrete ratio (for example, "X raw alerts collapsed into Y incidents, an N percent reduction"). **Turned into three numbers, not one, because the naive number is misleading given Phase 10's mega-chain finding — see the writeup.**
+- [x] Add this number to `results/cloud_llm_metrics.md`, in the same section as the fusion accuracy numbers.
 - [ ] Commit and push:
   ```
   git add results/cloud_llm_metrics.md
