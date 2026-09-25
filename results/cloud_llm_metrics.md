@@ -148,6 +148,25 @@ This is the number that actually reflects the fusion mechanism's real value: whe
 
 **Bottom line for the paper, and for the team:** don't report the 97.14% number as-is without the other two next to it — a reviewer who checks the underlying chain sizes (which is a one-line `sorted(len(c) for c in chains)` check) would immediately spot the same problem this writeup found, and reporting only the flattering number would look worse than reporting all three with the explanation. The real, non-inflated story is: fusion's correlation logic works well (70.76% reduction) on records it can actually evaluate soundly, but the pipeline's current overall numbers are bottlenecked by network's identity-assignment issue from Phase 10 — which is exactly why that issue needs to actually get fixed before Day 6-7's results consolidation, not just documented as a known caveat.
 
+## Grounding the LLM explanation in feature attribution (Phase 12)
+
+Added `top_feature` to the cloud detector's own `flags.json` (same leave-one-feature-out idea as Hridya's and Anshika's Phase 8: replace one feature at a time with its column mean, re-run `decision_function()`, see which replacement changes the score the most), and updated `SYSTEM_INSTRUCTION` in `explanation/llm_explain.py` to reference each record's `top_feature` directly in its summary rather than only entity/host/timestamp.
+
+**Confirmed working** on a demo three-layer chain built from real, non-null attribution values pulled from each layer's actual `flags.json` (`incident_demo_01` and the two new genuine scenario chains all have `top_feature: null` themselves, since they're hand-planted rows with no real feature vector behind them — so the verification used one genuine flagged row per layer instead, sharing entity/host/timestamps 4 minutes apart to read as one incident). The model's response named the actual driving feature at every step: called out `Flow IAT Max` for the network leg ("a sudden burst or unusually spaced traffic flow... typical of exfiltration attempts"), the OS syscall-pair feature ("abnormal combination of system calls... often seen when malware injects code"), and `action_CreateAccessKey` for the cloud leg ("creating fresh credentials, enabling continued access"), and used those specifics to build its severity reasoning rather than generic language.
+
+### Important flag for Hridya and Anshika: the shared leave-one-feature-out method may have an inverted sign
+
+While implementing cloud's own version, I compared two ways of picking "the feature that changes the score the most" on 5 real flagged cloud rows:
+
+- **Signed-max (what `network_detector`'s and `os_detector`'s current code does):** `drop = baseline - new_score`, then pick the feature maximizing `drop`. This selects the feature whose neutralization makes the row score *more* anomalous, however slightly.
+- **Absolute-max (what cloud's new code does):** pick the feature maximizing `abs(new_score - baseline)`, regardless of direction.
+
+On every one of the 5 rows tested, **the two methods picked a completely different feature**, and the magnitude of the truly-largest mover (found by absolute-max) was routinely 10-100x bigger than whatever signed-max had selected instead (example: row 44, absolute-max found a feature that shifted the score by 0.1636, while signed-max picked a different feature that only shifted it by -0.0074). That's not close — signed-max is missing the feature that actually drives the anomaly score almost every time, and instead picking one with a tiny, likely-noisy effect.
+
+**Why this happens:** for a genuinely anomalous row, neutralizing the actual causal feature (replacing it with the population average) should make `decision_function` go *up* (score moves toward "normal," since higher = more normal in this codebase's convention — see the `# higher = more normal` comment in every `train_detector.py`). That means the truly informative deltas are large and *positive* (`new_score - baseline`), not negative. `drop = baseline - new_score` is the negative of that, so maximizing `drop` specifically searches for the most-negative-delta feature — the opposite of the signal that actually matters. Most features, when neutralized, nudge the score positive (toward normal, however slightly) or barely move it; maximizing a quantity that's usually negative just finds whichever feature happened to move the score down by the least, which isn't a meaningful "top feature" at all.
+
+**What this means practically:** the `top_feature` values Hridya and Anshika have already pushed for network and OS are very likely not identifying the actual dominant feature per row — worth re-checking with the sign flipped (or switched to `abs()`, matching what cloud's implementation now does) before those values get used anywhere that matters, including feeding into an LLM prompt the way Phase 12 does for cloud. This is exactly the kind of thing Phase 12 exists to catch: grounding the LLM's explanation in attribution data is only as good as the attribution data actually being right.
+
 ## Consolidated results (network + os + cloud/llm)
 
 ### Baseline detection performance

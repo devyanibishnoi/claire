@@ -38,6 +38,26 @@ normalized = 1 - (raw_scores - raw_scores.min()) / (raw_scores.max() - raw_score
 
 original_rows = df.loc[X_test.index].reset_index(drop=True)
 
+X_test_reset = X_test.reset_index(drop=True)
+feature_names = list(X_test_reset.columns)
+column_means = X_test_reset.mean()
+
+
+def get_top_feature(row_series):
+    baseline = model.decision_function(row_series.to_frame().T)[0]
+    max_change = -float("inf")
+    top_feat = None
+    for col in feature_names:
+        modified = row_series.copy()
+        modified[col] = column_means[col]
+        new_score = model.decision_function(modified.to_frame().T)[0]
+        change = abs(new_score - baseline)
+        if change > max_change:
+            max_change = change
+            top_feat = col
+    return top_feat
+
+
 flags = []
 for i in range(len(X_test)):
     if flagged_mask[i]:
@@ -48,6 +68,7 @@ for i in range(len(X_test)):
             "timestamp": row["timestamp"],
             "anomaly_score": round(float(normalized[i]), 3),
             "layer": "cloud",
+            "top_feature": get_top_feature(X_test_reset.iloc[i]),
         })
 
 flags.append({
@@ -56,6 +77,7 @@ flags.append({
     "timestamp": "2026-07-01T10:08:00Z",
     "anomaly_score": 0.95,
     "layer": "cloud",
+    "top_feature": None,
 })
 
 flags.append({
@@ -64,6 +86,7 @@ flags.append({
     "timestamp": "2026-07-02T09:08:00Z",
     "anomaly_score": 0.93,
     "layer": "cloud",
+    "top_feature": None,
 })
 
 flags.append({
@@ -72,6 +95,7 @@ flags.append({
     "timestamp": "2026-07-03T14:08:00Z",
     "anomaly_score": 0.90,
     "layer": "cloud",
+    "top_feature": None,
 })
 
 with open("output/flags.json", "w") as f:

@@ -329,9 +329,9 @@ This is the largest of the three jobs since it covers a detector plus the two pi
 
 ### Phase 12 — Ground the LLM explanation in feature attribution
 
-- [ ] Once Hridya's and Anshika's `top_feature` field is confirmed pushed (their own Phase 8), add the same field to your own cloud detector's `flags.json` output.
-- [ ] Update the prompt in `llm_explain.py` to include each event's `top_feature` alongside the existing fields, and instruct the model to reference the actual contributing feature in its explanation, not only entity, host, and timestamp.
-- [ ] Re-run your existing demo scenario through the updated pipeline and confirm the explanation now names the specific feature that drove each detection.
+- [x] Once Hridya's and Anshika's `top_feature` field is confirmed pushed (their own Phase 8), add the same field to your own cloud detector's `flags.json` output. **Used `abs(new_score - baseline)` instead of their signed version — see the important flag in cloud_llm_metrics.md about why.**
+- [x] Update the prompt in `llm_explain.py` to include each event's `top_feature` alongside the existing fields, and instruct the model to reference the actual contributing feature in its explanation, not only entity, host, and timestamp.
+- [x] Re-run your existing demo scenario through the updated pipeline and confirm the explanation now names the specific feature that drove each detection. **`incident_demo_01`/the new scenario chains all have `top_feature: null` by design (synthetic rows) — verified instead on a demo chain built from real, non-null attribution values pulled from each layer's actual flags.json.**
 - [ ] Commit and push:
   ```
   git add explanation/ detectors/cloud_detector/

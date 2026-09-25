@@ -4,839 +4,959 @@
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-13T04:33:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user13",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-15T02:36:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user19",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-21T03:26:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user3",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-08T14:48:00Z",
     "anomaly_score": 0.689,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user12",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-09T01:04:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user1",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-28T03:25:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user17",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-22T04:21:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user3",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-02T12:18:00Z",
     "anomaly_score": 0.689,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user22",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-06T02:18:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user25",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-12T04:40:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user3",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-02T04:03:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user1",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-10T02:50:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user26",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-04T01:14:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user1",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-25T01:46:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user3",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-09T04:43:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user5",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-18T02:06:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user26",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-14T04:35:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user2",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-28T11:46:00Z",
     "anomaly_score": 0.689,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user29",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-11T03:33:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user9",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-11T02:56:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user18",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-22T01:19:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user5",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-24T03:38:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user18",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-06T04:49:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user1",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-02T04:38:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user16",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-27T04:08:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user1",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-09T03:30:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user2",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-28T03:48:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user5",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-29T02:58:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user22",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-04T02:20:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user3",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-17T10:15:00Z",
     "anomaly_score": 0.689,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user2",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-28T11:32:00Z",
     "anomaly_score": 0.689,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user29",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-23T02:55:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user19",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-22T03:35:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user11",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-12T04:29:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user23",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-02T01:04:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user19",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-05T04:23:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user6",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-30T04:01:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user8",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-04T02:03:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user9",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-02T04:23:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user15",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-18T01:06:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user18",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-10T04:35:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user5",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-09T03:10:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user21",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-06T01:31:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user8",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-11T04:30:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user28",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-23T02:59:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user19",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-06T01:49:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user8",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-07T04:21:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user30",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-12T02:46:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user23",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-29T03:38:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user6",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-30T03:35:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user7",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-27T03:35:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user21",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-12T03:28:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user12",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-07T04:27:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user27",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-23T04:30:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user15",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-11T03:17:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user21",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-17T03:56:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user27",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-25T01:02:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user4",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-01T15:33:00Z",
     "anomaly_score": 0.843,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user3",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-05T16:52:00Z",
     "anomaly_score": 0.689,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user3",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-04T04:49:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user9",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-26T03:26:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user3",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-19T01:47:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user18",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-14T01:20:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user30",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-26T04:04:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user20",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-23T04:00:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user30",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-01T02:10:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user6",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-04T04:36:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user30",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-26T04:19:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user2",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-19T02:40:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user2",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-05T03:33:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user30",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-07T02:56:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user12",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-10T02:53:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user3",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-01T17:30:00Z",
     "anomaly_score": 0.689,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user23",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-11T02:04:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user19",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-04T01:04:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user24",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-24T02:08:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user9",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-11T02:38:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user20",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-21T01:46:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user4",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-28T04:45:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user9",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-20T02:31:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user1",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-06T02:58:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user7",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-28T03:16:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user5",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-13T04:14:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user19",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-22T01:46:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user21",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-22T02:51:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user24",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-22T04:41:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user21",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-17T03:45:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user12",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-09T01:49:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user4",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-10T16:23:00Z",
     "anomaly_score": 0.843,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user5",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-25T03:25:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user21",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-27T04:47:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user29",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-26T03:58:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user26",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-19T02:47:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user2",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-30T14:38:00Z",
     "anomaly_score": 0.689,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user2",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-01T13:29:00Z",
     "anomaly_score": 0.689,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user9",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-23T04:11:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user16",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-15T03:22:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user22",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-20T01:44:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user21",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-17T02:19:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user6",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-30T03:53:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user22",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-09T04:57:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user14",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-01T04:00:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user6",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-22T03:48:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user4",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-01T01:34:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user4",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-14T03:58:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user11",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-17T03:39:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user30",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-25T02:25:00Z",
     "anomaly_score": 0.922,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_DeleteTrail"
   },
   {
     "entity": "user26",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-22T01:32:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user17",
     "host": "arn:aws:iam::123456789012:role/Analyst",
     "timestamp": "2026-06-08T03:58:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user23",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-09T02:43:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user15",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-03T02:57:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user1",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-04T03:53:00Z",
     "anomaly_score": 1.0,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "user14",
     "host": "arn:aws:s3:::reports-bucket",
     "timestamp": "2026-06-23T02:16:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user4",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-17T15:58:00Z",
     "anomaly_score": 0.843,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user11",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-05T03:38:00Z",
     "anomaly_score": 0.911,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_PutUserPolicy"
   },
   {
     "entity": "user28",
     "host": "arn:aws:s3:::user-uploads",
     "timestamp": "2026-06-04T01:24:00Z",
     "anomaly_score": 0.902,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "action_CreateAccessKey"
   },
   {
     "entity": "user20",
     "host": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123",
     "timestamp": "2026-06-17T01:17:00Z",
     "anomaly_score": 0.995,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": "is_unusual_hour"
   },
   {
     "entity": "incident_demo_01",
     "host": "incident_demo_01",
     "timestamp": "2026-07-01T10:08:00Z",
     "anomaly_score": 0.95,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": null
   },
   {
     "entity": "chain_apt_02",
     "host": "HOST-CHAIN-02",
     "timestamp": "2026-07-02T09:08:00Z",
     "anomaly_score": 0.93,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": null
   },
   {
     "entity": "chain_cred_03",
     "host": "HOST-CHAIN-03",
     "timestamp": "2026-07-03T14:08:00Z",
     "anomaly_score": 0.9,
-    "layer": "cloud"
+    "layer": "cloud",
+    "top_feature": null
   }
 ]

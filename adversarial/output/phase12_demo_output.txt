@@ -1,0 +1,15 @@
+**Summary of the likely multi‑stage attack**
+
+| Time (UTC) | Layer | Key indicator ( `top_feature` ) | What it suggests |
+|------------|-------|-------------------------------|-------------------|
+| 10:00 | Network | **Flow IAT Max** – the maximum inter‑arrival time for packets in a flow is far outside the normal range. | A sudden burst or unusually spaced traffic flow, typical of data‑exfiltration attempts, command‑and‑control beacons, or lateral‑movement scans. |
+| 10:04 | OS | **('78', '140')** – an atypical pair of identifiers (e.g., system‑call numbers, event codes, or port numbers) that rarely appear together. | The host is executing an abnormal combination of system calls / privileged actions, often seen when malware injects code, performs credential dumping, or escalates privileges. |
+| 10:08 | Cloud | **action_CreateAccessKey** – a request to generate a new cloud access key. | An attacker who has gained foothold on the host is persisting in the environment by creating fresh credentials, enabling continued access and potential misuse of cloud resources. |
+
+**Interpretation**  
+The sequence points to a coordinated attack:  
+1. Anomalous network traffic likely marks the initial foothold or data‑exfiltration channel.  
+2. Shortly after, the compromised host shows abnormal OS behavior, indicating malicious code execution or privilege escalation.  
+3. The attacker then leverages that foothold to create a new cloud API access key, establishing persistence and the ability to move laterally or exfiltrate cloud data.
+
+**Severity Rating:** **High** – The chain spans network, host, and cloud layers, involves credential creation, and all events have very high anomaly scores (>0.85), indicating a serious breach with potential for data loss and further compromise.
