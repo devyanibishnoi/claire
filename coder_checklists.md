@@ -349,7 +349,7 @@ A visual, interactive demo of the pipeline for your resume and portfolio. This i
 - [x] For Part 2 you need a real API call from the page. **Deviated from this checklist's original plan — see below.**
 - [x] Part 3, a results snapshot section: the key numbers as simple visual cards. Used network 46.9%→74.5%, LLM prompt-injection 25%→0%, fusion 100%/100% (controlled scenarios), and the cross-layer retraining-backfire finding as a wide callout card.
 - [ ] Reuse the architecture diagram and the feature-space convergence figure you already built for the patent disclosure rather than redrawing them. **Skipped — those figures aren't in this repo (they live wherever the patent disclosure work happened), so I built a simple inline architecture strip instead rather than blocking on finding them.**
-- [ ] Deploy it — **not done by me; needs your own GitHub/Vercel login. See deployment note below.**
+- [x] Deploy it. **Live on Vercel (Production Branch set to `demo`).**
 - [ ] Add the live link to your resume, your portfolio site, and the README's project description once it's up.
 
 **Deviation from the original plan, worth reading before deploying:** this checklist assumed Gemini (Phase 0's original pick) and a plain static host with the API key exposed client-side, or a self-managed serverless function. Two things changed that:
@@ -366,7 +366,7 @@ A visual, interactive demo of the pipeline for your resume and portfolio. This i
   Then either enable GitHub Pages on the `demo` branch (static-only, Part 2 shows the config note), or connect the repo to a new Vercel project pointed at the `demo` branch and add `GROQ_API_KEY` under Settings → Environment Variables (fully live, including Part 2) — Vercel can also serve the static page fine, so this alone gives you one link that does everything.
 
 ### Phase 14 — Pull it all together
-- [ ] Collect Hridya's `network_metrics.md` and Anshika's `os_metrics.md` along with your own `cloud_llm_metrics.md` (now including the Phase 8–12 additions) into one consolidated results table — this becomes the core of the patent's "Experimental Validation Results" section.
+- [x] Collect Hridya's `network_metrics.md` and Anshika's `os_metrics.md` along with your own `cloud_llm_metrics.md` (now including the Phase 8–12 additions) into one consolidated results table — this becomes the core of the patent's "Experimental Validation Results" section. **Done — the cross-paradigm, fusion-accuracy, alert-reduction, and attribution-grounding findings are now folded into `cloud_llm_metrics.md`'s "Consolidated results" section, including the sign-bug flag for Hridya/Anshika to check before it's stated as a finished claim.**
 - [ ] Send the current full draft to the faculty guide for feedback.
 - [ ] Review the Diagrams & Claims Lead's first claims draft.
 - [ ] Join the whole-team read-through and handle the final submission.
