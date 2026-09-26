@@ -5,7 +5,7 @@
     "timestamp": "2026-06-20T19:02:51Z",
     "anomaly_score": 0.363,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-008",
@@ -13,7 +13,7 @@
     "timestamp": "2026-06-08T11:19:43Z",
     "anomaly_score": 0.31,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-005",
@@ -21,7 +21,7 @@
     "timestamp": "2026-06-13T14:41:17Z",
     "anomaly_score": 0.559,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-024",
@@ -53,7 +53,7 @@
     "timestamp": "2026-06-05T02:44:21Z",
     "anomaly_score": 0.326,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Subflow Bwd Bytes"
   },
   {
     "entity": "USR-020",
@@ -61,7 +61,7 @@
     "timestamp": "2026-06-28T21:30:01Z",
     "anomaly_score": 0.383,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Flow IAT Max"
   },
   {
     "entity": "USR-007",
@@ -77,7 +77,7 @@
     "timestamp": "2026-06-18T01:57:57Z",
     "anomaly_score": 0.275,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Min"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-015",
@@ -85,7 +85,7 @@
     "timestamp": "2026-06-29T00:18:03Z",
     "anomaly_score": 0.572,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Max"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-019",
@@ -93,7 +93,7 @@
     "timestamp": "2026-06-27T10:05:06Z",
     "anomaly_score": 0.235,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Fwd Packet Length Std"
   },
   {
     "entity": "USR-023",
@@ -101,7 +101,7 @@
     "timestamp": "2026-06-08T11:40:49Z",
     "anomaly_score": 0.514,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-012",
@@ -125,7 +125,7 @@
     "timestamp": "2026-06-08T23:46:56Z",
     "anomaly_score": 0.448,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-019",
@@ -133,7 +133,7 @@
     "timestamp": "2026-06-07T19:21:10Z",
     "anomaly_score": 0.256,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-023",
@@ -141,7 +141,7 @@
     "timestamp": "2026-06-25T05:04:21Z",
     "anomaly_score": 0.461,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-025",
@@ -157,7 +157,7 @@
     "timestamp": "2026-06-23T11:46:24Z",
     "anomaly_score": 0.588,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-013",
@@ -165,7 +165,7 @@
     "timestamp": "2026-06-08T19:02:25Z",
     "anomaly_score": 0.337,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-021",
@@ -173,7 +173,7 @@
     "timestamp": "2026-06-27T09:09:58Z",
     "anomaly_score": 0.418,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-022",
@@ -181,7 +181,7 @@
     "timestamp": "2026-06-14T06:19:25Z",
     "anomaly_score": 0.282,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-006",
@@ -189,7 +189,7 @@
     "timestamp": "2026-06-23T23:57:56Z",
     "anomaly_score": 0.619,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-015",
@@ -197,7 +197,7 @@
     "timestamp": "2026-06-06T06:09:42Z",
     "anomaly_score": 0.457,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-013",
@@ -213,7 +213,7 @@
     "timestamp": "2026-06-22T02:52:52Z",
     "anomaly_score": 0.562,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-008",
@@ -221,7 +221,7 @@
     "timestamp": "2026-06-04T18:28:09Z",
     "anomaly_score": 0.323,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-021",
@@ -237,7 +237,7 @@
     "timestamp": "2026-06-26T06:07:47Z",
     "anomaly_score": 0.293,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-009",
@@ -261,7 +261,7 @@
     "timestamp": "2026-06-14T07:28:28Z",
     "anomaly_score": 0.28,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-022",
@@ -277,7 +277,7 @@
     "timestamp": "2026-06-02T10:46:29Z",
     "anomaly_score": 0.381,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Flow Packets/s"
   },
   {
     "entity": "USR-017",
@@ -285,7 +285,7 @@
     "timestamp": "2026-06-28T07:34:13Z",
     "anomaly_score": 0.688,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-024",
@@ -293,7 +293,7 @@
     "timestamp": "2026-06-15T11:11:22Z",
     "anomaly_score": 0.267,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-004",
@@ -309,7 +309,7 @@
     "timestamp": "2026-06-14T04:19:47Z",
     "anomaly_score": 0.305,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-015",
@@ -317,7 +317,7 @@
     "timestamp": "2026-06-29T07:48:35Z",
     "anomaly_score": 0.38,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-024",
@@ -325,7 +325,7 @@
     "timestamp": "2026-06-21T19:59:43Z",
     "anomaly_score": 0.236,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-009",
@@ -349,7 +349,7 @@
     "timestamp": "2026-06-09T21:40:06Z",
     "anomaly_score": 0.274,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-004",
@@ -357,7 +357,7 @@
     "timestamp": "2026-06-10T22:10:07Z",
     "anomaly_score": 0.421,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-012",
@@ -365,7 +365,7 @@
     "timestamp": "2026-06-22T02:15:34Z",
     "anomaly_score": 0.457,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-005",
@@ -373,7 +373,7 @@
     "timestamp": "2026-06-10T23:45:34Z",
     "anomaly_score": 0.257,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-016",
@@ -381,7 +381,7 @@
     "timestamp": "2026-06-11T09:34:52Z",
     "anomaly_score": 0.228,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Flow Bytes/s"
   },
   {
     "entity": "USR-018",
@@ -389,7 +389,7 @@
     "timestamp": "2026-06-20T17:08:20Z",
     "anomaly_score": 0.255,
     "layer": "network",
-    "top_feature": "Total Backward Packets"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-017",
@@ -421,7 +421,7 @@
     "timestamp": "2026-06-02T02:55:42Z",
     "anomaly_score": 0.394,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-019",
@@ -429,7 +429,7 @@
     "timestamp": "2026-06-30T09:01:22Z",
     "anomaly_score": 0.54,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-001",
@@ -437,7 +437,7 @@
     "timestamp": "2026-06-25T05:15:55Z",
     "anomaly_score": 0.459,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-003",
@@ -453,7 +453,7 @@
     "timestamp": "2026-06-02T07:06:56Z",
     "anomaly_score": 0.495,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-003",
@@ -469,7 +469,7 @@
     "timestamp": "2026-06-12T18:26:22Z",
     "anomaly_score": 0.307,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-008",
@@ -477,7 +477,7 @@
     "timestamp": "2026-06-05T22:57:38Z",
     "anomaly_score": 0.634,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-008",
@@ -493,7 +493,7 @@
     "timestamp": "2026-06-01T14:19:06Z",
     "anomaly_score": 0.584,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-015",
@@ -501,7 +501,7 @@
     "timestamp": "2026-06-19T21:07:53Z",
     "anomaly_score": 0.266,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-013",
@@ -509,7 +509,7 @@
     "timestamp": "2026-06-13T21:46:19Z",
     "anomaly_score": 0.537,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-024",
@@ -517,7 +517,7 @@
     "timestamp": "2026-06-29T16:04:14Z",
     "anomaly_score": 0.304,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-011",
@@ -525,7 +525,7 @@
     "timestamp": "2026-06-25T04:45:25Z",
     "anomaly_score": 0.549,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Max Packet Length"
   },
   {
     "entity": "USR-007",
@@ -541,7 +541,7 @@
     "timestamp": "2026-06-05T06:25:48Z",
     "anomaly_score": 0.777,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-018",
@@ -549,7 +549,7 @@
     "timestamp": "2026-06-20T01:06:36Z",
     "anomaly_score": 0.348,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-015",
@@ -565,7 +565,7 @@
     "timestamp": "2026-06-20T20:49:25Z",
     "anomaly_score": 0.341,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-008",
@@ -581,7 +581,7 @@
     "timestamp": "2026-06-17T10:21:53Z",
     "anomaly_score": 0.332,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-025",
@@ -589,7 +589,7 @@
     "timestamp": "2026-06-22T14:41:47Z",
     "anomaly_score": 0.507,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-016",
@@ -597,7 +597,7 @@
     "timestamp": "2026-06-19T05:15:34Z",
     "anomaly_score": 0.506,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-013",
@@ -605,7 +605,7 @@
     "timestamp": "2026-06-29T12:32:49Z",
     "anomaly_score": 0.491,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-002",
@@ -613,7 +613,7 @@
     "timestamp": "2026-06-15T14:24:04Z",
     "anomaly_score": 0.252,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-006",
@@ -621,7 +621,7 @@
     "timestamp": "2026-06-10T16:20:32Z",
     "anomaly_score": 0.304,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Bwd Packet Length Min"
   },
   {
     "entity": "USR-015",
@@ -629,7 +629,7 @@
     "timestamp": "2026-06-28T16:24:18Z",
     "anomaly_score": 0.345,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-014",
@@ -637,7 +637,7 @@
     "timestamp": "2026-06-21T09:06:28Z",
     "anomaly_score": 0.484,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-024",
@@ -653,7 +653,7 @@
     "timestamp": "2026-06-15T18:54:06Z",
     "anomaly_score": 0.324,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-007",
@@ -661,7 +661,7 @@
     "timestamp": "2026-06-09T21:25:21Z",
     "anomaly_score": 0.344,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-002",
@@ -677,7 +677,7 @@
     "timestamp": "2026-06-30T11:30:36Z",
     "anomaly_score": 0.653,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Fwd Header Length.1"
   },
   {
     "entity": "USR-024",
@@ -685,7 +685,7 @@
     "timestamp": "2026-06-18T10:28:36Z",
     "anomaly_score": 0.456,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-002",
@@ -693,7 +693,7 @@
     "timestamp": "2026-06-19T17:58:34Z",
     "anomaly_score": 0.301,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-017",
@@ -701,7 +701,7 @@
     "timestamp": "2026-06-09T10:30:51Z",
     "anomaly_score": 0.447,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-006",
@@ -709,7 +709,7 @@
     "timestamp": "2026-06-15T20:45:47Z",
     "anomaly_score": 0.271,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-002",
@@ -717,7 +717,7 @@
     "timestamp": "2026-06-18T04:57:53Z",
     "anomaly_score": 0.239,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-020",
@@ -789,7 +789,7 @@
     "timestamp": "2026-06-26T08:05:06Z",
     "anomaly_score": 0.368,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Packet Length Mean"
   },
   {
     "entity": "USR-003",
@@ -805,7 +805,7 @@
     "timestamp": "2026-06-28T20:16:23Z",
     "anomaly_score": 0.408,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-020",
@@ -813,7 +813,7 @@
     "timestamp": "2026-06-23T22:50:17Z",
     "anomaly_score": 0.237,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_forward"
   },
   {
     "entity": "USR-021",
@@ -821,7 +821,7 @@
     "timestamp": "2026-06-16T13:56:52Z",
     "anomaly_score": 0.492,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Max"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-017",
@@ -829,7 +829,7 @@
     "timestamp": "2026-06-20T09:24:27Z",
     "anomaly_score": 0.486,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-018",
@@ -837,7 +837,7 @@
     "timestamp": "2026-06-15T13:44:00Z",
     "anomaly_score": 0.277,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-022",
@@ -853,7 +853,7 @@
     "timestamp": "2026-06-14T23:08:45Z",
     "anomaly_score": 0.647,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-009",
@@ -861,7 +861,7 @@
     "timestamp": "2026-06-14T11:58:14Z",
     "anomaly_score": 0.316,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-020",
@@ -869,7 +869,7 @@
     "timestamp": "2026-06-25T20:21:39Z",
     "anomaly_score": 0.34,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-022",
@@ -893,7 +893,7 @@
     "timestamp": "2026-06-17T07:08:03Z",
     "anomaly_score": 0.298,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Bwd Packet Length Min"
   },
   {
     "entity": "USR-002",
@@ -901,7 +901,7 @@
     "timestamp": "2026-06-13T12:56:35Z",
     "anomaly_score": 0.526,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Total Length of Bwd Packets"
   },
   {
     "entity": "USR-011",
@@ -933,7 +933,7 @@
     "timestamp": "2026-06-21T13:38:00Z",
     "anomaly_score": 0.469,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-001",
@@ -957,7 +957,7 @@
     "timestamp": "2026-06-07T20:41:29Z",
     "anomaly_score": 0.24,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-018",
@@ -973,7 +973,7 @@
     "timestamp": "2026-06-22T12:08:48Z",
     "anomaly_score": 0.65,
     "layer": "network",
-    "top_feature": "PSH Flag Count"
+    "top_feature": "Avg Fwd Segment Size"
   },
   {
     "entity": "USR-010",
@@ -989,7 +989,7 @@
     "timestamp": "2026-06-18T13:20:27Z",
     "anomaly_score": 0.395,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd Packet Length Std"
   },
   {
     "entity": "USR-014",
@@ -997,7 +997,7 @@
     "timestamp": "2026-06-28T09:04:05Z",
     "anomaly_score": 0.273,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-024",
@@ -1005,7 +1005,7 @@
     "timestamp": "2026-06-03T02:48:46Z",
     "anomaly_score": 0.592,
     "layer": "network",
-    "top_feature": "PSH Flag Count"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-013",
@@ -1013,7 +1013,7 @@
     "timestamp": "2026-06-23T01:20:31Z",
     "anomaly_score": 0.225,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Min"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-016",
@@ -1021,7 +1021,7 @@
     "timestamp": "2026-06-09T15:06:08Z",
     "anomaly_score": 0.495,
     "layer": "network",
-    "top_feature": "Packet Length Mean"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-008",
@@ -1029,7 +1029,7 @@
     "timestamp": "2026-06-16T01:40:41Z",
     "anomaly_score": 0.542,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-007",
@@ -1045,7 +1045,7 @@
     "timestamp": "2026-06-01T19:47:35Z",
     "anomaly_score": 0.489,
     "layer": "network",
-    "top_feature": "Min Packet Length"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-008",
@@ -1053,7 +1053,7 @@
     "timestamp": "2026-06-17T05:17:34Z",
     "anomaly_score": 0.241,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-008",
@@ -1069,7 +1069,7 @@
     "timestamp": "2026-06-17T22:58:40Z",
     "anomaly_score": 0.317,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-017",
@@ -1077,7 +1077,7 @@
     "timestamp": "2026-06-04T20:43:41Z",
     "anomaly_score": 0.247,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-011",
@@ -1101,7 +1101,7 @@
     "timestamp": "2026-06-26T21:45:34Z",
     "anomaly_score": 0.245,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-020",
@@ -1117,7 +1117,7 @@
     "timestamp": "2026-06-29T12:07:28Z",
     "anomaly_score": 0.307,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-024",
@@ -1125,7 +1125,7 @@
     "timestamp": "2026-06-22T21:23:31Z",
     "anomaly_score": 0.289,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-023",
@@ -1149,7 +1149,7 @@
     "timestamp": "2026-06-22T02:10:22Z",
     "anomaly_score": 0.299,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-011",
@@ -1157,7 +1157,7 @@
     "timestamp": "2026-06-01T16:48:06Z",
     "anomaly_score": 0.471,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "FIN Flag Count"
   },
   {
     "entity": "USR-022",
@@ -1165,7 +1165,7 @@
     "timestamp": "2026-06-27T12:49:38Z",
     "anomaly_score": 0.236,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-010",
@@ -1173,7 +1173,7 @@
     "timestamp": "2026-06-09T13:45:09Z",
     "anomaly_score": 0.621,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-018",
@@ -1181,7 +1181,7 @@
     "timestamp": "2026-06-28T16:15:32Z",
     "anomaly_score": 0.48,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-007",
@@ -1189,7 +1189,7 @@
     "timestamp": "2026-06-12T12:17:34Z",
     "anomaly_score": 0.415,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-014",
@@ -1197,7 +1197,7 @@
     "timestamp": "2026-06-17T15:44:10Z",
     "anomaly_score": 0.233,
     "layer": "network",
-    "top_feature": "Total Backward Packets"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-022",
@@ -1221,7 +1221,7 @@
     "timestamp": "2026-06-30T21:16:48Z",
     "anomaly_score": 0.7,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-010",
@@ -1229,7 +1229,7 @@
     "timestamp": "2026-06-30T10:20:22Z",
     "anomaly_score": 0.725,
     "layer": "network",
-    "top_feature": "PSH Flag Count"
+    "top_feature": "Avg Fwd Segment Size"
   },
   {
     "entity": "USR-014",
@@ -1237,7 +1237,7 @@
     "timestamp": "2026-06-15T09:35:37Z",
     "anomaly_score": 0.529,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-015",
@@ -1261,7 +1261,7 @@
     "timestamp": "2026-06-09T07:21:23Z",
     "anomaly_score": 0.25,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-011",
@@ -1277,7 +1277,7 @@
     "timestamp": "2026-06-24T15:40:29Z",
     "anomaly_score": 0.418,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Flow IAT Max"
   },
   {
     "entity": "USR-008",
@@ -1285,7 +1285,7 @@
     "timestamp": "2026-06-16T10:05:59Z",
     "anomaly_score": 0.631,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-010",
@@ -1293,7 +1293,7 @@
     "timestamp": "2026-06-24T16:13:59Z",
     "anomaly_score": 0.291,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Bwd Packet Length Min"
   },
   {
     "entity": "USR-014",
@@ -1301,7 +1301,7 @@
     "timestamp": "2026-06-15T18:31:00Z",
     "anomaly_score": 0.381,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-023",
@@ -1309,7 +1309,7 @@
     "timestamp": "2026-06-03T13:35:51Z",
     "anomaly_score": 0.316,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Fwd IAT Total"
   },
   {
     "entity": "USR-023",
@@ -1317,7 +1317,7 @@
     "timestamp": "2026-06-20T19:02:45Z",
     "anomaly_score": 0.777,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Avg Fwd Segment Size"
   },
   {
     "entity": "USR-001",
@@ -1341,7 +1341,7 @@
     "timestamp": "2026-06-20T22:52:29Z",
     "anomaly_score": 0.269,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-014",
@@ -1349,7 +1349,7 @@
     "timestamp": "2026-06-19T16:15:03Z",
     "anomaly_score": 0.305,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-017",
@@ -1357,7 +1357,7 @@
     "timestamp": "2026-06-17T21:57:51Z",
     "anomaly_score": 0.281,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-002",
@@ -1373,7 +1373,7 @@
     "timestamp": "2026-06-04T02:40:03Z",
     "anomaly_score": 0.369,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-022",
@@ -1389,7 +1389,7 @@
     "timestamp": "2026-06-19T01:09:51Z",
     "anomaly_score": 0.351,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-020",
@@ -1405,7 +1405,7 @@
     "timestamp": "2026-06-16T16:17:25Z",
     "anomaly_score": 0.309,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-008",
@@ -1413,7 +1413,7 @@
     "timestamp": "2026-06-01T22:56:13Z",
     "anomaly_score": 0.45,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-025",
@@ -1421,7 +1421,7 @@
     "timestamp": "2026-06-12T20:52:17Z",
     "anomaly_score": 0.619,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-017",
@@ -1429,7 +1429,7 @@
     "timestamp": "2026-06-05T11:03:30Z",
     "anomaly_score": 0.559,
     "layer": "network",
-    "top_feature": "Packet Length Std"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-018",
@@ -1437,7 +1437,7 @@
     "timestamp": "2026-06-28T20:39:37Z",
     "anomaly_score": 0.621,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Fwd Header Length.1"
   },
   {
     "entity": "USR-003",
@@ -1453,7 +1453,7 @@
     "timestamp": "2026-06-25T13:38:09Z",
     "anomaly_score": 0.485,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-016",
@@ -1461,7 +1461,7 @@
     "timestamp": "2026-06-14T16:18:28Z",
     "anomaly_score": 0.375,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-013",
@@ -1477,7 +1477,7 @@
     "timestamp": "2026-06-15T02:15:58Z",
     "anomaly_score": 0.806,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-001",
@@ -1485,7 +1485,7 @@
     "timestamp": "2026-06-06T03:18:47Z",
     "anomaly_score": 0.475,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-013",
@@ -1509,7 +1509,7 @@
     "timestamp": "2026-06-02T20:52:16Z",
     "anomaly_score": 0.301,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-015",
@@ -1525,7 +1525,7 @@
     "timestamp": "2026-06-19T07:55:00Z",
     "anomaly_score": 0.295,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-019",
@@ -1557,7 +1557,7 @@
     "timestamp": "2026-06-19T09:29:13Z",
     "anomaly_score": 0.803,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-005",
@@ -1565,7 +1565,7 @@
     "timestamp": "2026-06-01T23:08:32Z",
     "anomaly_score": 0.24,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-025",
@@ -1581,7 +1581,7 @@
     "timestamp": "2026-06-08T23:44:02Z",
     "anomaly_score": 0.362,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-025",
@@ -1597,7 +1597,7 @@
     "timestamp": "2026-06-18T01:46:46Z",
     "anomaly_score": 0.391,
     "layer": "network",
-    "top_feature": "Flow IAT Std"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-020",
@@ -1629,7 +1629,7 @@
     "timestamp": "2026-06-04T02:37:12Z",
     "anomaly_score": 0.324,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-012",
@@ -1645,7 +1645,7 @@
     "timestamp": "2026-06-02T06:54:25Z",
     "anomaly_score": 0.317,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Fwd IAT Total"
   },
   {
     "entity": "USR-004",
@@ -1677,7 +1677,7 @@
     "timestamp": "2026-06-10T00:41:10Z",
     "anomaly_score": 0.611,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Fwd IAT Max"
   },
   {
     "entity": "USR-019",
@@ -1701,7 +1701,7 @@
     "timestamp": "2026-06-27T13:28:52Z",
     "anomaly_score": 0.565,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-002",
@@ -1709,7 +1709,7 @@
     "timestamp": "2026-06-20T14:40:23Z",
     "anomaly_score": 0.501,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-012",
@@ -1717,7 +1717,7 @@
     "timestamp": "2026-06-13T02:00:33Z",
     "anomaly_score": 0.622,
     "layer": "network",
-    "top_feature": "Active Std"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-003",
@@ -1725,7 +1725,7 @@
     "timestamp": "2026-06-29T13:06:52Z",
     "anomaly_score": 0.44,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-001",
@@ -1733,7 +1733,7 @@
     "timestamp": "2026-06-05T22:29:03Z",
     "anomaly_score": 0.486,
     "layer": "network",
-    "top_feature": "Total Backward Packets"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-016",
@@ -1741,7 +1741,7 @@
     "timestamp": "2026-06-23T10:20:51Z",
     "anomaly_score": 0.481,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-015",
@@ -1749,7 +1749,7 @@
     "timestamp": "2026-06-25T12:57:18Z",
     "anomaly_score": 0.489,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-020",
@@ -1773,7 +1773,7 @@
     "timestamp": "2026-06-07T07:51:13Z",
     "anomaly_score": 0.329,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Init_Win_bytes_forward"
   },
   {
     "entity": "USR-025",
@@ -1781,7 +1781,7 @@
     "timestamp": "2026-06-13T10:25:48Z",
     "anomaly_score": 0.699,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-019",
@@ -1797,7 +1797,7 @@
     "timestamp": "2026-06-30T14:57:47Z",
     "anomaly_score": 0.366,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-006",
@@ -1813,7 +1813,7 @@
     "timestamp": "2026-06-23T09:36:30Z",
     "anomaly_score": 0.297,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Bwd Packet Length Min"
   },
   {
     "entity": "USR-020",
@@ -1821,7 +1821,7 @@
     "timestamp": "2026-06-05T05:58:02Z",
     "anomaly_score": 0.414,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd Packet Length Max"
   },
   {
     "entity": "USR-023",
@@ -1829,7 +1829,7 @@
     "timestamp": "2026-06-20T07:43:53Z",
     "anomaly_score": 0.362,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-018",
@@ -1845,7 +1845,7 @@
     "timestamp": "2026-06-30T03:04:37Z",
     "anomaly_score": 0.482,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-007",
@@ -1861,7 +1861,7 @@
     "timestamp": "2026-06-09T21:36:23Z",
     "anomaly_score": 0.249,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-008",
@@ -1869,7 +1869,7 @@
     "timestamp": "2026-06-19T22:15:15Z",
     "anomaly_score": 0.474,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-023",
@@ -1877,7 +1877,7 @@
     "timestamp": "2026-06-18T22:31:34Z",
     "anomaly_score": 0.6,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-016",
@@ -1885,7 +1885,7 @@
     "timestamp": "2026-06-27T16:57:27Z",
     "anomaly_score": 0.388,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Flow IAT Max"
   },
   {
     "entity": "USR-019",
@@ -1901,7 +1901,7 @@
     "timestamp": "2026-06-13T15:24:29Z",
     "anomaly_score": 0.399,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Flow IAT Max"
   },
   {
     "entity": "USR-012",
@@ -1909,7 +1909,7 @@
     "timestamp": "2026-06-11T21:01:37Z",
     "anomaly_score": 0.854,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-009",
@@ -1917,7 +1917,7 @@
     "timestamp": "2026-06-26T14:07:25Z",
     "anomaly_score": 0.245,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-008",
@@ -1941,7 +1941,7 @@
     "timestamp": "2026-06-23T09:29:36Z",
     "anomaly_score": 0.381,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-017",
@@ -1957,7 +1957,7 @@
     "timestamp": "2026-06-09T23:43:10Z",
     "anomaly_score": 0.464,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-008",
@@ -1973,7 +1973,7 @@
     "timestamp": "2026-06-08T21:25:56Z",
     "anomaly_score": 0.581,
     "layer": "network",
-    "top_feature": "Total Backward Packets"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-006",
@@ -1981,7 +1981,7 @@
     "timestamp": "2026-06-15T14:58:01Z",
     "anomaly_score": 0.476,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-005",
@@ -1989,7 +1989,7 @@
     "timestamp": "2026-06-13T02:59:30Z",
     "anomaly_score": 0.689,
     "layer": "network",
-    "top_feature": "PSH Flag Count"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-002",
@@ -1997,7 +1997,7 @@
     "timestamp": "2026-06-03T23:49:49Z",
     "anomaly_score": 0.67,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-025",
@@ -2005,7 +2005,7 @@
     "timestamp": "2026-06-28T03:30:25Z",
     "anomaly_score": 0.613,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-002",
@@ -2013,7 +2013,7 @@
     "timestamp": "2026-06-11T08:52:03Z",
     "anomaly_score": 0.606,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Active Min"
   },
   {
     "entity": "USR-019",
@@ -2021,7 +2021,7 @@
     "timestamp": "2026-06-20T15:46:16Z",
     "anomaly_score": 0.286,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Fwd Packet Length Std"
   },
   {
     "entity": "USR-021",
@@ -2029,7 +2029,7 @@
     "timestamp": "2026-06-24T16:16:09Z",
     "anomaly_score": 0.29,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-022",
@@ -2045,7 +2045,7 @@
     "timestamp": "2026-06-18T10:34:58Z",
     "anomaly_score": 0.548,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-005",
@@ -2053,7 +2053,7 @@
     "timestamp": "2026-06-13T00:19:20Z",
     "anomaly_score": 0.275,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-003",
@@ -2069,7 +2069,7 @@
     "timestamp": "2026-06-25T08:21:43Z",
     "anomaly_score": 0.444,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-018",
@@ -2077,7 +2077,7 @@
     "timestamp": "2026-06-19T16:50:07Z",
     "anomaly_score": 0.473,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-014",
@@ -2085,7 +2085,7 @@
     "timestamp": "2026-06-06T07:43:28Z",
     "anomaly_score": 0.485,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-020",
@@ -2093,7 +2093,7 @@
     "timestamp": "2026-06-07T18:03:02Z",
     "anomaly_score": 0.228,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-020",
@@ -2101,7 +2101,7 @@
     "timestamp": "2026-06-27T05:45:54Z",
     "anomaly_score": 0.435,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-025",
@@ -2109,7 +2109,7 @@
     "timestamp": "2026-06-11T07:42:38Z",
     "anomaly_score": 0.308,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-010",
@@ -2117,7 +2117,7 @@
     "timestamp": "2026-06-01T09:32:37Z",
     "anomaly_score": 0.44,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-019",
@@ -2133,7 +2133,7 @@
     "timestamp": "2026-06-14T10:37:48Z",
     "anomaly_score": 0.681,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Total Backward Packets"
   },
   {
     "entity": "USR-016",
@@ -2141,7 +2141,7 @@
     "timestamp": "2026-06-29T23:08:56Z",
     "anomaly_score": 0.422,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-010",
@@ -2149,7 +2149,7 @@
     "timestamp": "2026-06-18T03:06:53Z",
     "anomaly_score": 0.374,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-008",
@@ -2173,7 +2173,7 @@
     "timestamp": "2026-06-09T08:57:52Z",
     "anomaly_score": 0.244,
     "layer": "network",
-    "top_feature": "Bwd IAT Std"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-019",
@@ -2181,7 +2181,7 @@
     "timestamp": "2026-06-22T14:23:29Z",
     "anomaly_score": 0.266,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-008",
@@ -2197,7 +2197,7 @@
     "timestamp": "2026-06-18T05:00:43Z",
     "anomaly_score": 0.496,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-004",
@@ -2221,7 +2221,7 @@
     "timestamp": "2026-06-09T18:40:24Z",
     "anomaly_score": 0.625,
     "layer": "network",
-    "top_feature": "SYN Flag Count"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-018",
@@ -2237,7 +2237,7 @@
     "timestamp": "2026-06-05T23:19:38Z",
     "anomaly_score": 0.352,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-015",
@@ -2245,7 +2245,7 @@
     "timestamp": "2026-06-19T09:38:05Z",
     "anomaly_score": 0.773,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Avg Fwd Segment Size"
   },
   {
     "entity": "USR-003",
@@ -2253,7 +2253,7 @@
     "timestamp": "2026-06-26T08:32:22Z",
     "anomaly_score": 0.651,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Total Length of Bwd Packets"
   },
   {
     "entity": "USR-022",
@@ -2277,7 +2277,7 @@
     "timestamp": "2026-06-09T06:24:32Z",
     "anomaly_score": 0.622,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Subflow Fwd Bytes"
   },
   {
     "entity": "USR-025",
@@ -2285,7 +2285,7 @@
     "timestamp": "2026-06-23T11:44:08Z",
     "anomaly_score": 0.264,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-017",
@@ -2301,7 +2301,7 @@
     "timestamp": "2026-06-01T19:44:08Z",
     "anomaly_score": 0.672,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-003",
@@ -2309,7 +2309,7 @@
     "timestamp": "2026-06-04T01:48:50Z",
     "anomaly_score": 0.353,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-016",
@@ -2325,7 +2325,7 @@
     "timestamp": "2026-06-13T22:42:26Z",
     "anomaly_score": 0.497,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-006",
@@ -2333,7 +2333,7 @@
     "timestamp": "2026-06-12T09:48:59Z",
     "anomaly_score": 0.871,
     "layer": "network",
-    "top_feature": "Active Max"
+    "top_feature": "Fwd Header Length.1"
   },
   {
     "entity": "USR-013",
@@ -2341,7 +2341,7 @@
     "timestamp": "2026-06-14T10:08:05Z",
     "anomaly_score": 0.495,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-018",
@@ -2349,7 +2349,7 @@
     "timestamp": "2026-06-30T01:30:51Z",
     "anomaly_score": 0.544,
     "layer": "network",
-    "top_feature": "Init_Win_bytes_backward"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-016",
@@ -2357,7 +2357,7 @@
     "timestamp": "2026-06-24T04:27:33Z",
     "anomaly_score": 0.433,
     "layer": "network",
-    "top_feature": "Subflow Bwd Bytes"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-009",
@@ -2365,7 +2365,7 @@
     "timestamp": "2026-06-30T21:39:13Z",
     "anomaly_score": 0.494,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-023",
@@ -2381,7 +2381,7 @@
     "timestamp": "2026-06-22T17:59:54Z",
     "anomaly_score": 0.298,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-020",
@@ -2405,7 +2405,7 @@
     "timestamp": "2026-06-02T17:16:34Z",
     "anomaly_score": 0.435,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-018",
@@ -2413,7 +2413,7 @@
     "timestamp": "2026-06-30T03:34:10Z",
     "anomaly_score": 0.407,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-015",
@@ -2421,7 +2421,7 @@
     "timestamp": "2026-06-11T14:25:32Z",
     "anomaly_score": 0.522,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-010",
@@ -2429,7 +2429,7 @@
     "timestamp": "2026-06-16T14:36:55Z",
     "anomaly_score": 0.423,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-005",
@@ -2453,7 +2453,7 @@
     "timestamp": "2026-06-16T07:30:57Z",
     "anomaly_score": 0.332,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-025",
@@ -2469,7 +2469,7 @@
     "timestamp": "2026-06-03T03:37:15Z",
     "anomaly_score": 0.789,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-024",
@@ -2477,7 +2477,7 @@
     "timestamp": "2026-06-03T20:44:04Z",
     "anomaly_score": 0.286,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-010",
@@ -2485,7 +2485,7 @@
     "timestamp": "2026-06-16T02:11:34Z",
     "anomaly_score": 0.506,
     "layer": "network",
-    "top_feature": "Packet Length Mean"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-019",
@@ -2493,7 +2493,7 @@
     "timestamp": "2026-06-15T09:24:55Z",
     "anomaly_score": 0.409,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-015",
@@ -2501,7 +2501,7 @@
     "timestamp": "2026-06-27T15:38:53Z",
     "anomaly_score": 0.523,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-008",
@@ -2517,7 +2517,7 @@
     "timestamp": "2026-06-28T06:28:39Z",
     "anomaly_score": 0.313,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-005",
@@ -2525,7 +2525,7 @@
     "timestamp": "2026-06-15T02:06:49Z",
     "anomaly_score": 0.63,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Fwd Header Length.1"
   },
   {
     "entity": "USR-019",
@@ -2541,7 +2541,7 @@
     "timestamp": "2026-06-18T17:53:40Z",
     "anomaly_score": 0.525,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-001",
@@ -2565,7 +2565,7 @@
     "timestamp": "2026-06-05T14:24:07Z",
     "anomaly_score": 0.595,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Fwd IAT Min"
   },
   {
     "entity": "USR-023",
@@ -2581,7 +2581,7 @@
     "timestamp": "2026-06-22T13:55:15Z",
     "anomaly_score": 0.269,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Flow IAT Min"
   },
   {
     "entity": "USR-023",
@@ -2597,7 +2597,7 @@
     "timestamp": "2026-06-29T15:35:28Z",
     "anomaly_score": 0.73,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Min"
+    "top_feature": "Fwd IAT Mean"
   },
   {
     "entity": "USR-021",
@@ -2605,7 +2605,7 @@
     "timestamp": "2026-06-17T09:34:28Z",
     "anomaly_score": 0.581,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-022",
@@ -2621,7 +2621,7 @@
     "timestamp": "2026-06-04T16:20:15Z",
     "anomaly_score": 0.526,
     "layer": "network",
-    "top_feature": "Min Packet Length"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-024",
@@ -2629,7 +2629,7 @@
     "timestamp": "2026-06-20T09:30:01Z",
     "anomaly_score": 0.59,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-014",
@@ -2637,7 +2637,7 @@
     "timestamp": "2026-06-29T21:10:46Z",
     "anomaly_score": 0.39,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Flow IAT Max"
   },
   {
     "entity": "USR-025",
@@ -2645,7 +2645,7 @@
     "timestamp": "2026-06-25T10:42:32Z",
     "anomaly_score": 0.289,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-021",
@@ -2661,7 +2661,7 @@
     "timestamp": "2026-06-28T07:35:36Z",
     "anomaly_score": 0.226,
     "layer": "network",
-    "top_feature": "Total Backward Packets"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-011",
@@ -2669,7 +2669,7 @@
     "timestamp": "2026-06-05T16:10:15Z",
     "anomaly_score": 0.307,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-012",
@@ -2677,7 +2677,7 @@
     "timestamp": "2026-06-03T12:39:27Z",
     "anomaly_score": 0.228,
     "layer": "network",
-    "top_feature": "Total Backward Packets"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-005",
@@ -2693,7 +2693,7 @@
     "timestamp": "2026-06-06T16:06:07Z",
     "anomaly_score": 0.378,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Bwd Header Length"
   },
   {
     "entity": "USR-006",
@@ -2701,7 +2701,7 @@
     "timestamp": "2026-06-28T11:20:14Z",
     "anomaly_score": 0.401,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Flow IAT Max"
   },
   {
     "entity": "USR-003",
@@ -2709,7 +2709,7 @@
     "timestamp": "2026-06-28T08:22:56Z",
     "anomaly_score": 0.54,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Max"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-020",
@@ -2717,7 +2717,7 @@
     "timestamp": "2026-06-21T15:46:02Z",
     "anomaly_score": 0.366,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Init_Win_bytes_forward"
   },
   {
     "entity": "USR-009",
@@ -2725,7 +2725,7 @@
     "timestamp": "2026-06-29T14:32:57Z",
     "anomaly_score": 0.321,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-001",
@@ -2733,7 +2733,7 @@
     "timestamp": "2026-06-09T22:43:01Z",
     "anomaly_score": 0.486,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Subflow Bwd Bytes"
   },
   {
     "entity": "USR-021",
@@ -2749,7 +2749,7 @@
     "timestamp": "2026-06-10T23:14:19Z",
     "anomaly_score": 0.455,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Fwd IAT Total"
   },
   {
     "entity": "USR-010",
@@ -2765,7 +2765,7 @@
     "timestamp": "2026-06-21T17:01:30Z",
     "anomaly_score": 0.748,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-002",
@@ -2773,7 +2773,7 @@
     "timestamp": "2026-06-03T04:49:23Z",
     "anomaly_score": 0.352,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Bwd Header Length"
   },
   {
     "entity": "USR-024",
@@ -2797,7 +2797,7 @@
     "timestamp": "2026-06-12T12:28:04Z",
     "anomaly_score": 0.536,
     "layer": "network",
-    "top_feature": "Subflow Fwd Packets"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-020",
@@ -2805,7 +2805,7 @@
     "timestamp": "2026-06-24T20:54:09Z",
     "anomaly_score": 0.341,
     "layer": "network",
-    "top_feature": "Total Backward Packets"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-021",
@@ -2813,7 +2813,7 @@
     "timestamp": "2026-06-12T21:57:43Z",
     "anomaly_score": 0.344,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-004",
@@ -2869,7 +2869,7 @@
     "timestamp": "2026-06-17T16:18:44Z",
     "anomaly_score": 0.431,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-003",
@@ -2893,7 +2893,7 @@
     "timestamp": "2026-06-25T20:24:14Z",
     "anomaly_score": 0.31,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-009",
@@ -2909,7 +2909,7 @@
     "timestamp": "2026-06-04T02:26:38Z",
     "anomaly_score": 0.359,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-009",
@@ -2933,7 +2933,7 @@
     "timestamp": "2026-06-12T14:12:49Z",
     "anomaly_score": 0.465,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "FIN Flag Count"
   },
   {
     "entity": "USR-008",
@@ -2941,7 +2941,7 @@
     "timestamp": "2026-06-09T13:38:50Z",
     "anomaly_score": 0.288,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-020",
@@ -2949,7 +2949,7 @@
     "timestamp": "2026-06-27T19:11:19Z",
     "anomaly_score": 0.528,
     "layer": "network",
-    "top_feature": "Total Backward Packets"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-018",
@@ -2957,7 +2957,7 @@
     "timestamp": "2026-06-10T22:15:30Z",
     "anomaly_score": 0.377,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-011",
@@ -2965,7 +2965,7 @@
     "timestamp": "2026-06-05T02:14:56Z",
     "anomaly_score": 0.242,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-021",
@@ -2973,7 +2973,7 @@
     "timestamp": "2026-06-01T17:35:37Z",
     "anomaly_score": 0.323,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-021",
@@ -2997,7 +2997,7 @@
     "timestamp": "2026-06-25T15:46:21Z",
     "anomaly_score": 0.342,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-020",
@@ -3005,7 +3005,7 @@
     "timestamp": "2026-06-10T00:02:03Z",
     "anomaly_score": 0.366,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-014",
@@ -3013,7 +3013,7 @@
     "timestamp": "2026-06-21T22:03:32Z",
     "anomaly_score": 0.42,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-009",
@@ -3021,7 +3021,7 @@
     "timestamp": "2026-06-10T22:15:17Z",
     "anomaly_score": 0.648,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-023",
@@ -3029,7 +3029,7 @@
     "timestamp": "2026-06-03T20:40:47Z",
     "anomaly_score": 0.551,
     "layer": "network",
-    "top_feature": "Active Std"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-012",
@@ -3037,7 +3037,7 @@
     "timestamp": "2026-06-15T17:16:49Z",
     "anomaly_score": 0.242,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Flow Packets/s"
   },
   {
     "entity": "USR-022",
@@ -3045,7 +3045,7 @@
     "timestamp": "2026-06-27T21:46:03Z",
     "anomaly_score": 0.372,
     "layer": "network",
-    "top_feature": "PSH Flag Count"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-018",
@@ -3053,7 +3053,7 @@
     "timestamp": "2026-06-05T01:13:13Z",
     "anomaly_score": 0.269,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-002",
@@ -3069,7 +3069,7 @@
     "timestamp": "2026-06-28T21:13:07Z",
     "anomaly_score": 0.412,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-020",
@@ -3085,7 +3085,7 @@
     "timestamp": "2026-06-14T12:34:26Z",
     "anomaly_score": 0.352,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-002",
@@ -3101,7 +3101,7 @@
     "timestamp": "2026-06-09T09:16:18Z",
     "anomaly_score": 0.63,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-018",
@@ -3109,7 +3109,7 @@
     "timestamp": "2026-06-14T04:44:14Z",
     "anomaly_score": 0.565,
     "layer": "network",
-    "top_feature": "Total Backward Packets"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-007",
@@ -3117,7 +3117,7 @@
     "timestamp": "2026-06-24T07:22:17Z",
     "anomaly_score": 0.479,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-005",
@@ -3149,7 +3149,7 @@
     "timestamp": "2026-06-06T03:52:01Z",
     "anomaly_score": 0.7,
     "layer": "network",
-    "top_feature": "SYN Flag Count"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-009",
@@ -3157,7 +3157,7 @@
     "timestamp": "2026-06-17T22:20:23Z",
     "anomaly_score": 0.721,
     "layer": "network",
-    "top_feature": "PSH Flag Count"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-001",
@@ -3165,7 +3165,7 @@
     "timestamp": "2026-06-16T04:30:11Z",
     "anomaly_score": 0.356,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-019",
@@ -3173,7 +3173,7 @@
     "timestamp": "2026-06-30T02:45:30Z",
     "anomaly_score": 0.323,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-011",
@@ -3181,7 +3181,7 @@
     "timestamp": "2026-06-27T05:39:45Z",
     "anomaly_score": 0.483,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-024",
@@ -3197,7 +3197,7 @@
     "timestamp": "2026-06-02T23:53:11Z",
     "anomaly_score": 0.537,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Bwd Packet Length Std"
   },
   {
     "entity": "USR-003",
@@ -3205,7 +3205,7 @@
     "timestamp": "2026-06-16T00:11:50Z",
     "anomaly_score": 0.528,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-016",
@@ -3213,7 +3213,7 @@
     "timestamp": "2026-06-01T06:43:33Z",
     "anomaly_score": 0.456,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Subflow Bwd Bytes"
   },
   {
     "entity": "USR-015",
@@ -3221,7 +3221,7 @@
     "timestamp": "2026-06-26T04:24:49Z",
     "anomaly_score": 0.347,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-017",
@@ -3237,7 +3237,7 @@
     "timestamp": "2026-06-17T11:00:44Z",
     "anomaly_score": 0.51,
     "layer": "network",
-    "top_feature": "Packet Length Mean"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-015",
@@ -3253,7 +3253,7 @@
     "timestamp": "2026-06-28T08:03:37Z",
     "anomaly_score": 0.489,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Bwd Header Length"
   },
   {
     "entity": "USR-004",
@@ -3269,7 +3269,7 @@
     "timestamp": "2026-06-28T00:36:29Z",
     "anomaly_score": 0.599,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Fwd IAT Min"
   },
   {
     "entity": "USR-003",
@@ -3277,7 +3277,7 @@
     "timestamp": "2026-06-26T20:27:22Z",
     "anomaly_score": 0.296,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-020",
@@ -3293,7 +3293,7 @@
     "timestamp": "2026-06-30T12:03:20Z",
     "anomaly_score": 0.361,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-019",
@@ -3301,7 +3301,7 @@
     "timestamp": "2026-06-01T09:30:59Z",
     "anomaly_score": 0.56,
     "layer": "network",
-    "top_feature": "Init_Win_bytes_backward"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-011",
@@ -3309,7 +3309,7 @@
     "timestamp": "2026-06-02T20:07:30Z",
     "anomaly_score": 0.5,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-015",
@@ -3317,7 +3317,7 @@
     "timestamp": "2026-06-26T06:19:00Z",
     "anomaly_score": 0.629,
     "layer": "network",
-    "top_feature": "Active Std"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-014",
@@ -3325,7 +3325,7 @@
     "timestamp": "2026-06-29T23:01:13Z",
     "anomaly_score": 0.478,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-007",
@@ -3333,7 +3333,7 @@
     "timestamp": "2026-06-23T09:10:21Z",
     "anomaly_score": 0.424,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-008",
@@ -3341,7 +3341,7 @@
     "timestamp": "2026-06-01T03:11:11Z",
     "anomaly_score": 0.297,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-013",
@@ -3349,7 +3349,7 @@
     "timestamp": "2026-06-21T02:10:18Z",
     "anomaly_score": 0.334,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-022",
@@ -3357,7 +3357,7 @@
     "timestamp": "2026-06-30T10:10:02Z",
     "anomaly_score": 0.604,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-005",
@@ -3365,7 +3365,7 @@
     "timestamp": "2026-06-03T02:56:17Z",
     "anomaly_score": 0.231,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Min Packet Length"
   },
   {
     "entity": "USR-024",
@@ -3381,7 +3381,7 @@
     "timestamp": "2026-06-04T17:22:36Z",
     "anomaly_score": 0.235,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packets/s"
   },
   {
     "entity": "USR-014",
@@ -3389,7 +3389,7 @@
     "timestamp": "2026-06-14T11:19:14Z",
     "anomaly_score": 0.293,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-012",
@@ -3397,7 +3397,7 @@
     "timestamp": "2026-06-08T09:54:19Z",
     "anomaly_score": 0.65,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-014",
@@ -3405,7 +3405,7 @@
     "timestamp": "2026-06-05T23:33:07Z",
     "anomaly_score": 0.506,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Mean"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-020",
@@ -3421,7 +3421,7 @@
     "timestamp": "2026-06-25T20:57:56Z",
     "anomaly_score": 0.545,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-009",
@@ -3429,7 +3429,7 @@
     "timestamp": "2026-06-06T18:32:37Z",
     "anomaly_score": 0.668,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-020",
@@ -3437,7 +3437,7 @@
     "timestamp": "2026-06-13T15:30:57Z",
     "anomaly_score": 0.457,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-001",
@@ -3453,7 +3453,7 @@
     "timestamp": "2026-06-17T06:49:51Z",
     "anomaly_score": 0.404,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-006",
@@ -3461,7 +3461,7 @@
     "timestamp": "2026-06-27T16:01:23Z",
     "anomaly_score": 0.381,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-023",
@@ -3469,7 +3469,7 @@
     "timestamp": "2026-06-26T20:17:37Z",
     "anomaly_score": 0.486,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-025",
@@ -3485,7 +3485,7 @@
     "timestamp": "2026-06-03T15:37:37Z",
     "anomaly_score": 0.298,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-006",
@@ -3493,7 +3493,7 @@
     "timestamp": "2026-06-27T23:59:41Z",
     "anomaly_score": 0.277,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-025",
@@ -3501,7 +3501,7 @@
     "timestamp": "2026-06-06T02:20:45Z",
     "anomaly_score": 0.275,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-020",
@@ -3509,7 +3509,7 @@
     "timestamp": "2026-06-15T14:31:04Z",
     "anomaly_score": 0.492,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-020",
@@ -3517,7 +3517,7 @@
     "timestamp": "2026-06-30T03:37:54Z",
     "anomaly_score": 0.306,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-025",
@@ -3525,7 +3525,7 @@
     "timestamp": "2026-06-20T04:15:21Z",
     "anomaly_score": 0.556,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-022",
@@ -3533,7 +3533,7 @@
     "timestamp": "2026-06-27T13:16:52Z",
     "anomaly_score": 0.423,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-010",
@@ -3565,7 +3565,7 @@
     "timestamp": "2026-06-15T07:35:50Z",
     "anomaly_score": 0.466,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-025",
@@ -3573,7 +3573,7 @@
     "timestamp": "2026-06-13T19:41:16Z",
     "anomaly_score": 0.618,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-025",
@@ -3589,7 +3589,7 @@
     "timestamp": "2026-06-25T14:20:57Z",
     "anomaly_score": 0.583,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-004",
@@ -3605,7 +3605,7 @@
     "timestamp": "2026-06-04T22:57:56Z",
     "anomaly_score": 0.283,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-006",
@@ -3653,7 +3653,7 @@
     "timestamp": "2026-06-28T12:27:24Z",
     "anomaly_score": 0.37,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-013",
@@ -3661,7 +3661,7 @@
     "timestamp": "2026-06-15T02:10:50Z",
     "anomaly_score": 0.261,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-020",
@@ -3677,7 +3677,7 @@
     "timestamp": "2026-06-01T09:28:52Z",
     "anomaly_score": 0.356,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-013",
@@ -3685,7 +3685,7 @@
     "timestamp": "2026-06-18T23:04:29Z",
     "anomaly_score": 0.494,
     "layer": "network",
-    "top_feature": "Flow IAT Std"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-017",
@@ -3693,7 +3693,7 @@
     "timestamp": "2026-06-20T15:39:59Z",
     "anomaly_score": 0.373,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-017",
@@ -3701,7 +3701,7 @@
     "timestamp": "2026-06-09T10:34:27Z",
     "anomaly_score": 0.322,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Fwd IAT Total"
   },
   {
     "entity": "USR-007",
@@ -3717,7 +3717,7 @@
     "timestamp": "2026-06-19T06:01:36Z",
     "anomaly_score": 0.58,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-003",
@@ -3725,7 +3725,7 @@
     "timestamp": "2026-06-05T12:05:24Z",
     "anomaly_score": 0.357,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Idle Max"
   },
   {
     "entity": "USR-021",
@@ -3749,7 +3749,7 @@
     "timestamp": "2026-06-21T09:48:08Z",
     "anomaly_score": 0.369,
     "layer": "network",
-    "top_feature": "Active Max"
+    "top_feature": "Fwd IAT Min"
   },
   {
     "entity": "USR-021",
@@ -3773,7 +3773,7 @@
     "timestamp": "2026-06-04T15:31:49Z",
     "anomaly_score": 0.326,
     "layer": "network",
-    "top_feature": "Packet Length Variance"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-012",
@@ -3781,7 +3781,7 @@
     "timestamp": "2026-06-12T07:16:43Z",
     "anomaly_score": 0.422,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-003",
@@ -3789,7 +3789,7 @@
     "timestamp": "2026-06-10T03:10:31Z",
     "anomaly_score": 0.508,
     "layer": "network",
-    "top_feature": "Init_Win_bytes_backward"
+    "top_feature": "Flow IAT Min"
   },
   {
     "entity": "USR-021",
@@ -3805,7 +3805,7 @@
     "timestamp": "2026-06-15T19:49:21Z",
     "anomaly_score": 0.49,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Max"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-013",
@@ -3813,7 +3813,7 @@
     "timestamp": "2026-06-29T12:16:44Z",
     "anomaly_score": 0.443,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-011",
@@ -3853,7 +3853,7 @@
     "timestamp": "2026-06-16T03:15:59Z",
     "anomaly_score": 0.41,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-017",
@@ -3861,7 +3861,7 @@
     "timestamp": "2026-06-12T00:32:24Z",
     "anomaly_score": 0.473,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-006",
@@ -3869,7 +3869,7 @@
     "timestamp": "2026-06-16T05:25:17Z",
     "anomaly_score": 0.491,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-011",
@@ -3877,7 +3877,7 @@
     "timestamp": "2026-06-15T21:43:26Z",
     "anomaly_score": 0.737,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Total Length of Bwd Packets"
   },
   {
     "entity": "USR-002",
@@ -3901,7 +3901,7 @@
     "timestamp": "2026-06-22T02:18:51Z",
     "anomaly_score": 0.401,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-024",
@@ -3917,7 +3917,7 @@
     "timestamp": "2026-06-18T04:36:03Z",
     "anomaly_score": 0.404,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-003",
@@ -3925,7 +3925,7 @@
     "timestamp": "2026-06-24T07:39:59Z",
     "anomaly_score": 0.262,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-012",
@@ -3933,7 +3933,7 @@
     "timestamp": "2026-06-06T04:15:57Z",
     "anomaly_score": 0.515,
     "layer": "network",
-    "top_feature": "Min Packet Length"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-023",
@@ -3949,7 +3949,7 @@
     "timestamp": "2026-06-27T08:18:15Z",
     "anomaly_score": 0.467,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-022",
@@ -3957,7 +3957,7 @@
     "timestamp": "2026-06-26T03:47:51Z",
     "anomaly_score": 0.643,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Min"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-024",
@@ -3973,7 +3973,7 @@
     "timestamp": "2026-06-07T17:55:15Z",
     "anomaly_score": 0.282,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-007",
@@ -3981,7 +3981,7 @@
     "timestamp": "2026-06-09T22:14:02Z",
     "anomaly_score": 0.346,
     "layer": "network",
-    "top_feature": "Flow IAT Std"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-025",
@@ -3997,7 +3997,7 @@
     "timestamp": "2026-06-06T23:03:43Z",
     "anomaly_score": 0.666,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-010",
@@ -4013,7 +4013,7 @@
     "timestamp": "2026-06-14T14:20:07Z",
     "anomaly_score": 0.436,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-018",
@@ -4029,7 +4029,7 @@
     "timestamp": "2026-06-05T21:37:42Z",
     "anomaly_score": 0.317,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-017",
@@ -4045,7 +4045,7 @@
     "timestamp": "2026-06-13T05:54:00Z",
     "anomaly_score": 0.243,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-013",
@@ -4061,7 +4061,7 @@
     "timestamp": "2026-06-15T00:16:38Z",
     "anomaly_score": 0.627,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-024",
@@ -4069,7 +4069,7 @@
     "timestamp": "2026-06-29T22:54:16Z",
     "anomaly_score": 0.379,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-020",
@@ -4077,7 +4077,7 @@
     "timestamp": "2026-06-21T23:56:14Z",
     "anomaly_score": 0.401,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Flow IAT Max"
   },
   {
     "entity": "USR-008",
@@ -4085,7 +4085,7 @@
     "timestamp": "2026-06-23T17:04:01Z",
     "anomaly_score": 0.534,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-018",
@@ -4093,7 +4093,7 @@
     "timestamp": "2026-06-16T13:44:22Z",
     "anomaly_score": 0.722,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-025",
@@ -4101,7 +4101,7 @@
     "timestamp": "2026-06-17T17:44:21Z",
     "anomaly_score": 0.273,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-017",
@@ -4133,7 +4133,7 @@
     "timestamp": "2026-06-08T18:07:39Z",
     "anomaly_score": 0.338,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-016",
@@ -4141,7 +4141,7 @@
     "timestamp": "2026-06-16T11:33:05Z",
     "anomaly_score": 0.377,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-012",
@@ -4157,7 +4157,7 @@
     "timestamp": "2026-06-16T02:03:54Z",
     "anomaly_score": 0.619,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Bwd Header Length"
   },
   {
     "entity": "USR-004",
@@ -4189,7 +4189,7 @@
     "timestamp": "2026-06-16T08:12:55Z",
     "anomaly_score": 0.382,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-003",
@@ -4197,7 +4197,7 @@
     "timestamp": "2026-06-13T18:46:24Z",
     "anomaly_score": 0.407,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "FIN Flag Count"
   },
   {
     "entity": "USR-005",
@@ -4221,7 +4221,7 @@
     "timestamp": "2026-06-21T11:44:36Z",
     "anomaly_score": 0.254,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-013",
@@ -4229,7 +4229,7 @@
     "timestamp": "2026-06-03T17:39:50Z",
     "anomaly_score": 0.539,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-012",
@@ -4253,7 +4253,7 @@
     "timestamp": "2026-06-02T06:04:13Z",
     "anomaly_score": 0.239,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-025",
@@ -4261,7 +4261,7 @@
     "timestamp": "2026-06-09T17:30:10Z",
     "anomaly_score": 0.573,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-016",
@@ -4269,7 +4269,7 @@
     "timestamp": "2026-06-08T13:53:54Z",
     "anomaly_score": 0.515,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-020",
@@ -4277,7 +4277,7 @@
     "timestamp": "2026-06-17T20:12:05Z",
     "anomaly_score": 0.385,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Flow IAT Max"
   },
   {
     "entity": "USR-005",
@@ -4301,7 +4301,7 @@
     "timestamp": "2026-06-08T18:04:17Z",
     "anomaly_score": 0.339,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-004",
@@ -4309,7 +4309,7 @@
     "timestamp": "2026-06-16T13:06:59Z",
     "anomaly_score": 0.482,
     "layer": "network",
-    "top_feature": "Packet Length Mean"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-025",
@@ -4317,7 +4317,7 @@
     "timestamp": "2026-06-14T07:51:03Z",
     "anomaly_score": 0.317,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-010",
@@ -4333,7 +4333,7 @@
     "timestamp": "2026-06-12T02:23:09Z",
     "anomaly_score": 0.73,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Min"
+    "top_feature": "Fwd IAT Mean"
   },
   {
     "entity": "USR-014",
@@ -4357,7 +4357,7 @@
     "timestamp": "2026-06-25T00:32:24Z",
     "anomaly_score": 0.413,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-016",
@@ -4365,7 +4365,7 @@
     "timestamp": "2026-06-05T06:04:27Z",
     "anomaly_score": 0.452,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-001",
@@ -4373,7 +4373,7 @@
     "timestamp": "2026-06-04T18:10:38Z",
     "anomaly_score": 0.737,
     "layer": "network",
-    "top_feature": "PSH Flag Count"
+    "top_feature": "Avg Fwd Segment Size"
   },
   {
     "entity": "USR-019",
@@ -4381,7 +4381,7 @@
     "timestamp": "2026-06-06T20:48:17Z",
     "anomaly_score": 0.821,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Avg Fwd Segment Size"
   },
   {
     "entity": "USR-008",
@@ -4389,7 +4389,7 @@
     "timestamp": "2026-06-01T03:38:53Z",
     "anomaly_score": 0.629,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-005",
@@ -4397,7 +4397,7 @@
     "timestamp": "2026-06-19T21:19:05Z",
     "anomaly_score": 0.227,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Min"
   },
   {
     "entity": "USR-010",
@@ -4413,7 +4413,7 @@
     "timestamp": "2026-06-30T09:23:32Z",
     "anomaly_score": 0.464,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-012",
@@ -4421,7 +4421,7 @@
     "timestamp": "2026-06-03T07:50:15Z",
     "anomaly_score": 0.375,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-014",
@@ -4429,7 +4429,7 @@
     "timestamp": "2026-06-05T10:15:42Z",
     "anomaly_score": 0.472,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-017",
@@ -4445,7 +4445,7 @@
     "timestamp": "2026-06-27T17:21:59Z",
     "anomaly_score": 0.323,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_forward"
   },
   {
     "entity": "USR-013",
@@ -4453,7 +4453,7 @@
     "timestamp": "2026-06-03T10:31:35Z",
     "anomaly_score": 0.517,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-012",
@@ -4477,7 +4477,7 @@
     "timestamp": "2026-06-30T01:54:05Z",
     "anomaly_score": 0.442,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Bwd Header Length"
   },
   {
     "entity": "USR-012",
@@ -4485,7 +4485,7 @@
     "timestamp": "2026-06-04T20:22:48Z",
     "anomaly_score": 0.246,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-021",
@@ -4493,7 +4493,7 @@
     "timestamp": "2026-06-22T01:23:03Z",
     "anomaly_score": 0.729,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Min"
+    "top_feature": "Fwd IAT Mean"
   },
   {
     "entity": "USR-024",
@@ -4501,7 +4501,7 @@
     "timestamp": "2026-06-25T23:06:26Z",
     "anomaly_score": 0.532,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-025",
@@ -4517,7 +4517,7 @@
     "timestamp": "2026-06-02T07:07:26Z",
     "anomaly_score": 0.563,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-021",
@@ -4541,7 +4541,7 @@
     "timestamp": "2026-06-13T20:33:06Z",
     "anomaly_score": 0.495,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-005",
@@ -4549,7 +4549,7 @@
     "timestamp": "2026-06-10T21:09:41Z",
     "anomaly_score": 0.482,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-002",
@@ -4557,7 +4557,7 @@
     "timestamp": "2026-06-12T06:55:16Z",
     "anomaly_score": 0.257,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-009",
@@ -4565,7 +4565,7 @@
     "timestamp": "2026-06-10T18:28:44Z",
     "anomaly_score": 0.229,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-011",
@@ -4573,7 +4573,7 @@
     "timestamp": "2026-06-26T15:50:46Z",
     "anomaly_score": 0.87,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Total Backward Packets"
   },
   {
     "entity": "USR-012",
@@ -4589,7 +4589,7 @@
     "timestamp": "2026-06-06T01:01:53Z",
     "anomaly_score": 0.232,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Fwd Packet Length Std"
   },
   {
     "entity": "USR-013",
@@ -4597,7 +4597,7 @@
     "timestamp": "2026-06-20T01:12:41Z",
     "anomaly_score": 0.589,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-024",
@@ -4613,7 +4613,7 @@
     "timestamp": "2026-06-08T19:10:37Z",
     "anomaly_score": 0.515,
     "layer": "network",
-    "top_feature": "Total Backward Packets"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-016",
@@ -4621,7 +4621,7 @@
     "timestamp": "2026-06-11T14:28:34Z",
     "anomaly_score": 0.367,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-017",
@@ -4629,7 +4629,7 @@
     "timestamp": "2026-06-03T15:37:39Z",
     "anomaly_score": 0.237,
     "layer": "network",
-    "top_feature": "Flow IAT Std"
+    "top_feature": "Min Packet Length"
   },
   {
     "entity": "USR-009",
@@ -4645,7 +4645,7 @@
     "timestamp": "2026-06-01T14:15:56Z",
     "anomaly_score": 0.448,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-003",
@@ -4661,7 +4661,7 @@
     "timestamp": "2026-06-27T00:34:25Z",
     "anomaly_score": 0.271,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-018",
@@ -4669,7 +4669,7 @@
     "timestamp": "2026-06-10T04:17:58Z",
     "anomaly_score": 0.539,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-011",
@@ -4677,7 +4677,7 @@
     "timestamp": "2026-06-27T13:48:05Z",
     "anomaly_score": 0.255,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-006",
@@ -4709,7 +4709,7 @@
     "timestamp": "2026-06-18T02:02:20Z",
     "anomaly_score": 0.497,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-022",
@@ -4717,7 +4717,7 @@
     "timestamp": "2026-06-04T23:56:57Z",
     "anomaly_score": 0.654,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Min"
+    "top_feature": "Bwd Header Length"
   },
   {
     "entity": "USR-001",
@@ -4733,7 +4733,7 @@
     "timestamp": "2026-06-28T12:55:55Z",
     "anomaly_score": 0.366,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-019",
@@ -4749,7 +4749,7 @@
     "timestamp": "2026-06-11T02:01:27Z",
     "anomaly_score": 0.376,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-022",
@@ -4765,7 +4765,7 @@
     "timestamp": "2026-06-22T19:20:23Z",
     "anomaly_score": 0.581,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "SYN Flag Count"
   },
   {
     "entity": "USR-019",
@@ -4773,7 +4773,7 @@
     "timestamp": "2026-06-23T02:08:26Z",
     "anomaly_score": 0.378,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-012",
@@ -4789,7 +4789,7 @@
     "timestamp": "2026-06-04T14:18:03Z",
     "anomaly_score": 0.488,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-001",
@@ -4797,7 +4797,7 @@
     "timestamp": "2026-06-20T16:25:23Z",
     "anomaly_score": 0.405,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Flow IAT Max"
   },
   {
     "entity": "USR-016",
@@ -4853,7 +4853,7 @@
     "timestamp": "2026-06-09T15:47:08Z",
     "anomaly_score": 0.489,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-023",
@@ -4861,7 +4861,7 @@
     "timestamp": "2026-06-13T07:05:46Z",
     "anomaly_score": 0.866,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-021",
@@ -4869,7 +4869,7 @@
     "timestamp": "2026-06-11T16:45:15Z",
     "anomaly_score": 0.44,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-005",
@@ -4877,7 +4877,7 @@
     "timestamp": "2026-06-24T04:01:42Z",
     "anomaly_score": 0.645,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-020",
@@ -4885,7 +4885,7 @@
     "timestamp": "2026-06-26T03:47:53Z",
     "anomaly_score": 0.408,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-003",
@@ -4901,7 +4901,7 @@
     "timestamp": "2026-06-17T04:34:13Z",
     "anomaly_score": 0.455,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-024",
@@ -4909,7 +4909,7 @@
     "timestamp": "2026-06-26T14:31:47Z",
     "anomaly_score": 0.548,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Subflow Bwd Bytes"
   },
   {
     "entity": "USR-016",
@@ -4933,7 +4933,7 @@
     "timestamp": "2026-06-07T03:20:42Z",
     "anomaly_score": 0.692,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-003",
@@ -4941,7 +4941,7 @@
     "timestamp": "2026-06-16T13:04:09Z",
     "anomaly_score": 0.383,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-012",
@@ -4949,7 +4949,7 @@
     "timestamp": "2026-06-05T03:27:08Z",
     "anomaly_score": 0.621,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-025",
@@ -4957,7 +4957,7 @@
     "timestamp": "2026-06-09T12:24:31Z",
     "anomaly_score": 0.275,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-019",
@@ -4973,7 +4973,7 @@
     "timestamp": "2026-06-24T06:13:19Z",
     "anomaly_score": 0.27,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Bwd Packets/s"
   },
   {
     "entity": "USR-025",
@@ -4989,7 +4989,7 @@
     "timestamp": "2026-06-23T03:24:10Z",
     "anomaly_score": 0.672,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Min"
   },
   {
     "entity": "USR-004",
@@ -5005,7 +5005,7 @@
     "timestamp": "2026-06-12T01:13:31Z",
     "anomaly_score": 0.395,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-008",
@@ -5037,7 +5037,7 @@
     "timestamp": "2026-06-01T20:44:25Z",
     "anomaly_score": 0.789,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Total Length of Bwd Packets"
   },
   {
     "entity": "USR-020",
@@ -5061,7 +5061,7 @@
     "timestamp": "2026-06-21T14:39:47Z",
     "anomaly_score": 0.27,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-010",
@@ -5069,7 +5069,7 @@
     "timestamp": "2026-06-14T01:03:24Z",
     "anomaly_score": 0.296,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-002",
@@ -5077,7 +5077,7 @@
     "timestamp": "2026-06-22T01:20:37Z",
     "anomaly_score": 0.486,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-006",
@@ -5085,7 +5085,7 @@
     "timestamp": "2026-06-01T05:16:08Z",
     "anomaly_score": 0.262,
     "layer": "network",
-    "top_feature": "Subflow Bwd Bytes"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-014",
@@ -5093,7 +5093,7 @@
     "timestamp": "2026-06-30T22:03:51Z",
     "anomaly_score": 0.342,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-016",
@@ -5101,7 +5101,7 @@
     "timestamp": "2026-06-15T15:07:59Z",
     "anomaly_score": 0.318,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-020",
@@ -5109,7 +5109,7 @@
     "timestamp": "2026-06-01T00:01:22Z",
     "anomaly_score": 0.382,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Flow Packets/s"
   },
   {
     "entity": "USR-005",
@@ -5117,7 +5117,7 @@
     "timestamp": "2026-06-23T00:56:04Z",
     "anomaly_score": 0.471,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "FIN Flag Count"
   },
   {
     "entity": "USR-011",
@@ -5125,7 +5125,7 @@
     "timestamp": "2026-06-19T17:06:45Z",
     "anomaly_score": 0.559,
     "layer": "network",
-    "top_feature": "Active Std"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-024",
@@ -5157,7 +5157,7 @@
     "timestamp": "2026-06-29T21:23:10Z",
     "anomaly_score": 0.292,
     "layer": "network",
-    "top_feature": "Total Backward Packets"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-004",
@@ -5165,7 +5165,7 @@
     "timestamp": "2026-06-01T08:40:33Z",
     "anomaly_score": 0.311,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Bwd Header Length"
   },
   {
     "entity": "USR-008",
@@ -5181,7 +5181,7 @@
     "timestamp": "2026-06-09T01:04:17Z",
     "anomaly_score": 0.29,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-014",
@@ -5197,7 +5197,7 @@
     "timestamp": "2026-06-24T19:02:15Z",
     "anomaly_score": 0.395,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Flow IAT Max"
   },
   {
     "entity": "USR-016",
@@ -5213,7 +5213,7 @@
     "timestamp": "2026-06-30T14:37:26Z",
     "anomaly_score": 0.226,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-003",
@@ -5237,7 +5237,7 @@
     "timestamp": "2026-06-09T16:09:14Z",
     "anomaly_score": 0.287,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Bwd Packet Length Mean"
   },
   {
     "entity": "USR-024",
@@ -5245,7 +5245,7 @@
     "timestamp": "2026-06-10T05:27:05Z",
     "anomaly_score": 0.243,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd Packet Length Std"
   },
   {
     "entity": "USR-012",
@@ -5269,7 +5269,7 @@
     "timestamp": "2026-06-01T04:38:14Z",
     "anomaly_score": 0.333,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-020",
@@ -5285,7 +5285,7 @@
     "timestamp": "2026-06-18T01:48:58Z",
     "anomaly_score": 0.571,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-020",
@@ -5293,7 +5293,7 @@
     "timestamp": "2026-06-06T07:13:23Z",
     "anomaly_score": 0.445,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-012",
@@ -5301,7 +5301,7 @@
     "timestamp": "2026-06-06T05:29:03Z",
     "anomaly_score": 0.326,
     "layer": "network",
-    "top_feature": "Bwd IAT Std"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-020",
@@ -5309,7 +5309,7 @@
     "timestamp": "2026-06-06T19:31:51Z",
     "anomaly_score": 0.495,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-017",
@@ -5317,7 +5317,7 @@
     "timestamp": "2026-06-06T20:43:47Z",
     "anomaly_score": 0.581,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-016",
@@ -5325,7 +5325,7 @@
     "timestamp": "2026-06-27T23:30:38Z",
     "anomaly_score": 0.789,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Total Backward Packets"
   },
   {
     "entity": "USR-017",
@@ -5341,7 +5341,7 @@
     "timestamp": "2026-06-12T02:00:45Z",
     "anomaly_score": 0.435,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-011",
@@ -5349,7 +5349,7 @@
     "timestamp": "2026-06-09T16:14:24Z",
     "anomaly_score": 0.649,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Min"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-011",
@@ -5357,7 +5357,7 @@
     "timestamp": "2026-06-14T15:59:53Z",
     "anomaly_score": 0.427,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Subflow Bwd Bytes"
   },
   {
     "entity": "USR-006",
@@ -5365,7 +5365,7 @@
     "timestamp": "2026-06-12T12:14:29Z",
     "anomaly_score": 0.675,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-016",
@@ -5373,7 +5373,7 @@
     "timestamp": "2026-06-18T10:58:33Z",
     "anomaly_score": 0.792,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-014",
@@ -5381,7 +5381,7 @@
     "timestamp": "2026-06-20T21:06:45Z",
     "anomaly_score": 0.523,
     "layer": "network",
-    "top_feature": "Total Backward Packets"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-019",
@@ -5389,7 +5389,7 @@
     "timestamp": "2026-06-02T20:42:23Z",
     "anomaly_score": 0.5,
     "layer": "network",
-    "top_feature": "Total Backward Packets"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-009",
@@ -5397,7 +5397,7 @@
     "timestamp": "2026-06-06T20:47:41Z",
     "anomaly_score": 0.357,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-021",
@@ -5405,7 +5405,7 @@
     "timestamp": "2026-06-11T10:49:40Z",
     "anomaly_score": 0.542,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-024",
@@ -5413,7 +5413,7 @@
     "timestamp": "2026-06-12T05:33:55Z",
     "anomaly_score": 0.504,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-016",
@@ -5421,7 +5421,7 @@
     "timestamp": "2026-06-23T00:01:06Z",
     "anomaly_score": 0.659,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd Header Length.1"
   },
   {
     "entity": "USR-006",
@@ -5429,7 +5429,7 @@
     "timestamp": "2026-06-12T06:49:56Z",
     "anomaly_score": 0.5,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-024",
@@ -5453,7 +5453,7 @@
     "timestamp": "2026-06-21T21:01:17Z",
     "anomaly_score": 0.544,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-019",
@@ -5461,7 +5461,7 @@
     "timestamp": "2026-06-05T10:09:38Z",
     "anomaly_score": 0.369,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-011",
@@ -5493,7 +5493,7 @@
     "timestamp": "2026-06-11T02:11:53Z",
     "anomaly_score": 0.537,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Flow IAT Max"
   },
   {
     "entity": "USR-011",
@@ -5517,7 +5517,7 @@
     "timestamp": "2026-06-18T02:07:40Z",
     "anomaly_score": 0.358,
     "layer": "network",
-    "top_feature": "Subflow Bwd Bytes"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-012",
@@ -5525,7 +5525,7 @@
     "timestamp": "2026-06-05T09:22:52Z",
     "anomaly_score": 0.32,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-024",
@@ -5541,7 +5541,7 @@
     "timestamp": "2026-06-04T18:23:06Z",
     "anomaly_score": 0.625,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Fwd Header Length.1"
   },
   {
     "entity": "USR-009",
@@ -5581,7 +5581,7 @@
     "timestamp": "2026-06-11T08:07:31Z",
     "anomaly_score": 0.488,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-009",
@@ -5605,7 +5605,7 @@
     "timestamp": "2026-06-23T18:02:02Z",
     "anomaly_score": 0.36,
     "layer": "network",
-    "top_feature": "PSH Flag Count"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-009",
@@ -5621,7 +5621,7 @@
     "timestamp": "2026-06-13T16:11:44Z",
     "anomaly_score": 0.545,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-020",
@@ -5629,7 +5629,7 @@
     "timestamp": "2026-06-15T15:12:56Z",
     "anomaly_score": 0.537,
     "layer": "network",
-    "top_feature": "Bwd IAT Std"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-008",
@@ -5637,7 +5637,7 @@
     "timestamp": "2026-06-07T18:17:54Z",
     "anomaly_score": 0.581,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-004",
@@ -5661,7 +5661,7 @@
     "timestamp": "2026-06-15T19:04:16Z",
     "anomaly_score": 0.321,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-025",
@@ -5685,7 +5685,7 @@
     "timestamp": "2026-06-15T21:10:13Z",
     "anomaly_score": 0.496,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-003",
@@ -5709,7 +5709,7 @@
     "timestamp": "2026-06-25T00:30:42Z",
     "anomaly_score": 0.277,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-021",
@@ -5725,7 +5725,7 @@
     "timestamp": "2026-06-02T07:41:45Z",
     "anomaly_score": 0.534,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-016",
@@ -5733,7 +5733,7 @@
     "timestamp": "2026-06-08T02:33:12Z",
     "anomaly_score": 0.262,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-005",
@@ -5741,7 +5741,7 @@
     "timestamp": "2026-06-24T05:31:57Z",
     "anomaly_score": 0.503,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-017",
@@ -5757,7 +5757,7 @@
     "timestamp": "2026-06-23T03:58:10Z",
     "anomaly_score": 0.281,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-001",
@@ -5781,7 +5781,7 @@
     "timestamp": "2026-06-28T16:10:33Z",
     "anomaly_score": 0.538,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Max"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-007",
@@ -5797,7 +5797,7 @@
     "timestamp": "2026-06-07T10:46:15Z",
     "anomaly_score": 0.287,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-016",
@@ -5805,7 +5805,7 @@
     "timestamp": "2026-06-10T06:46:58Z",
     "anomaly_score": 0.446,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-008",
@@ -5813,7 +5813,7 @@
     "timestamp": "2026-06-07T12:04:50Z",
     "anomaly_score": 0.282,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-011",
@@ -5821,7 +5821,7 @@
     "timestamp": "2026-06-16T04:06:23Z",
     "anomaly_score": 0.808,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Avg Fwd Segment Size"
   },
   {
     "entity": "USR-010",
@@ -5829,7 +5829,7 @@
     "timestamp": "2026-06-06T07:06:41Z",
     "anomaly_score": 0.228,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Min"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-009",
@@ -5837,7 +5837,7 @@
     "timestamp": "2026-06-02T22:38:29Z",
     "anomaly_score": 0.231,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-012",
@@ -5845,7 +5845,7 @@
     "timestamp": "2026-06-22T07:19:30Z",
     "anomaly_score": 0.508,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-008",
@@ -5853,7 +5853,7 @@
     "timestamp": "2026-06-10T16:33:11Z",
     "anomaly_score": 0.536,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Bwd Packet Length Std"
   },
   {
     "entity": "USR-010",
@@ -5861,7 +5861,7 @@
     "timestamp": "2026-06-14T14:28:56Z",
     "anomaly_score": 0.482,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-013",
@@ -5869,7 +5869,7 @@
     "timestamp": "2026-06-07T09:00:51Z",
     "anomaly_score": 0.43,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-023",
@@ -5877,7 +5877,7 @@
     "timestamp": "2026-06-13T01:04:52Z",
     "anomaly_score": 0.239,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-010",
@@ -5901,7 +5901,7 @@
     "timestamp": "2026-06-27T15:43:37Z",
     "anomaly_score": 0.226,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Flow Bytes/s"
   },
   {
     "entity": "USR-014",
@@ -5917,7 +5917,7 @@
     "timestamp": "2026-06-14T09:22:51Z",
     "anomaly_score": 0.477,
     "layer": "network",
-    "top_feature": "Min Packet Length"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-016",
@@ -5925,7 +5925,7 @@
     "timestamp": "2026-06-25T03:41:04Z",
     "anomaly_score": 0.317,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Fwd IAT Total"
   },
   {
     "entity": "USR-018",
@@ -5933,7 +5933,7 @@
     "timestamp": "2026-06-16T05:57:21Z",
     "anomaly_score": 0.741,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Total Length of Bwd Packets"
   },
   {
     "entity": "USR-022",
@@ -5949,7 +5949,7 @@
     "timestamp": "2026-06-10T22:21:41Z",
     "anomaly_score": 0.296,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-022",
@@ -5957,7 +5957,7 @@
     "timestamp": "2026-06-15T14:32:15Z",
     "anomaly_score": 0.441,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-025",
@@ -5965,7 +5965,7 @@
     "timestamp": "2026-06-11T16:14:12Z",
     "anomaly_score": 0.299,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-019",
@@ -5973,7 +5973,7 @@
     "timestamp": "2026-06-12T12:15:17Z",
     "anomaly_score": 0.622,
     "layer": "network",
-    "top_feature": "Active Std"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-006",
@@ -5997,7 +5997,7 @@
     "timestamp": "2026-06-10T05:48:30Z",
     "anomaly_score": 0.475,
     "layer": "network",
-    "top_feature": "Total Backward Packets"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-017",
@@ -6029,7 +6029,7 @@
     "timestamp": "2026-06-07T13:53:48Z",
     "anomaly_score": 0.538,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-007",
@@ -6037,7 +6037,7 @@
     "timestamp": "2026-06-17T02:42:32Z",
     "anomaly_score": 0.551,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-019",
@@ -6061,7 +6061,7 @@
     "timestamp": "2026-06-09T20:32:12Z",
     "anomaly_score": 0.48,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-010",
@@ -6069,7 +6069,7 @@
     "timestamp": "2026-06-28T12:47:31Z",
     "anomaly_score": 0.223,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Flow Packets/s"
   },
   {
     "entity": "USR-025",
@@ -6093,7 +6093,7 @@
     "timestamp": "2026-06-01T21:58:16Z",
     "anomaly_score": 0.817,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Avg Fwd Segment Size"
   },
   {
     "entity": "USR-021",
@@ -6101,7 +6101,7 @@
     "timestamp": "2026-06-18T16:35:31Z",
     "anomaly_score": 0.492,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-015",
@@ -6109,7 +6109,7 @@
     "timestamp": "2026-06-17T08:57:34Z",
     "anomaly_score": 0.493,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-013",
@@ -6117,7 +6117,7 @@
     "timestamp": "2026-06-24T21:50:07Z",
     "anomaly_score": 0.429,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-022",
@@ -6141,7 +6141,7 @@
     "timestamp": "2026-06-04T00:11:25Z",
     "anomaly_score": 0.434,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "FIN Flag Count"
   },
   {
     "entity": "USR-008",
@@ -6157,7 +6157,7 @@
     "timestamp": "2026-06-07T12:21:12Z",
     "anomaly_score": 0.292,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-002",
@@ -6181,7 +6181,7 @@
     "timestamp": "2026-06-04T02:54:18Z",
     "anomaly_score": 0.26,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-015",
@@ -6189,7 +6189,7 @@
     "timestamp": "2026-06-25T13:19:38Z",
     "anomaly_score": 0.235,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Init_Win_bytes_forward"
   },
   {
     "entity": "USR-008",
@@ -6197,7 +6197,7 @@
     "timestamp": "2026-06-20T21:48:36Z",
     "anomaly_score": 0.383,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-007",
@@ -6213,7 +6213,7 @@
     "timestamp": "2026-06-14T15:30:43Z",
     "anomaly_score": 0.723,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-022",
@@ -6237,7 +6237,7 @@
     "timestamp": "2026-06-17T21:09:51Z",
     "anomaly_score": 0.388,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Flow IAT Max"
   },
   {
     "entity": "USR-014",
@@ -6253,7 +6253,7 @@
     "timestamp": "2026-06-02T14:11:40Z",
     "anomaly_score": 0.549,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-010",
@@ -6261,7 +6261,7 @@
     "timestamp": "2026-06-07T20:16:33Z",
     "anomaly_score": 0.312,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-021",
@@ -6269,7 +6269,7 @@
     "timestamp": "2026-06-16T17:07:06Z",
     "anomaly_score": 0.278,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-007",
@@ -6277,7 +6277,7 @@
     "timestamp": "2026-06-25T18:15:35Z",
     "anomaly_score": 0.675,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Fwd Header Length.1"
   },
   {
     "entity": "USR-025",
@@ -6285,7 +6285,7 @@
     "timestamp": "2026-06-06T20:53:46Z",
     "anomaly_score": 0.434,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-024",
@@ -6293,7 +6293,7 @@
     "timestamp": "2026-06-15T05:55:51Z",
     "anomaly_score": 0.322,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-013",
@@ -6317,7 +6317,7 @@
     "timestamp": "2026-06-09T11:23:03Z",
     "anomaly_score": 0.226,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Flow Bytes/s"
   },
   {
     "entity": "USR-015",
@@ -6325,7 +6325,7 @@
     "timestamp": "2026-06-30T16:01:53Z",
     "anomaly_score": 0.351,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-025",
@@ -6349,7 +6349,7 @@
     "timestamp": "2026-06-01T16:45:09Z",
     "anomaly_score": 0.739,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-019",
@@ -6373,7 +6373,7 @@
     "timestamp": "2026-06-30T20:57:50Z",
     "anomaly_score": 0.245,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-024",
@@ -6381,7 +6381,7 @@
     "timestamp": "2026-06-28T00:20:33Z",
     "anomaly_score": 0.556,
     "layer": "network",
-    "top_feature": "Subflow Fwd Packets"
+    "top_feature": "Idle Mean"
   },
   {
     "entity": "USR-015",
@@ -6389,7 +6389,7 @@
     "timestamp": "2026-06-21T19:23:59Z",
     "anomaly_score": 0.229,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-006",
@@ -6397,7 +6397,7 @@
     "timestamp": "2026-06-08T17:28:23Z",
     "anomaly_score": 0.299,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-021",
@@ -6405,7 +6405,7 @@
     "timestamp": "2026-06-15T02:32:14Z",
     "anomaly_score": 0.617,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-017",
@@ -6413,7 +6413,7 @@
     "timestamp": "2026-06-10T21:39:27Z",
     "anomaly_score": 0.341,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-003",
@@ -6421,7 +6421,7 @@
     "timestamp": "2026-06-08T13:42:07Z",
     "anomaly_score": 0.271,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-025",
@@ -6429,7 +6429,7 @@
     "timestamp": "2026-06-24T21:29:16Z",
     "anomaly_score": 0.289,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-014",
@@ -6437,7 +6437,7 @@
     "timestamp": "2026-06-17T04:59:16Z",
     "anomaly_score": 0.558,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-021",
@@ -6469,7 +6469,7 @@
     "timestamp": "2026-06-07T05:53:13Z",
     "anomaly_score": 0.39,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-018",
@@ -6517,7 +6517,7 @@
     "timestamp": "2026-06-13T11:18:57Z",
     "anomaly_score": 0.595,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-015",
@@ -6525,7 +6525,7 @@
     "timestamp": "2026-06-12T03:13:34Z",
     "anomaly_score": 0.537,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-010",
@@ -6533,7 +6533,7 @@
     "timestamp": "2026-06-25T11:37:50Z",
     "anomaly_score": 0.247,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-022",
@@ -6541,7 +6541,7 @@
     "timestamp": "2026-06-12T20:21:20Z",
     "anomaly_score": 0.371,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Flow Bytes/s"
   },
   {
     "entity": "USR-021",
@@ -6557,7 +6557,7 @@
     "timestamp": "2026-06-23T01:18:20Z",
     "anomaly_score": 0.255,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-003",
@@ -6565,7 +6565,7 @@
     "timestamp": "2026-06-25T14:00:08Z",
     "anomaly_score": 0.473,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Idle Max"
   },
   {
     "entity": "USR-013",
@@ -6573,7 +6573,7 @@
     "timestamp": "2026-06-01T08:45:57Z",
     "anomaly_score": 0.478,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-018",
@@ -6581,7 +6581,7 @@
     "timestamp": "2026-06-15T13:42:54Z",
     "anomaly_score": 0.411,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-014",
@@ -6597,7 +6597,7 @@
     "timestamp": "2026-06-16T18:33:22Z",
     "anomaly_score": 0.356,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-019",
@@ -6605,7 +6605,7 @@
     "timestamp": "2026-06-02T13:49:39Z",
     "anomaly_score": 0.515,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-004",
@@ -6613,7 +6613,7 @@
     "timestamp": "2026-06-02T18:19:44Z",
     "anomaly_score": 0.794,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Subflow Bwd Bytes"
   },
   {
     "entity": "USR-017",
@@ -6621,7 +6621,7 @@
     "timestamp": "2026-06-29T00:32:09Z",
     "anomaly_score": 0.34,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-002",
@@ -6629,7 +6629,7 @@
     "timestamp": "2026-06-13T19:56:13Z",
     "anomaly_score": 0.412,
     "layer": "network",
-    "top_feature": "Active Min"
+    "top_feature": "Flow IAT Min"
   },
   {
     "entity": "USR-009",
@@ -6637,7 +6637,7 @@
     "timestamp": "2026-06-15T16:44:57Z",
     "anomaly_score": 0.408,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-018",
@@ -6645,7 +6645,7 @@
     "timestamp": "2026-06-13T09:18:00Z",
     "anomaly_score": 0.26,
     "layer": "network",
-    "top_feature": "Packet Length Std"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-019",
@@ -6661,7 +6661,7 @@
     "timestamp": "2026-06-27T10:49:29Z",
     "anomaly_score": 0.703,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-013",
@@ -6669,7 +6669,7 @@
     "timestamp": "2026-06-25T13:35:30Z",
     "anomaly_score": 0.538,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-003",
@@ -6677,7 +6677,7 @@
     "timestamp": "2026-06-17T11:10:18Z",
     "anomaly_score": 0.556,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-019",
@@ -6685,7 +6685,7 @@
     "timestamp": "2026-06-13T09:23:41Z",
     "anomaly_score": 0.517,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-018",
@@ -6693,7 +6693,7 @@
     "timestamp": "2026-06-10T15:07:58Z",
     "anomaly_score": 0.537,
     "layer": "network",
-    "top_feature": "Total Backward Packets"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-024",
@@ -6701,7 +6701,7 @@
     "timestamp": "2026-06-24T20:23:40Z",
     "anomaly_score": 0.268,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-003",
@@ -6709,7 +6709,7 @@
     "timestamp": "2026-06-09T09:57:31Z",
     "anomaly_score": 0.55,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-012",
@@ -6717,7 +6717,7 @@
     "timestamp": "2026-06-05T03:19:41Z",
     "anomaly_score": 0.472,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-009",
@@ -6725,7 +6725,7 @@
     "timestamp": "2026-06-22T04:27:13Z",
     "anomaly_score": 0.485,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-006",
@@ -6733,7 +6733,7 @@
     "timestamp": "2026-06-12T11:47:10Z",
     "anomaly_score": 0.426,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-019",
@@ -6741,7 +6741,7 @@
     "timestamp": "2026-06-19T16:30:21Z",
     "anomaly_score": 0.268,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-003",
@@ -6749,7 +6749,7 @@
     "timestamp": "2026-06-28T23:06:34Z",
     "anomaly_score": 0.335,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-005",
@@ -6765,7 +6765,7 @@
     "timestamp": "2026-06-15T04:03:31Z",
     "anomaly_score": 0.535,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Max Packet Length"
   },
   {
     "entity": "USR-003",
@@ -6789,7 +6789,7 @@
     "timestamp": "2026-06-17T13:44:21Z",
     "anomaly_score": 0.472,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Idle Mean"
   },
   {
     "entity": "USR-014",
@@ -6797,7 +6797,7 @@
     "timestamp": "2026-06-26T10:44:58Z",
     "anomaly_score": 0.3,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-004",
@@ -6805,7 +6805,7 @@
     "timestamp": "2026-06-08T12:04:27Z",
     "anomaly_score": 0.284,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-003",
@@ -6813,7 +6813,7 @@
     "timestamp": "2026-06-01T03:47:08Z",
     "anomaly_score": 0.412,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-020",
@@ -6829,7 +6829,7 @@
     "timestamp": "2026-06-08T14:58:13Z",
     "anomaly_score": 0.393,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Subflow Fwd Bytes"
   },
   {
     "entity": "USR-010",
@@ -6837,7 +6837,7 @@
     "timestamp": "2026-06-03T04:10:42Z",
     "anomaly_score": 0.243,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-018",
@@ -6845,7 +6845,7 @@
     "timestamp": "2026-06-04T23:50:37Z",
     "anomaly_score": 0.483,
     "layer": "network",
-    "top_feature": "Packet Length Mean"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-013",
@@ -6853,7 +6853,7 @@
     "timestamp": "2026-06-22T01:43:07Z",
     "anomaly_score": 0.376,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Flow IAT Max"
   },
   {
     "entity": "USR-006",
@@ -6861,7 +6861,7 @@
     "timestamp": "2026-06-21T12:39:24Z",
     "anomaly_score": 0.334,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-008",
@@ -6885,7 +6885,7 @@
     "timestamp": "2026-06-01T09:40:34Z",
     "anomaly_score": 0.46,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-015",
@@ -6901,7 +6901,7 @@
     "timestamp": "2026-06-09T08:25:48Z",
     "anomaly_score": 0.432,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-011",
@@ -6909,7 +6909,7 @@
     "timestamp": "2026-06-29T16:06:54Z",
     "anomaly_score": 0.507,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-011",
@@ -6917,7 +6917,7 @@
     "timestamp": "2026-06-16T18:13:30Z",
     "anomaly_score": 0.544,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-006",
@@ -6941,7 +6941,7 @@
     "timestamp": "2026-06-23T20:45:05Z",
     "anomaly_score": 0.427,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-006",
@@ -6965,7 +6965,7 @@
     "timestamp": "2026-06-27T17:19:34Z",
     "anomaly_score": 0.702,
     "layer": "network",
-    "top_feature": "SYN Flag Count"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-015",
@@ -6981,7 +6981,7 @@
     "timestamp": "2026-06-19T01:17:58Z",
     "anomaly_score": 0.484,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Mean"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-008",
@@ -6989,7 +6989,7 @@
     "timestamp": "2026-06-27T05:45:53Z",
     "anomaly_score": 0.248,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Fwd Packets/s"
   },
   {
     "entity": "USR-009",
@@ -6997,7 +6997,7 @@
     "timestamp": "2026-06-30T23:54:00Z",
     "anomaly_score": 0.829,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-020",
@@ -7005,7 +7005,7 @@
     "timestamp": "2026-06-08T11:05:32Z",
     "anomaly_score": 0.606,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Fwd IAT Min"
   },
   {
     "entity": "USR-017",
@@ -7013,7 +7013,7 @@
     "timestamp": "2026-06-12T05:36:43Z",
     "anomaly_score": 0.284,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-003",
@@ -7021,7 +7021,7 @@
     "timestamp": "2026-06-05T10:56:36Z",
     "anomaly_score": 0.226,
     "layer": "network",
-    "top_feature": "Bwd Packet Length Min"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-002",
@@ -7029,7 +7029,7 @@
     "timestamp": "2026-06-07T01:46:23Z",
     "anomaly_score": 0.738,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Fwd Header Length.1"
   },
   {
     "entity": "USR-022",
@@ -7037,7 +7037,7 @@
     "timestamp": "2026-06-24T01:04:53Z",
     "anomaly_score": 0.615,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-021",
@@ -7045,7 +7045,7 @@
     "timestamp": "2026-06-05T03:14:59Z",
     "anomaly_score": 0.354,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-004",
@@ -7053,7 +7053,7 @@
     "timestamp": "2026-06-04T15:07:38Z",
     "anomaly_score": 0.305,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-023",
@@ -7077,7 +7077,7 @@
     "timestamp": "2026-06-20T18:02:40Z",
     "anomaly_score": 0.353,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Flow IAT Min"
   },
   {
     "entity": "USR-017",
@@ -7085,7 +7085,7 @@
     "timestamp": "2026-06-11T02:30:50Z",
     "anomaly_score": 0.245,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-005",
@@ -7141,7 +7141,7 @@
     "timestamp": "2026-06-07T10:41:45Z",
     "anomaly_score": 0.79,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-024",
@@ -7149,7 +7149,7 @@
     "timestamp": "2026-06-17T16:19:06Z",
     "anomaly_score": 0.494,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-018",
@@ -7157,7 +7157,7 @@
     "timestamp": "2026-06-23T15:31:52Z",
     "anomaly_score": 0.284,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Bwd Packet Length Mean"
   },
   {
     "entity": "USR-014",
@@ -7173,7 +7173,7 @@
     "timestamp": "2026-06-16T11:59:44Z",
     "anomaly_score": 0.314,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-014",
@@ -7189,7 +7189,7 @@
     "timestamp": "2026-06-18T01:15:38Z",
     "anomaly_score": 0.54,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-023",
@@ -7197,7 +7197,7 @@
     "timestamp": "2026-06-04T12:23:17Z",
     "anomaly_score": 0.576,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Subflow Bwd Bytes"
   },
   {
     "entity": "USR-018",
@@ -7205,7 +7205,7 @@
     "timestamp": "2026-06-24T18:43:39Z",
     "anomaly_score": 0.408,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-015",
@@ -7213,7 +7213,7 @@
     "timestamp": "2026-06-26T21:53:47Z",
     "anomaly_score": 0.362,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd Packet Length Std"
   },
   {
     "entity": "USR-004",
@@ -7221,7 +7221,7 @@
     "timestamp": "2026-06-16T19:06:17Z",
     "anomaly_score": 0.309,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-021",
@@ -7237,7 +7237,7 @@
     "timestamp": "2026-06-08T15:54:47Z",
     "anomaly_score": 0.331,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-004",
@@ -7245,7 +7245,7 @@
     "timestamp": "2026-06-15T02:19:54Z",
     "anomaly_score": 0.311,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-003",
@@ -7253,7 +7253,7 @@
     "timestamp": "2026-06-19T11:28:14Z",
     "anomaly_score": 0.466,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-017",
@@ -7269,7 +7269,7 @@
     "timestamp": "2026-06-23T19:33:58Z",
     "anomaly_score": 0.295,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-006",
@@ -7277,7 +7277,7 @@
     "timestamp": "2026-06-17T18:23:15Z",
     "anomaly_score": 0.511,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd Packet Length Mean"
   },
   {
     "entity": "USR-018",
@@ -7293,7 +7293,7 @@
     "timestamp": "2026-06-05T18:20:11Z",
     "anomaly_score": 0.234,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd Packet Length Std"
   },
   {
     "entity": "USR-005",
@@ -7309,7 +7309,7 @@
     "timestamp": "2026-06-11T20:42:45Z",
     "anomaly_score": 0.278,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-012",
@@ -7333,7 +7333,7 @@
     "timestamp": "2026-06-30T23:55:29Z",
     "anomaly_score": 0.527,
     "layer": "network",
-    "top_feature": "Bwd IAT Std"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-016",
@@ -7349,7 +7349,7 @@
     "timestamp": "2026-06-07T20:33:35Z",
     "anomaly_score": 0.717,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "Total Length of Bwd Packets"
   },
   {
     "entity": "USR-016",
@@ -7357,7 +7357,7 @@
     "timestamp": "2026-06-01T23:38:47Z",
     "anomaly_score": 0.239,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-006",
@@ -7365,7 +7365,7 @@
     "timestamp": "2026-06-12T12:14:15Z",
     "anomaly_score": 0.769,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Avg Fwd Segment Size"
   },
   {
     "entity": "USR-003",
@@ -7389,7 +7389,7 @@
     "timestamp": "2026-06-30T04:40:51Z",
     "anomaly_score": 0.31,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-025",
@@ -7421,7 +7421,7 @@
     "timestamp": "2026-06-21T00:09:33Z",
     "anomaly_score": 0.288,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-004",
@@ -7437,7 +7437,7 @@
     "timestamp": "2026-06-09T07:31:39Z",
     "anomaly_score": 0.237,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-025",
@@ -7445,7 +7445,7 @@
     "timestamp": "2026-06-02T09:24:18Z",
     "anomaly_score": 0.314,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-007",
@@ -7469,7 +7469,7 @@
     "timestamp": "2026-06-07T19:58:29Z",
     "anomaly_score": 0.335,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-002",
@@ -7477,7 +7477,7 @@
     "timestamp": "2026-06-14T01:17:13Z",
     "anomaly_score": 0.276,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-009",
@@ -7517,7 +7517,7 @@
     "timestamp": "2026-06-16T09:25:44Z",
     "anomaly_score": 0.415,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Fwd IAT Total"
   },
   {
     "entity": "USR-023",
@@ -7525,7 +7525,7 @@
     "timestamp": "2026-06-17T21:30:22Z",
     "anomaly_score": 0.691,
     "layer": "network",
-    "top_feature": "Flow Packets/s"
+    "top_feature": "Subflow Bwd Bytes"
   },
   {
     "entity": "USR-007",
@@ -7541,7 +7541,7 @@
     "timestamp": "2026-06-19T11:52:31Z",
     "anomaly_score": 0.365,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-019",
@@ -7549,7 +7549,7 @@
     "timestamp": "2026-06-18T11:22:01Z",
     "anomaly_score": 0.499,
     "layer": "network",
-    "top_feature": "Packet Length Mean"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-020",
@@ -7557,7 +7557,7 @@
     "timestamp": "2026-06-30T13:43:39Z",
     "anomaly_score": 0.318,
     "layer": "network",
-    "top_feature": "Packet Length Variance"
+    "top_feature": "Flow IAT Mean"
   },
   {
     "entity": "USR-011",
@@ -7573,7 +7573,7 @@
     "timestamp": "2026-06-22T00:17:09Z",
     "anomaly_score": 0.545,
     "layer": "network",
-    "top_feature": "Init_Win_bytes_backward"
+    "top_feature": "Fwd IAT Std"
   },
   {
     "entity": "USR-017",
@@ -7581,7 +7581,7 @@
     "timestamp": "2026-06-30T05:54:54Z",
     "anomaly_score": 0.555,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-022",
@@ -7597,7 +7597,7 @@
     "timestamp": "2026-06-27T20:49:48Z",
     "anomaly_score": 0.312,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-023",
@@ -7605,7 +7605,7 @@
     "timestamp": "2026-06-29T01:58:58Z",
     "anomaly_score": 0.48,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-022",
@@ -7613,7 +7613,7 @@
     "timestamp": "2026-06-17T07:34:07Z",
     "anomaly_score": 0.273,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-016",
@@ -7621,7 +7621,7 @@
     "timestamp": "2026-06-12T03:25:19Z",
     "anomaly_score": 0.314,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-021",
@@ -7629,7 +7629,7 @@
     "timestamp": "2026-06-19T21:51:01Z",
     "anomaly_score": 0.318,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-021",
@@ -7645,7 +7645,7 @@
     "timestamp": "2026-06-13T20:49:42Z",
     "anomaly_score": 0.413,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-017",
@@ -7653,7 +7653,7 @@
     "timestamp": "2026-06-12T12:24:31Z",
     "anomaly_score": 0.479,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Mean"
   },
   {
     "entity": "USR-024",
@@ -7677,7 +7677,7 @@
     "timestamp": "2026-06-19T17:40:40Z",
     "anomaly_score": 0.284,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Fwd IAT Total"
   },
   {
     "entity": "USR-014",
@@ -7685,7 +7685,7 @@
     "timestamp": "2026-06-24T01:05:09Z",
     "anomaly_score": 0.281,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-011",
@@ -7693,7 +7693,7 @@
     "timestamp": "2026-06-08T10:19:14Z",
     "anomaly_score": 0.494,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-010",
@@ -7701,7 +7701,7 @@
     "timestamp": "2026-06-16T00:43:28Z",
     "anomaly_score": 0.403,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Flow IAT Max"
   },
   {
     "entity": "USR-022",
@@ -7717,7 +7717,7 @@
     "timestamp": "2026-06-25T12:32:51Z",
     "anomaly_score": 0.269,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-002",
@@ -7725,7 +7725,7 @@
     "timestamp": "2026-06-14T18:31:53Z",
     "anomaly_score": 0.295,
     "layer": "network",
-    "top_feature": "PSH Flag Count"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-001",
@@ -7733,7 +7733,7 @@
     "timestamp": "2026-06-11T21:30:37Z",
     "anomaly_score": 0.391,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Max"
   },
   {
     "entity": "USR-001",
@@ -7749,7 +7749,7 @@
     "timestamp": "2026-06-12T19:07:39Z",
     "anomaly_score": 0.302,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-021",
@@ -7757,7 +7757,7 @@
     "timestamp": "2026-06-17T15:45:40Z",
     "anomaly_score": 0.317,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-009",
@@ -7773,7 +7773,7 @@
     "timestamp": "2026-06-04T08:39:42Z",
     "anomaly_score": 0.58,
     "layer": "network",
-    "top_feature": "min_seg_size_forward"
+    "top_feature": "SYN Flag Count"
   },
   {
     "entity": "USR-022",
@@ -7781,7 +7781,7 @@
     "timestamp": "2026-06-02T05:58:55Z",
     "anomaly_score": 0.463,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Bwd Header Length"
   },
   {
     "entity": "USR-013",
@@ -7797,7 +7797,7 @@
     "timestamp": "2026-06-29T18:15:03Z",
     "anomaly_score": 0.743,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Avg Fwd Segment Size"
   },
   {
     "entity": "USR-001",
@@ -7805,7 +7805,7 @@
     "timestamp": "2026-06-01T02:26:24Z",
     "anomaly_score": 0.235,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_backward"
   },
   {
     "entity": "USR-001",
@@ -7813,7 +7813,7 @@
     "timestamp": "2026-06-20T01:41:05Z",
     "anomaly_score": 0.373,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-011",
@@ -7821,7 +7821,7 @@
     "timestamp": "2026-06-06T17:16:19Z",
     "anomaly_score": 0.512,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-016",
@@ -7829,7 +7829,7 @@
     "timestamp": "2026-06-14T23:15:56Z",
     "anomaly_score": 0.283,
     "layer": "network",
-    "top_feature": "Fwd IAT Mean"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-003",
@@ -7837,7 +7837,7 @@
     "timestamp": "2026-06-04T03:54:36Z",
     "anomaly_score": 0.238,
     "layer": "network",
-    "top_feature": "Fwd IAT Min"
+    "top_feature": "Flow Packets/s"
   },
   {
     "entity": "USR-004",
@@ -7845,7 +7845,7 @@
     "timestamp": "2026-06-15T14:20:19Z",
     "anomaly_score": 0.321,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "ACK Flag Count"
   },
   {
     "entity": "USR-025",
@@ -7869,7 +7869,7 @@
     "timestamp": "2026-06-21T22:37:24Z",
     "anomaly_score": 0.887,
     "layer": "network",
-    "top_feature": "Flow IAT Min"
+    "top_feature": "Fwd PSH Flags"
   },
   {
     "entity": "USR-014",
@@ -7877,7 +7877,7 @@
     "timestamp": "2026-06-22T16:31:20Z",
     "anomaly_score": 0.585,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Bwd Header Length"
   },
   {
     "entity": "USR-004",
@@ -7885,7 +7885,7 @@
     "timestamp": "2026-06-02T02:18:16Z",
     "anomaly_score": 0.244,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Init_Win_bytes_forward"
   },
   {
     "entity": "USR-005",
@@ -7893,7 +7893,7 @@
     "timestamp": "2026-06-10T14:28:58Z",
     "anomaly_score": 0.227,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Fwd Packet Length Std"
   },
   {
     "entity": "USR-009",
@@ -7901,7 +7901,7 @@
     "timestamp": "2026-06-11T06:40:11Z",
     "anomaly_score": 0.584,
     "layer": "network",
-    "top_feature": "Fwd Packets/s"
+    "top_feature": "Bwd IAT Max"
   },
   {
     "entity": "USR-020",
@@ -7917,7 +7917,7 @@
     "timestamp": "2026-06-25T02:07:26Z",
     "anomaly_score": 0.44,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-013",
@@ -7925,7 +7925,7 @@
     "timestamp": "2026-06-21T16:50:44Z",
     "anomaly_score": 0.498,
     "layer": "network",
-    "top_feature": "Packet Length Mean"
+    "top_feature": "Idle Std"
   },
   {
     "entity": "USR-002",
@@ -7941,7 +7941,7 @@
     "timestamp": "2026-06-24T04:14:50Z",
     "anomaly_score": 0.333,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Active Mean"
   },
   {
     "entity": "USR-020",
@@ -7957,7 +7957,7 @@
     "timestamp": "2026-06-17T16:21:19Z",
     "anomaly_score": 0.266,
     "layer": "network",
-    "top_feature": "Flow Bytes/s"
+    "top_feature": "Total Fwd Packets"
   },
   {
     "entity": "USR-019",
@@ -7965,7 +7965,7 @@
     "timestamp": "2026-06-14T22:27:01Z",
     "anomaly_score": 0.668,
     "layer": "network",
-    "top_feature": "ACK Flag Count"
+    "top_feature": "Active Std"
   },
   {
     "entity": "USR-007",
@@ -7973,7 +7973,7 @@
     "timestamp": "2026-06-13T00:53:52Z",
     "anomaly_score": 0.277,
     "layer": "network",
-    "top_feature": "Total Length of Bwd Packets"
+    "top_feature": "Down/Up Ratio"
   },
   {
     "entity": "USR-002",
@@ -7981,7 +7981,7 @@
     "timestamp": "2026-06-25T20:28:37Z",
     "anomaly_score": 0.329,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-023",
@@ -7989,7 +7989,7 @@
     "timestamp": "2026-06-18T17:30:11Z",
     "anomaly_score": 0.316,
     "layer": "network",
-    "top_feature": "Flow IAT Max"
+    "top_feature": "Avg Bwd Segment Size"
   },
   {
     "entity": "USR-005",
@@ -7997,7 +7997,7 @@
     "timestamp": "2026-06-12T10:54:35Z",
     "anomaly_score": 0.302,
     "layer": "network",
-    "top_feature": "PSH Flag Count"
+    "top_feature": "Bwd Packet Length Max"
   },
   {
     "entity": "USR-021",
