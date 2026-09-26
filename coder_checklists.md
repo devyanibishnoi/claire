@@ -343,21 +343,27 @@ This is the largest of the three jobs since it covers a detector plus the two pi
 
 A visual, interactive demo of the pipeline for your resume and portfolio. This is separate from the conference submission, nobody else on the team needs to touch it, and it should not block or slow down Phase 8 through 12.
 
-- [ ] Decide the shape: a single self-contained webpage (HTML, CSS, JS in one file, no backend server needed) is the right scope here, not a full app with a database. Everything it needs (the incident_demo_01 data, the metrics numbers) can be written directly into the page rather than fetched from anywhere.
-- [ ] Part 1, the animated walkthrough: build a step-by-step visual replay of your real `incident_demo_01` scenario. Three cards (network, OS, cloud) reveal in sequence at their real timestamps (t=0, t=+4min, t=+8min) with their real flagged data, then animate into a fusion step showing the real correlation logic (shared entity/host, inside the time window), then reveal the actual LLM-generated explanation text you already have in `results/cloud_llm_metrics.md`. Trigger this with a single "run incident" button rather than autoplaying on page load.
-- [ ] Part 2, the live "try to break it" demo: a text box where a visitor can type their own prompt-injection attempt, which gets inserted into the entity field of a fused evidence record and sent to an LLM using the same system instructions your real `llm_explain.py` uses (treat every field as untrusted data), then displays whether the model complied or correctly flagged the injection. This is the single most memorable part of the demo for anyone viewing your portfolio, since they get to try it themselves rather than watch a recording.
-- [ ] For Part 2 you need a real API call from the page. Reuse the same Gemini API key setup from your own Phase 0, and check Google AI Studio's docs for making a client-side request, or route it through a minimal serverless function if you'd rather not expose the key in page source (Vercel and Netlify both support this for free on a personal project).
-- [ ] Part 3, a results snapshot section: the key numbers as simple visual cards, not a table, network recall 46.9% to 74.5%, the cross-layer retraining-backfire finding stated in one or two sentences, and whichever of the new Phase 8 to 11 numbers are ready by the time you build this (the cross-paradigm result, the fusion precision/recall, the alert-reduction ratio).
-- [ ] Reuse the architecture diagram and the feature-space convergence figure you already built for the patent disclosure rather than redrawing them.
-- [ ] Deploy it somewhere with a stable public link, GitHub Pages is the simplest free option for a static page like this:
+- [x] Decide the shape: a single self-contained webpage (HTML, CSS, JS in one file, no backend server needed) is the right scope here, not a full app with a database. **Built as `index.html` at repo root.**
+- [x] Part 1, the animated walkthrough: build a step-by-step visual replay of your real `incident_demo_01` scenario. Three cards (network, OS, cloud) reveal in sequence at their real timestamps (t=0, t=+4min, t=+8min) with their real flagged data, then animate into a fusion step showing the real correlation logic (shared entity/host, inside the time window), then reveal the actual LLM-generated explanation text you already have in `results/cloud_llm_metrics.md`. Trigger this with a single "run incident" button rather than autoplaying on page load. **Explanation text is the real, freshly-generated output from `llm_explain.py`, not hand-written.**
+- [x] Part 2, the live "try to break it" demo: a text box where a visitor can type their own prompt-injection attempt, which gets inserted into the entity field of a fused evidence record and sent to an LLM using the same system instructions your real `llm_explain.py` uses (treat every field as untrusted data), then displays whether the model complied or correctly flagged the injection.
+- [x] For Part 2 you need a real API call from the page. **Deviated from this checklist's original plan — see below.**
+- [x] Part 3, a results snapshot section: the key numbers as simple visual cards. Used network 46.9%→74.5%, LLM prompt-injection 25%→0%, fusion 100%/100% (controlled scenarios), and the cross-layer retraining-backfire finding as a wide callout card.
+- [ ] Reuse the architecture diagram and the feature-space convergence figure you already built for the patent disclosure rather than redrawing them. **Skipped — those figures aren't in this repo (they live wherever the patent disclosure work happened), so I built a simple inline architecture strip instead rather than blocking on finding them.**
+- [ ] Deploy it — **not done by me; needs your own GitHub/Vercel login. See deployment note below.**
+- [ ] Add the live link to your resume, your portfolio site, and the README's project description once it's up.
+
+**Deviation from the original plan, worth reading before deploying:** this checklist assumed Gemini (Phase 0's original pick) and a plain static host with the API key exposed client-side, or a self-managed serverless function. Two things changed that:
+1. The real pipeline (`llm_explain.py`) actually runs on **Groq**, not Gemini — Phase 0 apparently changed provider at some point and this checklist line never got updated. Part 2 uses Groq (`openai/gpt-oss-120b`, matching the real pipeline) so the "same system instructions your real llm_explain.py uses" claim is actually true.
+2. A raw API key sitting in public page source is a real risk (anyone viewing source can copy it and run up usage on your account) — not something to ship on a resume link people will actually click. So Part 2 calls `/api/explain` (a small serverless function at `api/explain.js`, key stored server-side as an environment variable) instead of calling Groq directly from the browser.
+
+**What this means for deployment:** `index.html` alone works on plain GitHub Pages (Parts 1 and 3 fully live, Part 2 shows an honest "backend not configured" message instead of failing silently). To make Part 2 actually live, deploy the same files to **Vercel** instead (it serves the static page *and* runs `api/explain.js` from one project — simpler than juggling GitHub Pages plus a separate function host) and set a `GROQ_API_KEY` environment variable in the Vercel project settings. Commands, once you're ready:
   ```
   git checkout -b demo
-  git add index.html
+  git add index.html api/
   git commit -m "demo: portfolio walkthrough of the CLAIRE pipeline"
   git push -u origin demo
   ```
-  then enable Pages for that branch in the repository's Settings, under Pages, and point it at the `demo` branch.
-- [ ] Add the live link to your resume, your portfolio site, and the README's project description once it's up.
+  Then either enable GitHub Pages on the `demo` branch (static-only, Part 2 shows the config note), or connect the repo to a new Vercel project pointed at the `demo` branch and add `GROQ_API_KEY` under Settings → Environment Variables (fully live, including Part 2) — Vercel can also serve the static page fine, so this alone gives you one link that does everything.
 
 ### Phase 14 — Pull it all together
 - [ ] Collect Hridya's `network_metrics.md` and Anshika's `os_metrics.md` along with your own `cloud_llm_metrics.md` (now including the Phase 8–12 additions) into one consolidated results table — this becomes the core of the patent's "Experimental Validation Results" section.
