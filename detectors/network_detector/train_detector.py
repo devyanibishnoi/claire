@@ -101,15 +101,15 @@ def get_top_feature(row_series):
     feature whose removal drops the anomaly score the most."""
     # Pass as a single-row DataFrame to keep feature names -- avoids sklearn warning
     baseline = model.decision_function(row_series.to_frame().T)[0]
-    max_drop = -float("inf")
+    max_change = -float("inf")
     top_feat = None
     for col in feature_names:
         modified = row_series.copy()
         modified[col] = column_means[col]
         new_score = model.decision_function(modified.to_frame().T)[0]
-        drop = baseline - new_score
-        if drop > max_drop:
-            max_drop = drop
+        change = abs(new_score - baseline)
+        if change > max_change:
+            max_change = change
             top_feat = col
     return top_feat
 

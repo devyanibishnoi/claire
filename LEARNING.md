@@ -109,7 +109,7 @@ If most flagged rows come back with very similar `anomaly_score`s (e.g. clustere
 
 ### Leave-one-feature-out attribution: get the sign right, or it picks the wrong feature
 
-This one's important for Hridya and Anshika specifically, not just a general note — it affects the `top_feature` values already pushed for network and OS.
+This one's worth both of you understanding, but the actual action item is Hridya's specifically: it affects network's already-pushed `top_feature` values. (Anshika's own implementation already used the correct approach independently — see her section below — so this isn't a fire drill for her, just useful to understand why the two approaches diverge.)
 
 The shared method for "which feature drove this row's anomaly score" is: take a flagged row, replace one feature at a time with that column's average, re-run `model.decision_function()`, and see which single replacement changes the score the most. The subtlety is in *how* "changes the most" gets measured, and it's easy to get backwards.
 
@@ -277,6 +277,8 @@ Network's columns (`protocol_type`, `service`, `flag`) are low-cardinality — a
 
 **On the retraining-backfire problem (see Everyone's adversarial testing section):** unlike the cloud detector, `X` here already includes essentially every raw column CICIDS2017 provides — nothing's being deliberately held back, so "engineer a currently-unused feature" isn't an available fix the way it is for cloud. The more likely issue is that the evasion attack itself (`±15%` random noise applied independently to *every* column) doesn't give 30 adversarial examples a single consistent, learnable shape — compare to cloud's mimicry attack, which always shares the exact same signature (one sensitive action + familiar IP). Narrowing the attack to a few consistent, meaningful columns (closer to Anshika's targeted approach) is more likely to help than trying to retrain against a diffuse, differently-random attack every time. Also worth taking seriously rather than dismissing: the network write-up itself notes some CICIDS2017 attack types (Infiltration, Heartbleed, Bot) genuinely resemble normal traffic statistically — if that's true, there may be no clean feature-based fix available in this dataset at all, which is a legitimate limitation to report rather than a gap to keep chasing.
 
+**Action item, not just a note:** `get_top_feature()` in `detectors/network_detector/train_detector.py` picks the feature maximizing `baseline - new_score` (a signed search), which finds the feature whose neutralization makes a row *more* anomalous, not the one that actually explains why it's anomalous. It should pick the feature maximizing `abs(new_score - baseline)` instead — same shape of fix already applied in cloud's `train_detector.py`, so that file is a working reference. `top_feature` needs to be regenerated with the fix before it's used anywhere that matters, including the LLM explanation grounding in Phase 12. See "Leave-one-feature-out attribution" in Everyone's section above for the full reasoning, and "Important flag for Hridya" in `results/cloud_llm_metrics.md` for the concrete before/after comparison.
+
 ---
 
 ## Anshika — OS/Endpoint Detector
@@ -286,6 +288,8 @@ Network's columns (`protocol_type`, `service`, `flag`) are low-cardinality — a
 `user` is probably low-cardinality for a small dataset, but don't assume — check with `df['user'].nunique()` before deciding how to encode it.
 
 **On the retraining-backfire problem (see Everyone's adversarial testing section):** same situation as network, not cloud — `X` is already the full bag-of-syscalls matrix, every available column included, nothing held back to re-engineer into a new feature. The honestly-reported low baseline recall (25% on real, unmodified attacks, before evasion is even involved) suggests ADFA-LD may just be a genuinely hard dataset to separate with the current feature set, independent of the retraining question. Worth checking if any temporal or session-level signal exists in the raw data that isn't currently in `X`, but if not, that's a real limitation worth stating plainly rather than something to keep chasing under deadline pressure.
+
+**No action needed on the attribution sign issue:** the checklist said to copy network's leave-one-feature-out method exactly, but `find_top_feature()` in `detectors/os_detector/train_detector.py` already computes `abs(modified_score - original_score)` rather than a signed difference — the correct approach, arrived at independently. Confirmed by direct code comparison, not assumed. OS's `top_feature` values are fine as pushed.
 
 ---
 
