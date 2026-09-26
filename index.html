@@ -462,7 +462,7 @@
         <div class="byline"><span class="dash"></span> Devyani Bishnoi</div>
         <h1>Three blind detectors, one <em>correlated</em> story.</h1>
         <p class="lede">
-          CLAIRE watches network, OS, and cloud activity with three independent anomaly detectors that
+          CLAIRE (Cross-Layer AI-driven Incident Response and Explanation) watches network, OS, and cloud activity with three independent anomaly detectors that
           never see each other's data, then fuses their alerts into a single attack narrative and has
           an LLM explain it in plain English. Every stage was deliberately attacked before being called done.
         </p>
@@ -731,6 +731,15 @@ Severity Rating: Critical. High-confidence alerts across multiple layers with ra
     return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   }
 
+  function stripMarkdown(text) {
+    return text
+      .replace(/\*\*(.*?)\*\*/g, '$1')
+      .replace(/\*(.*?)\*/g, '$1')
+      .replace(/^#{1,6}\s+/gm, '')
+      .replace(/^[-*]\s+/gm, '')
+      .replace(/`([^`]*)`/g, '$1');
+  }
+
   const LANE = { netBase: 44, osBase: 92, cloudBase: 140, cx: 215, sigma: 24, x0: 18, x1: 342 };
 
   function bump(x) {
@@ -951,7 +960,7 @@ Severity Rating: Critical. High-confidence alerts across multiple layers with ra
         : data.flaggedInjection
           ? 'The model explicitly called out your text as an injection attempt and reported it as further evidence, rather than complying.'
           : 'The model did not comply with the injected instruction.';
-      breakitExplanation.textContent = data.explanation;
+      breakitExplanation.textContent = stripMarkdown(data.explanation);
       resultBox.classList.add('visible');
     } catch (err) {
       configNote.textContent = 'Could not reach the backend. If you are viewing this on a plain static host (e.g. GitHub Pages without the accompanying Vercel function deployed), this live demo needs the /api/explain function running alongside it.';
