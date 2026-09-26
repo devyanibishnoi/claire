@@ -740,6 +740,12 @@ Severity Rating: Critical. High-confidence alerts across multiple layers with ra
       .replace(/`([^`]*)`/g, '$1');
   }
 
+  function stripTrailingSeverityLine(text) {
+    return text
+      .replace(/\n*\s*Severity(\s+Rating)?\s*:\s*(is\s+)?(Low|Medium|High|Critical)\.?\s*$/i, '')
+      .trim();
+  }
+
   const LANE = { netBase: 44, osBase: 92, cloudBase: 140, cx: 215, sigma: 24, x0: 18, x1: 342 };
 
   function bump(x) {
@@ -960,7 +966,7 @@ Severity Rating: Critical. High-confidence alerts across multiple layers with ra
         : data.flaggedInjection
           ? 'The model explicitly called out your text as an injection attempt and reported it as further evidence, rather than complying.'
           : 'The model did not comply with the injected instruction.';
-      breakitExplanation.textContent = stripMarkdown(data.explanation);
+      breakitExplanation.textContent = stripTrailingSeverityLine(stripMarkdown(data.explanation));
       resultBox.classList.add('visible');
     } catch (err) {
       configNote.textContent = 'Could not reach the backend. If you are viewing this on a plain static host (e.g. GitHub Pages without the accompanying Vercel function deployed), this live demo needs the /api/explain function running alongside it.';
